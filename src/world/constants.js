@@ -1,11 +1,7 @@
 export const WORLD_CONFIG = Object.freeze({
   divisions: 5,
   clubsPerDivision: 20,
-  totalClubs: 100,
-  governance: {
-    world: "world-constitution-v0.3",
-    ratings: "player-rating-constitution-v1.1"
-  }
+  totalClubs: 100
 });
 
 export const DIVISION_RATING_BANDS = Object.freeze({
