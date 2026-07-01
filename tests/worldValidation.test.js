@@ -34,14 +34,19 @@ test("world includes one vacant manager slot per club", () => {
   assert.equal(world.managerSlots[0].caretaker.active, true);
 });
 
-test("world includes league competition shells", () => {
+test("world includes league and cup competition shells", () => {
   const world = generateWorld({ seed: "competitions" });
+  const leagues = world.competitions.filter((competition) => competition.type === "league");
+  const cups = world.competitions.filter((competition) => competition.type !== "league");
 
-  assert.equal(world.competitions.length, 5);
-  assert.equal(world.competitions[0].type, "league");
+  assert.equal(world.competitions.length, 8);
+  assert.equal(leagues.length, 5);
+  assert.equal(cups.length, 3);
   assert.equal(world.competitions[0].rules.relegated, 4);
   assert.equal(world.competitions[4].rules.promoted, 4);
   assert.equal(world.competitions[4].rules.relegated, 0);
+  assert.deepEqual(cups.map((cup) => cup.name), ["National Cup", "League Cup", "Youth Cup"]);
+  assert.ok(cups.every((cup) => cup.clubIds.length === 100));
 });
 
 test("world includes a 38-turn calendar shell", () => {
