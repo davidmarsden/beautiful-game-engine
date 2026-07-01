@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "provider": "api-football",
+    "version": "api-football-snapshot-v0.1",
+    "source": {
+      "leagueId": 39,
+      "season": 2025,
+      "maxPages": 1
+    },
+    "createdAt": "2026-07-01T18:50:46.993Z",
+    "rowCount": 0
+  },
+  "rows": []
+}
