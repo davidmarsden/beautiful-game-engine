@@ -1,3 +1,4 @@
+import { getGovernanceCompatibility } from "../governance/compatibility.js";
 import { createRng, integerBetween } from "../shared/rng.js";
 import { CLUB_NAMES } from "./clubNames.js";
 import { DIVISION_RATING_BANDS, WORLD_CONFIG } from "./constants.js";
@@ -41,7 +42,7 @@ export function generateWorld(options = {}) {
       seed,
       season: options.season ?? 1,
       generatedBy: "beautiful-game-engine@0.1.0",
-      governance: WORLD_CONFIG.governance
+      governance: getGovernanceCompatibility()
     },
     clubs,
     divisions: Array.from({ length: WORLD_CONFIG.divisions }, (_, index) => {
