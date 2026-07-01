@@ -1,12 +1,13 @@
 import { WORLD_CONFIG } from "./constants.js";
 import { leagueRulesForDivision } from "./competitionRules.js";
+import { createCupShells } from "./cups.js";
 
 export function createCompetitionShells(world) {
   if (!world?.divisions || !world?.clubs) {
     throw new Error("createCompetitionShells requires a generated world.");
   }
 
-  return world.divisions.map((division) => ({
+  const leagues = world.divisions.map((division) => ({
     id: `league-d${division.level}-s${world.meta.season}`,
     type: "league",
     name: `Division ${division.level}`,
@@ -19,4 +20,6 @@ export function createCompetitionShells(world) {
       WORLD_CONFIG.clubsPerDivision
     )
   }));
+
+  return [...leagues, ...createCupShells(world)];
 }
