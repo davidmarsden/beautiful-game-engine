@@ -6,8 +6,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "node --test",
-    "demo": "node src/index.js",
-    "import:api-football:players": "node scripts/import-api-football-players.js"
+    "demo": "node src/index.js"
   },
   "engines": {
     "node": ">=20"
