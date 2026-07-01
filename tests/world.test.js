@@ -1,6 +1,11 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { generateWorld, createSeasonShell, averageClubRating } from "../src/index.js";
+import {
+  averageClubRating,
+  createSeasonShell,
+  generateWorld,
+  getGovernanceCompatibility
+} from "../src/index.js";
 
 test("world generation creates 100 clubs across five divisions", () => {
   const world = generateWorld({ seed: "test-seed" });
@@ -18,6 +23,14 @@ test("world generation is deterministic for the same seed", () => {
   const second = generateWorld({ seed: "same-seed" });
 
   assert.deepEqual(first, second);
+});
+
+test("world metadata declares governance compatibility", () => {
+  const world = generateWorld({ seed: "governance" });
+
+  assert.deepEqual(world.meta.governance, getGovernanceCompatibility());
+  assert.equal(world.meta.governance.world, "world-constitution-v0.3");
+  assert.equal(world.meta.governance.matchEngine, "match-engine-constitution-v0.3");
 });
 
 test("season shell creates double round-robin fixture counts", () => {
