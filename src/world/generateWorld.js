@@ -1,7 +1,11 @@
 import { getGovernanceCompatibility } from "../governance/compatibility.js";
 import { createRng, integerBetween } from "../shared/rng.js";
+import { createSeasonCalendar } from "./calendar.js";
 import { CLUB_NAMES } from "./clubNames.js";
+import { createCompetitionShells } from "./competitions.js";
 import { DIVISION_RATING_BANDS, WORLD_CONFIG } from "./constants.js";
+import { createManagerSlots } from "./managers.js";
+import { createSquadShells } from "./squads.js";
 
 function padClubId(number) {
   return `club-${String(number).padStart(3, "0")}`;
@@ -37,7 +41,7 @@ export function generateWorld(options = {}) {
     };
   });
 
-  return {
+  const baseWorld = {
     meta: {
       seed,
       season: options.season ?? 1,
@@ -54,5 +58,13 @@ export function generateWorld(options = {}) {
         clubIds: clubs.filter((club) => club.division === division).map((club) => club.id)
       };
     })
+  };
+
+  return {
+    ...baseWorld,
+    squads: createSquadShells(clubs),
+    managerSlots: createManagerSlots(clubs),
+    competitions: createCompetitionShells(baseWorld),
+    calendar: createSeasonCalendar(baseWorld)
   };
 }
