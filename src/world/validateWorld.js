@@ -50,8 +50,8 @@ export function validateWorld(world) {
     fail("one manager slot is required for each club.");
   }
 
-  if (!Array.isArray(world.competitions) || world.competitions.length < WORLD_CONFIG.divisions) {
-    fail("league competition shells are required.");
+  if (!Array.isArray(world.competitions) || world.competitions.length !== WORLD_CONFIG.divisions + 3) {
+    fail("league and cup competition shells are required.");
   }
 
   if (!world.calendar?.leagueTurns || world.calendar.leagueTurns.length !== 38) {
