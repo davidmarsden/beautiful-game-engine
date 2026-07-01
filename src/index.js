@@ -9,6 +9,14 @@ export {
   getGovernanceCompatibility
 } from "./governance/compatibility.js";
 export { averageClubRating } from "./ratings/index.js";
+export { createDataSnapshot } from "./importers/snapshots.js";
+export {
+  ApiFootballClient,
+  API_FOOTBALL_CONFIG,
+  getApiFootballKey,
+  normaliseApiFootballPlayer,
+  normaliseApiFootballPlayers
+} from "./importers/apiFootball/index.js";
 export { generateWorld } from "./world/generateWorld.js";
 export { createSeasonShell } from "./world/seasonShell.js";
 export { validateWorld } from "./world/validateWorld.js";
