@@ -4,6 +4,8 @@ export {
   tableRows
 } from "./leagueTable.js";
 
+export { simulateSeason } from "./simulateSeason.js";
+
 export {
   createSeasonState,
   processNextFixture,
