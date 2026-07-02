@@ -32,7 +32,7 @@ function squad(teamId, base) {
     player(`${teamId}-rw`, teamId, "Winger", base),
     player(`${teamId}-lw`, teamId, "Winger", base),
     player(`${teamId}-st`, teamId, "Attacker", base),
-    player(`${teamId}-sub`, teamId, "Forward", base - 3)
+    player(`${teamId}-sub", teamId, "Forward", base - 3)
   ];
 }
 
@@ -40,7 +40,17 @@ const players = [...squad("home", 88), ...squad("away", 82)];
 const playerMap = Object.fromEntries(players.map((row) => [row.id, row]));
 
 const pack = {
-  meta: { source: { league: "39", season: "2024" } },
+  meta: {
+    version: "league-pack-v0.1",
+    source: { league: "39", season: "2024" },
+    counts: {
+      clubs: 2,
+      players: Object.keys(playerMap).length,
+      fixtures: 1,
+      standings: 0,
+      managerSlots: 2
+    }
+  },
   clubs: {
     home: { id: "home", name: "Home FC", source: { providerTeamId: "home" }, squad: { overall: 88 } },
     away: { id: "away", name: "Away FC", source: { providerTeamId: "away" }, squad: { overall: 82 } }
