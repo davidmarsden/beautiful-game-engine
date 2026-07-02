@@ -6,6 +6,7 @@ import {
   createSeasonState,
   processNextFixture,
   seasonSummary,
+  simulateSeason,
   tableRows
 } from "../src/index.js";
 
@@ -64,6 +65,18 @@ const pack = {
   standings: []
 };
 
+const twoFixturePack = {
+  ...pack,
+  meta: {
+    ...pack.meta,
+    counts: { ...pack.meta.counts, fixtures: 2 }
+  },
+  fixtures: [
+    { id: "fixture-1", homeTeamId: "home", awayTeamId: "away" },
+    { id: "fixture-2", homeTeamId: "away", awayTeamId: "home" }
+  ]
+};
+
 test("creates and sorts a league table", () => {
   let table = createLeagueTable(pack.clubs);
   table = applyResultToTable(table, {
@@ -103,4 +116,17 @@ test("processes one fixture and updates state", () => {
   assert.equal(complete, true);
   assert.ok(state.cohesion.home.matchesTracked > 0);
   assert.equal(summary.table.reduce((sum, row) => sum + row.played, 0), 2);
+});
+
+test("simulates a complete mini season", () => {
+  const replay = simulateSeason(twoFixturePack, {
+    seed: "mini-season-test",
+    useLineups: true
+  });
+
+  assert.equal(replay.complete, true);
+  assert.equal(replay.results.length, 2);
+  assert.equal(replay.summary.fixturesPlayed, 2);
+  assert.equal(replay.summary.fixturesRemaining, 0);
+  assert.equal(replay.summary.table.reduce((sum, row) => sum + row.played, 0), 4);
 });
