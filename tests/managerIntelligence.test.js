@@ -60,7 +60,7 @@ test("builds manager intelligence profiles from fixture details", () => {
   assert.equal(alpha.cards, 1);
 
   assert.equal(beta.preferredFormation, "3-5-2");
-  assert.equal(beta.rotation, "medium");
+  assert.equal(beta.rotation, "high");
   assert.equal(beta.substitutionTiming, "late");
-  assert.equal(beta.aggression, "medium");
+  assert.equal(beta.aggression, "low");
 });
