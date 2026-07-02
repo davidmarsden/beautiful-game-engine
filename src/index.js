@@ -5,6 +5,12 @@ import { createSeasonShell } from "./world/seasonShell.js";
 import { validateWorld } from "./world/validateWorld.js";
 
 export {
+  applyCohesionModifierToXg,
+  cohesionMatchModifier,
+  createCohesionState,
+  updateCohesionState
+} from "./cohesion/index.js";
+export {
   GOVERNANCE_COMPATIBILITY,
   getGovernanceCompatibility
 } from "./governance/compatibility.js";
