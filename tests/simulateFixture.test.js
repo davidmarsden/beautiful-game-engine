@@ -24,7 +24,7 @@ function squad(teamId, base) {
     player(`${teamId}-cm3`, teamId, "Midfielder", base - 2),
     player(`${teamId}-rw`, teamId, "Winger", base - 1),
     player(`${teamId}-lw`, teamId, "Winger", base - 1),
-    player(`${teamId}-st", teamId, "Attacker", base + 1),
+    player(`${teamId}-st`, teamId, "Attacker", base + 1),
     player(`${teamId}-sub1`, teamId, "Forward", base - 4),
     player(`${teamId}-sub2`, teamId, "Midfielder", base - 5)
   ].map((row) => [row.id, row]));
