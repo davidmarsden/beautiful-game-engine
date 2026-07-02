@@ -50,6 +50,7 @@ export {
   createSeasonState,
   processNextFixture,
   seasonSummary,
+  simulateSeason,
   tableRows
 } from "./season/index.js";
 export {
