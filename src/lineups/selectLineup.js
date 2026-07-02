@@ -1,3 +1,4 @@
+import { isPlayerAvailable } from "../playerCondition/index.js";
 import { getFormationSlots } from "./formations.js";
 import { playerRating, playerRoles, roleFitScore } from "./playerRoles.js";
 
@@ -90,7 +91,8 @@ export function selectLineup(players, options = {}) {
   const formation = options.formation ?? "4-3-3";
   const benchSize = Number(options.benchSize ?? 7);
   const slots = getFormationSlots(formation);
-  const expandedPlayers = expandPartialSquad(players, slots, {
+  const pool = players.filter((player) => isPlayerAvailable(player));
+  const expandedPlayers = expandPartialSquad(pool, slots, {
     allowSynthetic: options.allowSynthetic ?? false,
     syntheticBaseRating: Number(options.syntheticBaseRating ?? 65)
   });
@@ -100,7 +102,7 @@ export function selectLineup(players, options = {}) {
   for (const slot of slots) {
     const selected = bestAvailableForSlot(expandedPlayers, selectedIds, slot);
     if (!selected) {
-      throw new Error(`Not enough players to fill ${formation}.`);
+      throw new Error(`Not enough available players to fill ${formation}.`);
     }
     selectedIds.add(selected.player.id);
     starters.push(selected);
@@ -119,6 +121,7 @@ export function selectLineup(players, options = {}) {
       playerId: starter.player.id,
       name: starter.player.name,
       rating: starter.rating,
+      fatigue: starter.player.condition?.fatigue ?? 0,
       fitScore: starter.fitScore,
       roles: playerRoles(starter.player),
       synthetic: starter.player.synthetic === true
@@ -128,6 +131,7 @@ export function selectLineup(players, options = {}) {
       playerId: benchPlayer.player.id,
       name: benchPlayer.player.name,
       rating: benchPlayer.rating,
+      fatigue: benchPlayer.player.condition?.fatigue ?? 0,
       roles: benchPlayer.roles,
       synthetic: benchPlayer.player.synthetic === true
     })),
