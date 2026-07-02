@@ -70,3 +70,20 @@ test("supports alternative formations", () => {
   assert.equal(lineup.starters.filter((starter) => starter.slot === "DM").length, 2);
   assert.equal(lineup.starters.some((starter) => starter.slot === "AM"), true);
 });
+
+test("can fill a partial squad with synthetic players when explicitly allowed", () => {
+  const partial = [
+    player("real-gk", "Goalkeeper", 80),
+    player("real-st", "Attacker", 82)
+  ];
+  const lineup = selectLineup(partial, {
+    formation: "4-3-3",
+    benchSize: 0,
+    allowSynthetic: true,
+    syntheticBaseRating: 65
+  });
+
+  assert.equal(lineup.starters.length, 11);
+  assert.equal(lineup.syntheticPlayersUsed, 9);
+  assert.equal(lineup.starters.filter((starter) => starter.synthetic).length, 9);
+});
