@@ -32,7 +32,7 @@ function squad(teamId, base) {
     player(`${teamId}-rw`, teamId, "Winger", base),
     player(`${teamId}-lw`, teamId, "Winger", base),
     player(`${teamId}-st`, teamId, "Attacker", base),
-    player(`${teamId}-sub", teamId, "Forward", base - 3)
+    player(`${teamId}-sub`, teamId, "Forward", base - 3)
   ];
 }
 
