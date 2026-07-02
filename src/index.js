@@ -27,6 +27,11 @@ export { resolveManagerPlan } from "./managers/index.js";
 export { buildManagerProfilesFromFixtureDetails } from "./managerIntelligence/index.js";
 export { expectedGoals, simulateFixture } from "./match/index.js";
 export { findFixtureByTeams } from "./realMatch/index.js";
+export {
+  applyTacticalModifiersToXg,
+  tacticalIdentityFromManagerProfile,
+  tacticalModifier
+} from "./tactics/index.js";
 export { averageClubRating } from "./ratings/index.js";
 export { generateWorld } from "./world/generateWorld.js";
 export { createSeasonShell } from "./world/seasonShell.js";
