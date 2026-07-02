@@ -1,5 +1,5 @@
 import { validateLeaguePack } from "../leaguePack/validateLeaguePack.js";
-import { selectLineup } from "../lineups/index.js";
+import { resolveManagerPlan } from "../managers/index.js";
 import { createRng } from "../shared/rng.js";
 
 function clamp(value, min, max) {
@@ -52,11 +52,14 @@ function clubPlayers(pack, club) {
   return Object.values(pack.players).filter((player) => player.team?.providerTeamId === club.source?.providerTeamId);
 }
 
-function maybeSelectLineup(pack, club, options) {
-  if (!options.useLineups) return null;
-  const players = clubPlayers(pack, club);
-  return selectLineup(players, {
-    formation: options.formation ?? "4-3-3",
+function resolveFixturePlan(pack, club, submittedPlan, options) {
+  const shouldResolve = options.useLineups || submittedPlan;
+  if (!shouldResolve) return null;
+
+  return resolveManagerPlan({
+    players: clubPlayers(pack, club),
+    submittedPlan,
+    fallbackFormation: options.formation ?? "4-3-3",
     benchSize: options.benchSize ?? 7
   });
 }
@@ -78,8 +81,10 @@ export function simulateFixture(pack, fixtureId, options = {}) {
 
   const seed = options.seed ?? `${fixtureId}:default`;
   const rng = createRng(seed);
-  const homeLineup = maybeSelectLineup(pack, homeClub, options);
-  const awayLineup = maybeSelectLineup(pack, awayClub, options);
+  const homePlan = resolveFixturePlan(pack, homeClub, options.homePlan, options);
+  const awayPlan = resolveFixturePlan(pack, awayClub, options.awayPlan, options);
+  const homeLineup = homePlan?.lineup ?? null;
+  const awayLineup = awayPlan?.lineup ?? null;
   const xg = expectedGoals({ homeClub, awayClub, homeLineup, awayLineup });
   const homeGoals = poisson(rng, xg.home);
   const awayGoals = poisson(rng, xg.away);
@@ -91,8 +96,14 @@ export function simulateFixture(pack, fixtureId, options = {}) {
     awayTeamId: fixture.awayTeamId,
     homeTeamName: homeClub.name,
     awayTeamName: awayClub.name,
-    formation: options.useLineups ? (options.formation ?? "4-3-3") : null,
-    lineups: options.useLineups
+    formation: homePlan?.formation ?? awayPlan?.formation ?? null,
+    managerPlans: homePlan || awayPlan
+      ? {
+          home: homePlan,
+          away: awayPlan
+        }
+      : null,
+    lineups: homeLineup || awayLineup
       ? {
           home: homeLineup,
           away: awayLineup
