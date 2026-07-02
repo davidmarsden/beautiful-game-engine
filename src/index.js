@@ -26,6 +26,17 @@ export {
 export { resolveManagerPlan } from "./managers/index.js";
 export { buildManagerProfilesFromFixtureDetails } from "./managerIntelligence/index.js";
 export { expectedGoals, simulateFixture } from "./match/index.js";
+export {
+  availabilityReason,
+  availabilityStatus,
+  effectiveRatingWithFatigue,
+  fatigueFromMinutes,
+  fatigueRatingAdjustment,
+  isPlayerAvailable,
+  recoverFatigue,
+  recoveryRateForAge,
+  updateFatigueAfterMatch
+} from "./playerCondition/index.js";
 export { findFixtureByTeams } from "./realMatch/index.js";
 export {
   applyTacticalModifiersToXg,
