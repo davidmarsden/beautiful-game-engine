@@ -7,6 +7,14 @@ on:
         description: "Season starting year"
         required: true
         default: "2024"
+      home:
+        description: "Home team search name"
+        required: true
+        default: "Manchester United"
+      away:
+        description: "Away team search name"
+        required: true
+        default: "Liverpool"
   push:
   pull_request:
 
@@ -41,3 +49,7 @@ jobs:
       - name: Smoke test exported league pack
         working-directory: beautiful-game-engine
         run: node scripts/smoke-test-league-pack.js ../beautiful-game-data/exports/league-packs/league-39-season-${{ github.event.inputs.season || '2024' }}.json
+
+      - name: First real match
+        working-directory: beautiful-game-engine
+        run: node scripts/play-real-match.js --pack=../beautiful-game-data/exports/league-packs/league-39-season-${{ github.event.inputs.season || '2024' }}.json --home='${{ github.event.inputs.home || 'Manchester United' }}' --away='${{ github.event.inputs.away || 'Liverpool' }}'
