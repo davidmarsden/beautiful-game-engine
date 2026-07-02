@@ -42,7 +42,8 @@ function hydrateSelectedPlayer({ player, slot, order }) {
     name: player.name,
     rating,
     fitScore: roleFitScore(player, slot),
-    roles: playerRoles(player)
+    roles: playerRoles(player),
+    synthetic: player.synthetic === true
   };
 }
 
@@ -72,7 +73,8 @@ function buildManualLineup(players, plan) {
       playerId: player.id,
       name: player.name,
       rating: playerRating(player),
-      roles: playerRoles(player)
+      roles: playerRoles(player),
+      synthetic: player.synthetic === true
     };
   });
 
@@ -80,6 +82,7 @@ function buildManualLineup(players, plan) {
 
   return {
     formation: plan.formation,
+    syntheticPlayersUsed: starters.filter((starter) => starter.synthetic).length,
     starters,
     bench,
     captain: captainPlayer ? { playerId: captainPlayer.id, name: captainPlayer.name } : null,
@@ -96,13 +99,20 @@ function buildManualLineup(players, plan) {
   };
 }
 
-export function resolveManagerPlan({ players, submittedPlan = null, fallbackFormation = "4-3-3", benchSize = 7 }) {
+export function resolveManagerPlan({
+  players,
+  submittedPlan = null,
+  fallbackFormation = "4-3-3",
+  benchSize = 7,
+  allowSynthetic = false,
+  syntheticBaseRating = 65
+}) {
   const plan = normalisePlan(submittedPlan ?? { formation: fallbackFormation });
   const isManual = Array.isArray(plan.starters);
 
   const lineup = isManual
     ? buildManualLineup(players, plan)
-    : selectLineup(players, { formation: plan.formation, benchSize });
+    : selectLineup(players, { formation: plan.formation, benchSize, allowSynthetic, syntheticBaseRating });
 
   return {
     managerId: plan.managerId,
