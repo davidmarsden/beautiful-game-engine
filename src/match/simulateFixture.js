@@ -1,5 +1,6 @@
-import { createRng } from "../shared/rng.js";
 import { validateLeaguePack } from "../leaguePack/validateLeaguePack.js";
+import { selectLineup } from "../lineups/index.js";
+import { createRng } from "../shared/rng.js";
 
 function clamp(value, min, max) {
   return Math.max(min, Math.min(max, value));
@@ -22,9 +23,11 @@ function clubStrength(club) {
   return Number(club.squad?.overall ?? club.squad?.startingStrength ?? 75);
 }
 
-function expectedGoals({ homeClub, awayClub }) {
-  const homeStrength = clubStrength(homeClub);
-  const awayStrength = clubStrength(awayClub);
+function lineupStrength(lineup) {
+  return Number(lineup.strength?.roleFit ?? lineup.strength?.startingXI ?? 75);
+}
+
+function expectedGoalsFromStrengths({ homeStrength, awayStrength }) {
   const strengthGap = homeStrength - awayStrength;
 
   return {
@@ -33,10 +36,29 @@ function expectedGoals({ homeClub, awayClub }) {
   };
 }
 
+function expectedGoals({ homeClub, awayClub, homeLineup = null, awayLineup = null }) {
+  const homeStrength = homeLineup ? lineupStrength(homeLineup) : clubStrength(homeClub);
+  const awayStrength = awayLineup ? lineupStrength(awayLineup) : clubStrength(awayClub);
+  return expectedGoalsFromStrengths({ homeStrength, awayStrength });
+}
+
 function outcome(homeGoals, awayGoals) {
   if (homeGoals > awayGoals) return "home";
   if (awayGoals > homeGoals) return "away";
   return "draw";
+}
+
+function clubPlayers(pack, club) {
+  return Object.values(pack.players).filter((player) => player.team?.providerTeamId === club.source?.providerTeamId);
+}
+
+function maybeSelectLineup(pack, club, options) {
+  if (!options.useLineups) return null;
+  const players = clubPlayers(pack, club);
+  return selectLineup(players, {
+    formation: options.formation ?? "4-3-3",
+    benchSize: options.benchSize ?? 7
+  });
 }
 
 export function simulateFixture(pack, fixtureId, options = {}) {
@@ -56,7 +78,9 @@ export function simulateFixture(pack, fixtureId, options = {}) {
 
   const seed = options.seed ?? `${fixtureId}:default`;
   const rng = createRng(seed);
-  const xg = expectedGoals({ homeClub, awayClub });
+  const homeLineup = maybeSelectLineup(pack, homeClub, options);
+  const awayLineup = maybeSelectLineup(pack, awayClub, options);
+  const xg = expectedGoals({ homeClub, awayClub, homeLineup, awayLineup });
   const homeGoals = poisson(rng, xg.home);
   const awayGoals = poisson(rng, xg.away);
 
@@ -67,6 +91,13 @@ export function simulateFixture(pack, fixtureId, options = {}) {
     awayTeamId: fixture.awayTeamId,
     homeTeamName: homeClub.name,
     awayTeamName: awayClub.name,
+    formation: options.useLineups ? (options.formation ?? "4-3-3") : null,
+    lineups: options.useLineups
+      ? {
+          home: homeLineup,
+          away: awayLineup
+        }
+      : null,
     expectedGoals: xg,
     score: {
       home: homeGoals,
@@ -77,4 +108,4 @@ export function simulateFixture(pack, fixtureId, options = {}) {
   };
 }
 
-export { expectedGoals };
+export { expectedGoals, expectedGoalsFromStrengths };
