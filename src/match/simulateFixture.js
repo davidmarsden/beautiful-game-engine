@@ -1,6 +1,7 @@
 import { validateLeaguePack } from "../leaguePack/validateLeaguePack.js";
 import { resolveManagerPlan } from "../managers/index.js";
 import { createRng } from "../shared/rng.js";
+import { applyTacticalModifiersToXg } from "../tactics/index.js";
 
 function clamp(value, min, max) {
   return Math.max(min, Math.min(max, value));
@@ -36,10 +37,12 @@ function expectedGoalsFromStrengths({ homeStrength, awayStrength }) {
   };
 }
 
-function expectedGoals({ homeClub, awayClub, homeLineup = null, awayLineup = null }) {
+function expectedGoals({ homeClub, awayClub, homeLineup = null, awayLineup = null, homeTactics = null, awayTactics = null }) {
   const homeStrength = homeLineup ? lineupStrength(homeLineup) : clubStrength(homeClub);
   const awayStrength = awayLineup ? lineupStrength(awayLineup) : clubStrength(awayClub);
-  return expectedGoalsFromStrengths({ homeStrength, awayStrength });
+  const base = expectedGoalsFromStrengths({ homeStrength, awayStrength });
+  if (!homeTactics && !awayTactics) return base;
+  return applyTacticalModifiersToXg(base, { homeIdentity: homeTactics, awayIdentity: awayTactics });
 }
 
 function outcome(homeGoals, awayGoals) {
@@ -87,7 +90,9 @@ export function simulateFixture(pack, fixtureId, options = {}) {
   const awayPlan = resolveFixturePlan(pack, awayClub, options.awayPlan, options);
   const homeLineup = homePlan?.lineup ?? null;
   const awayLineup = awayPlan?.lineup ?? null;
-  const xg = expectedGoals({ homeClub, awayClub, homeLineup, awayLineup });
+  const homeTactics = options.homeTactics ?? homePlan?.tacticalIdentity ?? null;
+  const awayTactics = options.awayTactics ?? awayPlan?.tacticalIdentity ?? null;
+  const xg = expectedGoals({ homeClub, awayClub, homeLineup, awayLineup, homeTactics, awayTactics });
   const homeGoals = poisson(rng, xg.home);
   const awayGoals = poisson(rng, xg.away);
 
@@ -99,6 +104,13 @@ export function simulateFixture(pack, fixtureId, options = {}) {
     homeTeamName: homeClub.name,
     awayTeamName: awayClub.name,
     formation: homePlan?.formation ?? awayPlan?.formation ?? null,
+    tactics: homeTactics || awayTactics
+      ? {
+          home: homeTactics,
+          away: awayTactics,
+          modifiers: xg.modifiers ?? null
+        }
+      : null,
     syntheticPlayersUsed: {
       home: homeLineup?.syntheticPlayersUsed ?? 0,
       away: awayLineup?.syntheticPlayersUsed ?? 0
@@ -115,7 +127,10 @@ export function simulateFixture(pack, fixtureId, options = {}) {
           away: awayLineup
         }
       : null,
-    expectedGoals: xg,
+    expectedGoals: {
+      home: xg.home,
+      away: xg.away
+    },
     score: {
       home: homeGoals,
       away: awayGoals
