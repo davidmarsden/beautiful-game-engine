@@ -1,3 +1,5 @@
+import { effectiveRatingWithFatigue } from "../playerCondition/index.js";
+
 const POSITION_ROLE_MAP = Object.freeze({
   goalkeeper: ["GK"],
   keeper: ["GK"],
@@ -50,8 +52,12 @@ export function playerRoles(player) {
   return ["CM"];
 }
 
-export function playerRating(player) {
+export function playerBaseRating(player) {
   return Number(player.ratings?.effectiveMatchRating ?? player.ratings?.ability ?? player.rating ?? 50);
+}
+
+export function playerRating(player) {
+  return effectiveRatingWithFatigue(playerBaseRating(player), player.condition?.fatigue ?? 0);
 }
 
 export function roleFitScore(player, slot) {
