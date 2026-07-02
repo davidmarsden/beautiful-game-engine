@@ -45,6 +45,14 @@ export {
 } from "./playerCondition/index.js";
 export { findFixtureByTeams } from "./realMatch/index.js";
 export {
+  applyResultToTable,
+  createLeagueTable,
+  createSeasonState,
+  processNextFixture,
+  seasonSummary,
+  tableRows
+} from "./season/index.js";
+export {
   applyTacticalModifiersToXg,
   tacticalIdentityFromManagerProfile,
   tacticalModifier
