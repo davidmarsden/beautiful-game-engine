@@ -60,7 +60,9 @@ function resolveFixturePlan(pack, club, submittedPlan, options) {
     players: clubPlayers(pack, club),
     submittedPlan,
     fallbackFormation: options.formation ?? "4-3-3",
-    benchSize: options.benchSize ?? 7
+    benchSize: options.benchSize ?? 7,
+    allowSynthetic: options.allowSynthetic ?? false,
+    syntheticBaseRating: Number(options.syntheticBaseRating ?? 65)
   });
 }
 
@@ -97,6 +99,10 @@ export function simulateFixture(pack, fixtureId, options = {}) {
     homeTeamName: homeClub.name,
     awayTeamName: awayClub.name,
     formation: homePlan?.formation ?? awayPlan?.formation ?? null,
+    syntheticPlayersUsed: {
+      home: homeLineup?.syntheticPlayersUsed ?? 0,
+      away: awayLineup?.syntheticPlayersUsed ?? 0
+    },
     managerPlans: homePlan || awayPlan
       ? {
           home: homePlan,
