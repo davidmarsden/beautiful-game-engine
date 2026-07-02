@@ -46,8 +46,11 @@ export {
 export { findFixtureByTeams } from "./realMatch/index.js";
 export {
   applyResultToTable,
+  buildSeasonReport,
   createLeagueTable,
   createSeasonState,
+  formatLeagueTable,
+  formatSeasonReport,
   processNextFixture,
   seasonSummary,
   simulateSeason,
