@@ -1,3 +1,5 @@
+export { expectedGoals, simulateFixture } from "./simulateFixture.js";
+
 export function placeholderExpectedResult(homeClub, awayClub) {
   if (!homeClub || !awayClub) {
     throw new Error("placeholderExpectedResult requires two clubs.");
