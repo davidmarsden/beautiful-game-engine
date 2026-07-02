@@ -2,6 +2,11 @@ name: Cross-repo data smoke test
 
 on:
   workflow_dispatch:
+    inputs:
+      season:
+        description: "Season starting year"
+        required: true
+        default: "2024"
   push:
   pull_request:
 
@@ -35,4 +40,4 @@ jobs:
 
       - name: Smoke test exported league pack
         working-directory: beautiful-game-engine
-        run: node scripts/smoke-test-league-pack.js ../beautiful-game-data/exports/league-packs/league-39-season-2024.json
+        run: node scripts/smoke-test-league-pack.js ../beautiful-game-data/exports/league-packs/league-39-season-${{ github.event.inputs.season || '2024' }}.json
