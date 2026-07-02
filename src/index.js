@@ -15,6 +15,14 @@ export {
   summariseLeaguePack,
   validateLeaguePack
 } from "./leaguePack/index.js";
+export {
+  FORMATIONS,
+  getFormationSlots,
+  playerRating,
+  playerRoles,
+  roleFitScore,
+  selectLineup
+} from "./lineups/index.js";
 export { expectedGoals, simulateFixture } from "./match/index.js";
 export { averageClubRating } from "./ratings/index.js";
 export { generateWorld } from "./world/generateWorld.js";
