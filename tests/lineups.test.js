@@ -87,3 +87,17 @@ test("can fill a partial squad with synthetic players when explicitly allowed", 
   assert.equal(lineup.syntheticPlayersUsed, 9);
   assert.equal(lineup.starters.filter((starter) => starter.synthetic).length, 9);
 });
+
+test("skips players who are not available", () => {
+  const unavailableKeeper = {
+    ...player("gk1", "Goalkeeper", 99, 34),
+    availability: { injured: true }
+  };
+  const lineup = selectLineup([unavailableKeeper, ...squad.filter((candidate) => candidate.id !== "gk1")], {
+    formation: "4-3-3",
+    benchSize: 5
+  });
+
+  assert.equal(lineup.starters[0].slot, "GK");
+  assert.equal(lineup.starters[0].playerId, "gk2");
+});
