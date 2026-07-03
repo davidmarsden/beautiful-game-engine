@@ -1,0 +1,66 @@
+name: Run Monte Carlo Season
+
+on:
+  workflow_dispatch:
+    inputs:
+      season:
+        description: "Season starting year"
+        required: true
+        default: "2024"
+      league:
+        description: "API-Football league id"
+        required: true
+        default: "39"
+      seed:
+        description: "Monte Carlo seed"
+        required: true
+        default: "monte-carlo"
+      runs:
+        description: "Number of season simulations"
+        required: true
+        default: "100"
+      maxFixtures:
+        description: "Optional fixture limit"
+        required: false
+        default: ""
+
+jobs:
+  monte-carlo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout engine
+        uses: actions/checkout@v4
+        with:
+          path: beautiful-game-engine
+
+      - name: Checkout data
+        uses: actions/checkout@v4
+        with:
+          repository: davidmarsden/beautiful-game-data
+          path: beautiful-game-data
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Engine unit tests
+        working-directory: beautiful-game-engine
+        run: npm test
+
+      - name: Run Monte Carlo season
+        working-directory: beautiful-game-engine
+        run: |
+          PACK="../beautiful-game-data/exports/league-packs/league-${{ github.event.inputs.league }}-season-${{ github.event.inputs.season }}.json"
+          OUT="monte-carlo-league-${{ github.event.inputs.league }}-season-${{ github.event.inputs.season }}-${{ github.event.inputs.runs }}-runs.json"
+          if [ -n "${{ github.event.inputs.maxFixtures }}" ]; then
+            node scripts/monte-carlo-season.js --pack="$PACK" --seed="${{ github.event.inputs.seed }}" --runs="${{ github.event.inputs.runs }}" --maxFixtures="${{ github.event.inputs.maxFixtures }}" --json="$OUT"
+          else
+            node scripts/monte-carlo-season.js --pack="$PACK" --seed="${{ github.event.inputs.seed }}" --runs="${{ github.event.inputs.runs }}" --json="$OUT"
+          fi
+
+      - name: Upload Monte Carlo report
+        uses: actions/upload-artifact@v4
+        with:
+          name: monte-carlo-league-${{ github.event.inputs.league }}-season-${{ github.event.inputs.season }}-${{ github.event.inputs.runs }}-runs
+          path: beautiful-game-engine/monte-carlo-league-${{ github.event.inputs.league }}-season-${{ github.event.inputs.season }}-${{ github.event.inputs.runs }}-runs.json
