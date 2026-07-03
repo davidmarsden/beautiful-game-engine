@@ -2,7 +2,9 @@ import { writeFile } from "node:fs/promises";
 import {
   buildSeasonReport,
   calibrateLeagueTable,
+  calibrateSeasonDistribution,
   formatCalibrationReport,
+  formatSeasonDistributionReport,
   formatSeasonReport,
   loadLeaguePack,
   simulateSeason
@@ -36,11 +38,13 @@ const report = buildSeasonReport(replay, {
   title: args.title ?? "Season Replay"
 });
 const calibration = args.calibrate === "true" ? calibrateLeagueTable(replay, pack) : null;
+const distribution = args.calibrate === "true" ? calibrateSeasonDistribution(replay, pack) : null;
 
 console.log(formatSeasonReport(report));
 if (calibration) console.log(formatCalibrationReport(calibration));
+if (distribution) console.log(formatSeasonDistributionReport(distribution));
 
 if (args.json) {
-  await writeFile(args.json, `${JSON.stringify({ report, replay, calibration }, null, 2)}\n`, "utf8");
+  await writeFile(args.json, `${JSON.stringify({ report, replay, calibration, distribution }, null, 2)}\n`, "utf8");
   console.log(`\nWrote JSON report: ${args.json}`);
 }
