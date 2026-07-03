@@ -15,7 +15,8 @@ export function simulateSeason(pack, options = {}) {
       ...options.fixtureOptions,
       seed: fixtureSeed,
       useLineups: options.useLineups ?? true,
-      allowSynthetic: options.allowSynthetic ?? false
+      allowSynthetic: options.allowSynthetic ?? false,
+      calibration: options.calibration ?? options.fixtureOptions?.calibration
     });
 
     state = processed.state;
