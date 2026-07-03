@@ -1,5 +1,7 @@
 import { writeFile } from "node:fs/promises";
 import {
+  calibrateMonteCarlo,
+  formatMonteCarloCalibration,
   formatMonteCarloReport,
   loadLeaguePack,
   runMonteCarloSeason
@@ -30,10 +32,12 @@ const report = runMonteCarloSeason(pack, {
   allowSynthetic: args.allowSynthetic === "true",
   maxFixtures: args.maxFixtures ? Number(args.maxFixtures) : undefined
 });
+const calibration = calibrateMonteCarlo(report, pack);
 
 console.log(formatMonteCarloReport(report));
+console.log(formatMonteCarloCalibration(calibration));
 
 if (args.json) {
-  await writeFile(args.json, `${JSON.stringify(report, null, 2)}\n`, "utf8");
+  await writeFile(args.json, `${JSON.stringify({ report, calibration }, null, 2)}\n`, "utf8");
   console.log(`\nWrote JSON report: ${args.json}`);
 }
