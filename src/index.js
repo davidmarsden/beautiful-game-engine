@@ -56,6 +56,10 @@ export {
   updateFatigueAfterMatch
 } from "./playerCondition/index.js";
 export {
+  calibrateSmwRatings,
+  formatSmwRatingCalibration
+} from "./ratingCalibration/index.js";
+export {
   buildRatingExplorer,
   formatRatingExplorer
 } from "./ratingExplorer/index.js";
