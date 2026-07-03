@@ -59,7 +59,8 @@ export function runMonteCarloSeason(pack, options = {}) {
       seed: `${baseSeed}:${index}`,
       useLineups: options.useLineups ?? true,
       allowSynthetic: options.allowSynthetic ?? false,
-      maxFixtures: options.maxFixtures
+      maxFixtures: options.maxFixtures,
+      calibration: options.calibration
     });
     const table = replay.summary.table.map((row, rowIndex) => ({ position: rowIndex + 1, ...row }));
     teamCount = Math.max(teamCount, table.length);
@@ -80,6 +81,7 @@ export function runMonteCarloSeason(pack, options = {}) {
   return {
     runs,
     seed: baseSeed,
+    calibration: options.calibration ?? null,
     teamCount,
     champions,
     teams
@@ -91,9 +93,10 @@ export function formatMonteCarloReport(report) {
     "# Monte Carlo Season",
     `Runs: ${report.runs}`,
     `Seed: ${report.seed}`,
+    report.calibration ? `Calibration: ${JSON.stringify(report.calibration)}` : null,
     "",
     "Team                     AvgPos AvgPts Title Top4 Releg Best Worst"
-  ];
+  ].filter((line) => line !== null);
 
   for (const team of report.teams) {
     lines.push([
