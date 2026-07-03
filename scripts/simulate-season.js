@@ -1,6 +1,8 @@
 import { writeFile } from "node:fs/promises";
 import {
   buildSeasonReport,
+  calibrateLeagueTable,
+  formatCalibrationReport,
   formatSeasonReport,
   loadLeaguePack,
   simulateSeason
@@ -19,7 +21,7 @@ const args = parseArgs(process.argv.slice(2));
 const packPath = args.pack;
 
 if (!packPath) {
-  console.error("Usage: node scripts/simulate-season.js --pack=<league-pack.json> [--json=season-report.json]");
+  console.error("Usage: node scripts/simulate-season.js --pack=<league-pack.json> [--json=season-report.json] [--calibrate=true]");
   process.exit(1);
 }
 
@@ -33,10 +35,12 @@ const replay = simulateSeason(pack, {
 const report = buildSeasonReport(replay, {
   title: args.title ?? "Season Replay"
 });
+const calibration = args.calibrate === "true" ? calibrateLeagueTable(replay, pack) : null;
 
 console.log(formatSeasonReport(report));
+if (calibration) console.log(formatCalibrationReport(calibration));
 
 if (args.json) {
-  await writeFile(args.json, `${JSON.stringify({ report, replay }, null, 2)}\n`, "utf8");
+  await writeFile(args.json, `${JSON.stringify({ report, replay, calibration }, null, 2)}\n`, "utf8");
   console.log(`\nWrote JSON report: ${args.json}`);
 }
