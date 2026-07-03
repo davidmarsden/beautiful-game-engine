@@ -55,6 +55,10 @@ export {
   recoveryRateForAge,
   updateFatigueAfterMatch
 } from "./playerCondition/index.js";
+export {
+  buildRatingExplorer,
+  formatRatingExplorer
+} from "./ratingExplorer/index.js";
 export { findFixtureByTeams } from "./realMatch/index.js";
 export {
   applyResultToTable,
