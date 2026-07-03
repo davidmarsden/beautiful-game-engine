@@ -6,8 +6,10 @@ import { validateWorld } from "./world/validateWorld.js";
 
 export {
   calibrateLeagueTable,
+  calibrateMonteCarlo,
   calibrateSeasonDistribution,
   formatCalibrationReport,
+  formatMonteCarloCalibration,
   formatSeasonDistributionReport
 } from "./calibration/index.js";
 export {
