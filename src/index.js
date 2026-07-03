@@ -39,6 +39,10 @@ export { resolveManagerPlan } from "./managers/index.js";
 export { buildManagerProfilesFromFixtureDetails } from "./managerIntelligence/index.js";
 export { expectedGoals, simulateFixture } from "./match/index.js";
 export {
+  formatMonteCarloReport,
+  runMonteCarloSeason
+} from "./monteCarlo/index.js";
+export {
   availabilityReason,
   availabilityStatus,
   effectiveRatingWithFatigue,
