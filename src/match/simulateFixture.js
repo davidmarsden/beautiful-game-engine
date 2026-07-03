@@ -7,8 +7,9 @@ function clamp(value, min, max) {
   return Math.max(min, Math.min(max, value));
 }
 
-function poisson(rng, lambda) {
-  const limit = Math.exp(-lambda);
+function poisson(rng, lambda, varianceScale = 1) {
+  const scaledLambda = lambda * varianceScale;
+  const limit = Math.exp(-scaledLambda);
   let product = 1;
   let goals = 0;
 
@@ -17,7 +18,7 @@ function poisson(rng, lambda) {
     product *= rng();
   } while (product > limit);
 
-  return goals - 1;
+  return Math.round((goals - 1) / varianceScale);
 }
 
 function clubStrength(club) {
@@ -25,22 +26,48 @@ function clubStrength(club) {
 }
 
 function lineupStrength(lineup) {
-  return Number(lineup.strength?.roleFit ?? lineup.strength?.startingXI ?? 75);
+  return Number(lineup.strength?.startingXI ?? lineup.strength?.roleFit ?? 75);
 }
 
-function expectedGoalsFromStrengths({ homeStrength, awayStrength }) {
-  const strengthGap = homeStrength - awayStrength;
-
+function calibrationOptions(options = {}) {
   return {
-    home: Number(clamp(1.35 + 0.035 * strengthGap + 0.18, 0.25, 4.5).toFixed(2)),
-    away: Number(clamp(1.20 - 0.035 * strengthGap, 0.20, 4.2).toFixed(2))
+    baseHomeXg: Number(options.baseHomeXg ?? 1.38),
+    baseAwayXg: Number(options.baseAwayXg ?? 1.14),
+    homeAdvantageXg: Number(options.homeAdvantageXg ?? 0.2),
+    strengthGapFactor: Number(options.strengthGapFactor ?? 0.075),
+    favouriteSuppressionFactor: Number(options.favouriteSuppressionFactor ?? 0.025),
+    minHomeXg: Number(options.minHomeXg ?? 0.25),
+    maxHomeXg: Number(options.maxHomeXg ?? 4.8),
+    minAwayXg: Number(options.minAwayXg ?? 0.18),
+    maxAwayXg: Number(options.maxAwayXg ?? 4.4),
+    varianceScale: Number(options.varianceScale ?? 1.25)
   };
 }
 
-function expectedGoals({ homeClub, awayClub, homeLineup = null, awayLineup = null, homeTactics = null, awayTactics = null }) {
+function expectedGoalsFromStrengths({ homeStrength, awayStrength }, options = {}) {
+  const calibration = calibrationOptions(options);
+  const strengthGap = homeStrength - awayStrength;
+  const favouriteBoost = Math.max(0, strengthGap) * calibration.favouriteSuppressionFactor;
+  const awayFavouriteBoost = Math.max(0, -strengthGap) * calibration.favouriteSuppressionFactor;
+
+  return {
+    home: Number(clamp(
+      calibration.baseHomeXg + calibration.homeAdvantageXg + calibration.strengthGapFactor * strengthGap + favouriteBoost,
+      calibration.minHomeXg,
+      calibration.maxHomeXg
+    ).toFixed(2)),
+    away: Number(clamp(
+      calibration.baseAwayXg - calibration.strengthGapFactor * strengthGap + awayFavouriteBoost,
+      calibration.minAwayXg,
+      calibration.maxAwayXg
+    ).toFixed(2))
+  };
+}
+
+function expectedGoals({ homeClub, awayClub, homeLineup = null, awayLineup = null, homeTactics = null, awayTactics = null, calibration = {} }) {
   const homeStrength = homeLineup ? lineupStrength(homeLineup) : clubStrength(homeClub);
   const awayStrength = awayLineup ? lineupStrength(awayLineup) : clubStrength(awayClub);
-  const base = expectedGoalsFromStrengths({ homeStrength, awayStrength });
+  const base = expectedGoalsFromStrengths({ homeStrength, awayStrength }, calibration);
   if (!homeTactics && !awayTactics) return base;
   return applyTacticalModifiersToXg(base, { homeIdentity: homeTactics, awayIdentity: awayTactics });
 }
@@ -86,15 +113,16 @@ export function simulateFixture(pack, fixtureId, options = {}) {
 
   const seed = options.seed ?? `${fixtureId}:default`;
   const rng = createRng(seed);
+  const calibration = calibrationOptions(options.calibration ?? options);
   const homePlan = resolveFixturePlan(pack, homeClub, options.homePlan, options);
   const awayPlan = resolveFixturePlan(pack, awayClub, options.awayPlan, options);
   const homeLineup = homePlan?.lineup ?? null;
   const awayLineup = awayPlan?.lineup ?? null;
   const homeTactics = options.homeTactics ?? homePlan?.tacticalIdentity ?? null;
   const awayTactics = options.awayTactics ?? awayPlan?.tacticalIdentity ?? null;
-  const xg = expectedGoals({ homeClub, awayClub, homeLineup, awayLineup, homeTactics, awayTactics });
-  const homeGoals = poisson(rng, xg.home);
-  const awayGoals = poisson(rng, xg.away);
+  const xg = expectedGoals({ homeClub, awayClub, homeLineup, awayLineup, homeTactics, awayTactics, calibration });
+  const homeGoals = poisson(rng, xg.home, calibration.varianceScale);
+  const awayGoals = poisson(rng, xg.away, calibration.varianceScale);
 
   return {
     fixtureId,
