@@ -23,6 +23,22 @@ on:
         description: "Optional fixture limit"
         required: false
         default: ""
+      strengthGapFactor:
+        description: "Rating gap to xG multiplier"
+        required: false
+        default: "0.075"
+      favouriteSuppressionFactor:
+        description: "Extra favourite boost / underdog suppression"
+        required: false
+        default: "0.025"
+      varianceScale:
+        description: "Higher values dampen scoring variance"
+        required: false
+        default: "1.25"
+      homeAdvantageXg:
+        description: "Home advantage xG bonus"
+        required: false
+        default: "0.20"
 
 jobs:
   monte-carlo:
@@ -53,10 +69,11 @@ jobs:
         run: |
           PACK="../beautiful-game-data/exports/league-packs/league-${{ github.event.inputs.league }}-season-${{ github.event.inputs.season }}.json"
           OUT="monte-carlo-league-${{ github.event.inputs.league }}-season-${{ github.event.inputs.season }}-${{ github.event.inputs.runs }}-runs.json"
+          EXTRA="--strengthGapFactor=${{ github.event.inputs.strengthGapFactor }} --favouriteSuppressionFactor=${{ github.event.inputs.favouriteSuppressionFactor }} --varianceScale=${{ github.event.inputs.varianceScale }} --homeAdvantageXg=${{ github.event.inputs.homeAdvantageXg }}"
           if [ -n "${{ github.event.inputs.maxFixtures }}" ]; then
-            node scripts/monte-carlo-season.js --pack="$PACK" --seed="${{ github.event.inputs.seed }}" --runs="${{ github.event.inputs.runs }}" --maxFixtures="${{ github.event.inputs.maxFixtures }}" --json="$OUT"
+            node scripts/monte-carlo-season.js --pack="$PACK" --seed="${{ github.event.inputs.seed }}" --runs="${{ github.event.inputs.runs }}" --maxFixtures="${{ github.event.inputs.maxFixtures }}" $EXTRA --json="$OUT"
           else
-            node scripts/monte-carlo-season.js --pack="$PACK" --seed="${{ github.event.inputs.seed }}" --runs="${{ github.event.inputs.runs }}" --json="$OUT"
+            node scripts/monte-carlo-season.js --pack="$PACK" --seed="${{ github.event.inputs.seed }}" --runs="${{ github.event.inputs.runs }}" $EXTRA --json="$OUT"
           fi
 
       - name: Upload Monte Carlo report
