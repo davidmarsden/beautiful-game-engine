@@ -1,0 +1,54 @@
+name: Run Rating Explorer
+
+on:
+  workflow_dispatch:
+    inputs:
+      season:
+        description: "Season starting year"
+        required: true
+        default: "2024"
+      league:
+        description: "API-Football league id"
+        required: true
+        default: "39"
+      topPlayerLimit:
+        description: "Top players to print per club"
+        required: true
+        default: "8"
+
+jobs:
+  rating-explorer:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout engine
+        uses: actions/checkout@v4
+        with:
+          path: beautiful-game-engine
+
+      - name: Checkout data
+        uses: actions/checkout@v4
+        with:
+          repository: davidmarsden/beautiful-game-data
+          path: beautiful-game-data
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Engine unit tests
+        working-directory: beautiful-game-engine
+        run: npm test
+
+      - name: Run rating explorer
+        working-directory: beautiful-game-engine
+        run: |
+          PACK="../beautiful-game-data/exports/league-packs/league-${{ github.event.inputs.league }}-season-${{ github.event.inputs.season }}.json"
+          OUT="rating-explorer-league-${{ github.event.inputs.league }}-season-${{ github.event.inputs.season }}.json"
+          node scripts/rating-explorer.js --pack="$PACK" --topPlayerLimit="${{ github.event.inputs.topPlayerLimit }}" --json="$OUT"
+
+      - name: Upload rating explorer report
+        uses: actions/upload-artifact@v4
+        with:
+          name: rating-explorer-league-${{ github.event.inputs.league }}-season-${{ github.event.inputs.season }}
+          path: beautiful-game-engine/rating-explorer-league-${{ github.event.inputs.league }}-season-${{ github.event.inputs.season }}.json
