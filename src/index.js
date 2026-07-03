@@ -6,7 +6,9 @@ import { validateWorld } from "./world/validateWorld.js";
 
 export {
   calibrateLeagueTable,
-  formatCalibrationReport
+  calibrateSeasonDistribution,
+  formatCalibrationReport,
+  formatSeasonDistributionReport
 } from "./calibration/index.js";
 export {
   applyCohesionModifierToXg,
