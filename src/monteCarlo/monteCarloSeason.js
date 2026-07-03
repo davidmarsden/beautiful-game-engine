@@ -4,6 +4,11 @@ function round(value) {
   return Number(Number(value ?? 0).toFixed(3));
 }
 
+function rowPoints(row) {
+  const value = Number(row.points ?? row.pts ?? row.totalPoints ?? 0);
+  return Number.isFinite(value) ? value : 0;
+}
+
 function blankTeam(row) {
   return {
     teamId: row.teamId,
@@ -22,7 +27,7 @@ function blankTeam(row) {
 function updateTeam(summary, row, simulations, options) {
   const position = row.position;
   summary.totalPosition += position;
-  summary.totalPoints += row.points;
+  summary.totalPoints += rowPoints(row);
   summary.bestPosition = summary.bestPosition === null ? position : Math.min(summary.bestPosition, position);
   summary.worstPosition = summary.worstPosition === null ? position : Math.max(summary.worstPosition, position);
   summary.positionCounts[position] = (summary.positionCounts[position] ?? 0) + 1;
@@ -33,16 +38,17 @@ function updateTeam(summary, row, simulations, options) {
 }
 
 function finaliseTeam(summary, runs) {
+  const safeRuns = Math.max(1, Number(runs ?? 0));
   return {
     teamId: summary.teamId,
     teamName: summary.teamName,
-    averagePosition: round(summary.totalPosition / runs),
-    averagePoints: round(summary.totalPoints / runs),
+    averagePosition: round(summary.totalPosition / safeRuns),
+    averagePoints: round(summary.totalPoints / safeRuns),
     bestPosition: summary.bestPosition,
     worstPosition: summary.worstPosition,
-    titleProbability: round(summary.titleWins / runs),
-    topFourProbability: round(summary.topFour / runs),
-    relegationProbability: round(summary.relegations / runs),
+    titleProbability: round(summary.titleWins / safeRuns),
+    topFourProbability: round(summary.topFour / safeRuns),
+    relegationProbability: round(summary.relegations / safeRuns),
     positionCounts: summary.positionCounts
   };
 }
