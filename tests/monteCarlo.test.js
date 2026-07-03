@@ -29,6 +29,10 @@ function squad(teamId, base) {
   ];
 }
 
+function totalPositionCounts(team) {
+  return Object.values(team.positionCounts).reduce((sum, count) => sum + count, 0);
+}
+
 const players = [...squad("alpha", 90), ...squad("beta", 80)];
 const playerMap = Object.fromEntries(players.map((row) => [row.id, row]));
 
@@ -65,7 +69,7 @@ test("runs Monte Carlo season simulations", () => {
 
   assert.equal(report.runs, 5);
   assert.equal(report.teams.length, 2);
-  assert.equal(report.teams[0].positionCounts[1] + report.teams[0].positionCounts[2], 5);
+  assert.equal(totalPositionCounts(report.teams[0]), 5);
   assert.ok(report.teams[0].averagePosition >= 1);
 });
 
