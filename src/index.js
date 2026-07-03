@@ -5,6 +5,10 @@ import { createSeasonShell } from "./world/seasonShell.js";
 import { validateWorld } from "./world/validateWorld.js";
 
 export {
+  calibrateLeagueTable,
+  formatCalibrationReport
+} from "./calibration/index.js";
+export {
   applyCohesionModifierToXg,
   cohesionMatchModifier,
   createCohesionState,
