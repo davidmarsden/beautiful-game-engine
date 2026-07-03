@@ -50,9 +50,9 @@ jobs:
           PACK="../beautiful-game-data/exports/league-packs/league-${{ github.event.inputs.league }}-season-${{ github.event.inputs.season }}.json"
           OUT="season-report-league-${{ github.event.inputs.league }}-season-${{ github.event.inputs.season }}.json"
           if [ -n "${{ github.event.inputs.maxFixtures }}" ]; then
-            node scripts/simulate-season.js --pack="$PACK" --seed="${{ github.event.inputs.seed }}" --maxFixtures="${{ github.event.inputs.maxFixtures }}" --json="$OUT"
+            node scripts/simulate-season.js --pack="$PACK" --seed="${{ github.event.inputs.seed }}" --maxFixtures="${{ github.event.inputs.maxFixtures }}" --calibrate=true --json="$OUT"
           else
-            node scripts/simulate-season.js --pack="$PACK" --seed="${{ github.event.inputs.seed }}" --json="$OUT"
+            node scripts/simulate-season.js --pack="$PACK" --seed="${{ github.event.inputs.seed }}" --calibrate=true --json="$OUT"
           fi
 
       - name: Upload season report
