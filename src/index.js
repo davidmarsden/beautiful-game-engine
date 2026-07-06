@@ -85,6 +85,7 @@ export {
   DEFAULT_SQUAD_RULES,
   assignSquadsToClubs
 } from "./squadAssignment/assignSquads.js";
+export { runSnakeDraft } from "./squadAssignment/snakeDraft.js";
 export { averageClubRating } from "./ratings/index.js";
 export { generateWorld } from "./world/generateWorld.js";
 export { createSeasonShell } from "./world/seasonShell.js";
