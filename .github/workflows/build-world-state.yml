@@ -15,6 +15,23 @@ on:
         options:
           - assign-squads
           - unsigned-snapshot
+      assignmentMode:
+        description: "Squad assignment mode"
+        required: true
+        default: "snake-draft"
+        type: choice
+        options:
+          - snake-draft
+          - banded
+      draftOrder:
+        description: "Draft order, only used for snake draft"
+        required: true
+        default: "division-balanced"
+        type: choice
+        options:
+          - division-balanced
+          - random
+          - reverse-strength
       seasonId:
         description: "Season ID for the generated world state"
         required: true
@@ -85,6 +102,8 @@ jobs:
             --seasonId=${{ github.event.inputs.seasonId }} \
             --worldId=${{ github.event.inputs.worldId }} \
             --squadSize=${{ github.event.inputs.squadSize }} \
+            --assignmentMode=${{ github.event.inputs.assignmentMode }} \
+            --draftOrder=${{ github.event.inputs.draftOrder }} \
             --worldOutput=derived/world-state/tbg-alpha-world.json \
             --worldSummaryOutput=derived/world-state/tbg-alpha-world-summary.json
 
@@ -99,6 +118,7 @@ jobs:
             beautiful-game-engine/derived/squad-assignment/unsigned-players-after-assignment.json
             beautiful-game-engine/derived/squad-assignment/club-squad-report.json
             beautiful-game-engine/derived/squad-assignment/summary.json
+            beautiful-game-engine/derived/squad-assignment/draft-picks.json
           if-no-files-found: ignore
 
       - name: Commit world-state output
