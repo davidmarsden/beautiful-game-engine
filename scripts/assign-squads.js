@@ -2,6 +2,7 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { dirname } from "node:path";
 import { generateWorld } from "../src/world/generateWorld.js";
 import { assignSquadsToClubs } from "../src/squadAssignment/assignSquads.js";
+import { runSnakeDraft } from "../src/squadAssignment/snakeDraft.js";
 import { buildWorldStateFromPlayerPools, summariseWorldState } from "../src/worldState/buildWorldState.js";
 
 function parseArgs(argv) {
@@ -36,6 +37,8 @@ const seed = args.seed ?? "tbg-alpha-squad-assignment";
 const seasonId = args.seasonId ?? "season-001";
 const worldId = args.worldId ?? "tbg-alpha-world";
 const squadSize = Number(args.squadSize ?? 25);
+const assignmentMode = args.assignmentMode ?? "banded";
+const draftOrder = args.draftOrder ?? "division-balanced";
 
 const [globalPlayers, unsignedPlayers, submittedPlayers] = await Promise.all([
   readJson(globalPlayersPath, []),
@@ -45,11 +48,19 @@ const [globalPlayers, unsignedPlayers, submittedPlayers] = await Promise.all([
 
 const sourcePlayers = unsignedPlayers.length ? unsignedPlayers : globalPlayers;
 const worldShell = generateWorld({ seed, season: Number(String(seasonId).replace(/\D/g, "")) || 1 });
-const assignment = assignSquadsToClubs({
-  players: sourcePlayers,
-  clubs: worldShell.clubs,
-  rules: { squadSize }
-});
+const assignment = assignmentMode === "snake-draft"
+  ? runSnakeDraft({
+    players: sourcePlayers,
+    clubs: worldShell.clubs,
+    squadSize,
+    seed,
+    order: draftOrder
+  })
+  : assignSquadsToClubs({
+    players: sourcePlayers,
+    clubs: worldShell.clubs,
+    rules: { squadSize }
+  });
 
 if (assignment.summary.duplicate_assigned_ids.length) {
   throw new Error(`Duplicate assigned players: ${assignment.summary.duplicate_assigned_ids.join(", ")}`);
@@ -79,6 +90,7 @@ await writeJson(args.assignedPlayersOutput ?? "derived/squad-assignment/assigned
 await writeJson(args.unsignedPlayersOutput ?? "derived/squad-assignment/unsigned-players-after-assignment.json", assignment.unsignedPlayers);
 await writeJson(args.clubReportOutput ?? "derived/squad-assignment/club-squad-report.json", assignment.clubReports);
 await writeJson(args.assignmentSummaryOutput ?? "derived/squad-assignment/summary.json", assignment.summary);
+if (assignment.draftPicks) await writeJson(args.draftPicksOutput ?? "derived/squad-assignment/draft-picks.json", assignment.draftPicks);
 await writeJson(args.worldOutput ?? "derived/world-state/tbg-alpha-world.json", worldState);
 await writeJson(args.worldSummaryOutput ?? "derived/world-state/tbg-alpha-world-summary.json", fullSummary);
 
