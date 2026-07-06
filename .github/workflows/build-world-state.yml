@@ -1,0 +1,84 @@
+name: Build TBG World State
+
+on:
+  workflow_dispatch:
+    inputs:
+      dataRef:
+        description: "beautiful-game-data branch, tag or SHA to read player pools from"
+        required: true
+        default: "main"
+      seasonId:
+        description: "Season ID for the generated world state"
+        required: true
+        default: "season-001"
+      worldId:
+        description: "World ID for the generated world state"
+        required: true
+        default: "tbg-alpha-world"
+
+permissions:
+  contents: write
+
+jobs:
+  build-world-state:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out engine repository
+        uses: actions/checkout@v4
+        with:
+          path: beautiful-game-engine
+
+      - name: Check out data repository
+        uses: actions/checkout@v4
+        with:
+          repository: davidmarsden/beautiful-game-data
+          ref: ${{ github.event.inputs.dataRef }}
+          path: beautiful-game-data
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install engine dependencies
+        working-directory: beautiful-game-engine
+        run: npm install
+
+      - name: Run engine tests
+        working-directory: beautiful-game-engine
+        run: npm test
+
+      - name: Build world state from data player pools
+        working-directory: beautiful-game-engine
+        run: |
+          npm run build:world-state -- \
+            --globalPlayers=../beautiful-game-data/derived/tbg-player-pools/global-players.json \
+            --gamePlayers=../beautiful-game-data/derived/tbg-player-pools/game-players.json \
+            --unsignedPlayers=../beautiful-game-data/derived/tbg-player-pools/unsigned-players.json \
+            --submittedPlayers=../beautiful-game-data/derived/tbg-player-pools/submitted-players.json \
+            --seasonId=${{ github.event.inputs.seasonId }} \
+            --worldId=${{ github.event.inputs.worldId }} \
+            --output=derived/world-state/tbg-alpha-world.json \
+            --summary=derived/world-state/tbg-alpha-world-summary.json
+
+      - name: Upload world-state artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: tbg-world-state
+          path: |
+            beautiful-game-engine/derived/world-state/tbg-alpha-world.json
+            beautiful-game-engine/derived/world-state/tbg-alpha-world-summary.json
+          if-no-files-found: error
+
+      - name: Commit world-state output
+        working-directory: beautiful-game-engine
+        run: |
+          if [ -z "$(git status --porcelain derived/world-state)" ]; then
+            echo "No world-state changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add derived/world-state
+          git commit -m "Build TBG world state from data pools"
+          git push
