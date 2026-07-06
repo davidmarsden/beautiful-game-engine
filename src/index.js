@@ -85,6 +85,14 @@ export { averageClubRating } from "./ratings/index.js";
 export { generateWorld } from "./world/generateWorld.js";
 export { createSeasonShell } from "./world/seasonShell.js";
 export { validateWorld } from "./world/validateWorld.js";
+export {
+  buildWorldStateFromPlayerPools,
+  summariseWorldState
+} from "./worldState/buildWorldState.js";
+export {
+  validateTbgPlayer,
+  validateTbgPlayers
+} from "./worldState/validateTbgPlayer.js";
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const world = generateWorld({ seed: "demo", season: 1 });
