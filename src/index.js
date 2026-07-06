@@ -81,6 +81,10 @@ export {
   tacticalIdentityFromManagerProfile,
   tacticalModifier
 } from "./tactics/index.js";
+export {
+  DEFAULT_SQUAD_RULES,
+  assignSquadsToClubs
+} from "./squadAssignment/assignSquads.js";
 export { averageClubRating } from "./ratings/index.js";
 export { generateWorld } from "./world/generateWorld.js";
 export { createSeasonShell } from "./world/seasonShell.js";
