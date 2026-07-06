@@ -7,6 +7,14 @@ on:
         description: "beautiful-game-data branch, tag or SHA to read player pools from"
         required: true
         default: "main"
+      mode:
+        description: "Build unsigned snapshot or assign squads first"
+        required: true
+        default: "assign-squads"
+        type: choice
+        options:
+          - assign-squads
+          - unsigned-snapshot
       seasonId:
         description: "Season ID for the generated world state"
         required: true
@@ -15,6 +23,10 @@ on:
         description: "World ID for the generated world state"
         required: true
         default: "tbg-alpha-world"
+      squadSize:
+        description: "Target squad size when assigning squads"
+        required: true
+        default: "25"
 
 permissions:
   contents: write
@@ -48,7 +60,8 @@ jobs:
         working-directory: beautiful-game-engine
         run: npm test
 
-      - name: Build world state from data player pools
+      - name: Build unsigned world state from data player pools
+        if: ${{ github.event.inputs.mode == 'unsigned-snapshot' }}
         working-directory: beautiful-game-engine
         run: |
           npm run build:world-state -- \
@@ -61,6 +74,20 @@ jobs:
             --output=derived/world-state/tbg-alpha-world.json \
             --summary=derived/world-state/tbg-alpha-world-summary.json
 
+      - name: Assign squads and build playable world state
+        if: ${{ github.event.inputs.mode == 'assign-squads' }}
+        working-directory: beautiful-game-engine
+        run: |
+          npm run assign:squads -- \
+            --globalPlayers=../beautiful-game-data/derived/tbg-player-pools/global-players.json \
+            --unsignedPlayers=../beautiful-game-data/derived/tbg-player-pools/unsigned-players.json \
+            --submittedPlayers=../beautiful-game-data/derived/tbg-player-pools/submitted-players.json \
+            --seasonId=${{ github.event.inputs.seasonId }} \
+            --worldId=${{ github.event.inputs.worldId }} \
+            --squadSize=${{ github.event.inputs.squadSize }} \
+            --worldOutput=derived/world-state/tbg-alpha-world.json \
+            --worldSummaryOutput=derived/world-state/tbg-alpha-world-summary.json
+
       - name: Upload world-state artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -68,17 +95,21 @@ jobs:
           path: |
             beautiful-game-engine/derived/world-state/tbg-alpha-world.json
             beautiful-game-engine/derived/world-state/tbg-alpha-world-summary.json
-          if-no-files-found: error
+            beautiful-game-engine/derived/squad-assignment/assigned-players.json
+            beautiful-game-engine/derived/squad-assignment/unsigned-players-after-assignment.json
+            beautiful-game-engine/derived/squad-assignment/club-squad-report.json
+            beautiful-game-engine/derived/squad-assignment/summary.json
+          if-no-files-found: ignore
 
       - name: Commit world-state output
         working-directory: beautiful-game-engine
         run: |
-          if [ -z "$(git status --porcelain derived/world-state)" ]; then
+          if [ -z "$(git status --porcelain derived/world-state derived/squad-assignment)" ]; then
             echo "No world-state changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add derived/world-state
-          git commit -m "Build TBG world state from data pools"
+          git add derived/world-state derived/squad-assignment
+          git commit -m "Build TBG playable world state"
           git push
