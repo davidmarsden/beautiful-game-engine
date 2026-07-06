@@ -1,0 +1,72 @@
+{
+  "world_id": "tbg-alpha-world",
+  "contract_version": "tbg-contract-v0.1",
+  "data_snapshot_id": "6e712a67a9507ae0",
+  "players": 5485,
+  "clubs": 0,
+  "assigned_players": 0,
+  "unsigned_players": 5485,
+  "average_ability": 85.26,
+  "top_players": [
+    {
+      "name": "Kylian Mbappé",
+      "ability": 99,
+      "effective": 99,
+      "club": "Real Madrid"
+    },
+    {
+      "name": "Erling Haaland",
+      "ability": 97,
+      "effective": 97,
+      "club": "Manchester City"
+    },
+    {
+      "name": "Vinicius José Paixão de Oliveira Junior",
+      "ability": 97,
+      "effective": 97,
+      "club": "Real Madrid"
+    },
+    {
+      "name": "Lamine Yamal Nasraoui Ebana",
+      "ability": 96,
+      "effective": 96,
+      "club": "FC Barcelona"
+    },
+    {
+      "name": "Pedro González López",
+      "ability": 96,
+      "effective": 96,
+      "club": "FC Barcelona"
+    },
+    {
+      "name": "Jude Bellingham",
+      "ability": 96,
+      "effective": 96,
+      "club": "Real Madrid"
+    },
+    {
+      "name": "Federico Valverde",
+      "ability": 96,
+      "effective": 96,
+      "club": "Real Madrid"
+    },
+    {
+      "name": "Harry Kane",
+      "ability": 96,
+      "effective": 96,
+      "club": "Bayern Munich"
+    },
+    {
+      "name": "Rodrigo Hernández Cascante",
+      "ability": 96,
+      "effective": 96,
+      "club": "Manchester City"
+    },
+    {
+      "name": "Lionel Messi",
+      "ability": 96,
+      "effective": 96,
+      "club": "Inter Miami CF"
+    }
+  ]
+}
