@@ -1,0 +1,32 @@
+{
+  "clubs": 100,
+  "squad_size_target": 25,
+  "assigned_players": 2500,
+  "unsigned_players": 2985,
+  "duplicate_assigned_ids": [],
+  "complete_squads": 100,
+  "incomplete_squads": 0,
+  "rules": {
+    "squadSize": 25,
+    "quotas": {
+      "GK": 3,
+      "DEF": 8,
+      "MID": 8,
+      "ATT": 6
+    },
+    "divisionCeilings": {
+      "1": 99,
+      "2": 93,
+      "3": 91,
+      "4": 90,
+      "5": 89
+    },
+    "divisionFloors": {
+      "1": 88,
+      "2": 86,
+      "3": 84,
+      "4": 82,
+      "5": 80
+    }
+  }
+}

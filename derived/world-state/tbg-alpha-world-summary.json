@@ -1,11 +1,11 @@
 {
   "world_id": "tbg-alpha-world",
   "contract_version": "tbg-contract-v0.1",
-  "data_snapshot_id": "6e712a67a9507ae0",
+  "data_snapshot_id": "273a9f9c0f082be5",
   "players": 5485,
-  "clubs": 0,
-  "assigned_players": 0,
-  "unsigned_players": 5485,
+  "clubs": 100,
+  "assigned_players": 2500,
+  "unsigned_players": 2985,
   "average_ability": 85.26,
   "top_players": [
     {
@@ -67,6 +67,362 @@
       "ability": 96,
       "effective": 96,
       "club": "Inter Miami CF"
+    }
+  ],
+  "squad_assignment": {
+    "clubs": 100,
+    "squad_size_target": 25,
+    "assigned_players": 2500,
+    "unsigned_players": 2985,
+    "duplicate_assigned_ids": [],
+    "complete_squads": 100,
+    "incomplete_squads": 0,
+    "rules": {
+      "squadSize": 25,
+      "quotas": {
+        "GK": 3,
+        "DEF": 8,
+        "MID": 8,
+        "ATT": 6
+      },
+      "divisionCeilings": {
+        "1": 99,
+        "2": 93,
+        "3": 91,
+        "4": 90,
+        "5": 89
+      },
+      "divisionFloors": {
+        "1": 88,
+        "2": 86,
+        "3": 84,
+        "4": 82,
+        "5": 80
+      }
+    }
+  },
+  "weakest_complete_clubs": [
+    {
+      "club_id": "club-097",
+      "club_name": "Balfour United",
+      "division": 5,
+      "squad_size": 25,
+      "average_rating": 85,
+      "strongest_rating": 86,
+      "weakest_rating": 84,
+      "positions": {
+        "GK": 3,
+        "DEF": 8,
+        "MID": 8,
+        "ATT": 6,
+        "UNK": 0
+      }
+    },
+    {
+      "club_id": "club-099",
+      "club_name": "Dormers Wells",
+      "division": 5,
+      "squad_size": 25,
+      "average_rating": 85,
+      "strongest_rating": 86,
+      "weakest_rating": 84,
+      "positions": {
+        "GK": 3,
+        "DEF": 8,
+        "MID": 8,
+        "ATT": 6,
+        "UNK": 0
+      }
+    },
+    {
+      "club_id": "club-081",
+      "club_name": "Wakefield Town",
+      "division": 5,
+      "squad_size": 25,
+      "average_rating": 85,
+      "strongest_rating": 86,
+      "weakest_rating": 84,
+      "positions": {
+        "GK": 3,
+        "DEF": 8,
+        "MID": 8,
+        "ATT": 6,
+        "UNK": 0
+      }
+    },
+    {
+      "club_id": "club-086",
+      "club_name": "Whitechapel",
+      "division": 5,
+      "squad_size": 25,
+      "average_rating": 85,
+      "strongest_rating": 86,
+      "weakest_rating": 84,
+      "positions": {
+        "GK": 3,
+        "DEF": 8,
+        "MID": 8,
+        "ATT": 6,
+        "UNK": 0
+      }
+    },
+    {
+      "club_id": "club-093",
+      "club_name": "Yardley",
+      "division": 5,
+      "squad_size": 25,
+      "average_rating": 85,
+      "strongest_rating": 86,
+      "weakest_rating": 84,
+      "positions": {
+        "GK": 3,
+        "DEF": 8,
+        "MID": 8,
+        "ATT": 6,
+        "UNK": 0
+      }
+    },
+    {
+      "club_id": "club-088",
+      "club_name": "Willowbank",
+      "division": 5,
+      "squad_size": 25,
+      "average_rating": 85.04,
+      "strongest_rating": 86,
+      "weakest_rating": 84,
+      "positions": {
+        "GK": 3,
+        "DEF": 8,
+        "MID": 8,
+        "ATT": 6,
+        "UNK": 0
+      }
+    },
+    {
+      "club_id": "club-083",
+      "club_name": "Waterford Gate",
+      "division": 5,
+      "squad_size": 25,
+      "average_rating": 85.24,
+      "strongest_rating": 86,
+      "weakest_rating": 84,
+      "positions": {
+        "GK": 3,
+        "DEF": 8,
+        "MID": 8,
+        "ATT": 6,
+        "UNK": 0
+      }
+    },
+    {
+      "club_id": "club-084",
+      "club_name": "Westerby",
+      "division": 5,
+      "squad_size": 25,
+      "average_rating": 85.24,
+      "strongest_rating": 86,
+      "weakest_rating": 84,
+      "positions": {
+        "GK": 3,
+        "DEF": 8,
+        "MID": 8,
+        "ATT": 6,
+        "UNK": 0
+      }
+    },
+    {
+      "club_id": "club-085",
+      "club_name": "Westhaven",
+      "division": 5,
+      "squad_size": 25,
+      "average_rating": 85.24,
+      "strongest_rating": 86,
+      "weakest_rating": 84,
+      "positions": {
+        "GK": 3,
+        "DEF": 8,
+        "MID": 8,
+        "ATT": 6,
+        "UNK": 0
+      }
+    },
+    {
+      "club_id": "club-089",
+      "club_name": "Winchester Vale",
+      "division": 5,
+      "squad_size": 25,
+      "average_rating": 85.24,
+      "strongest_rating": 86,
+      "weakest_rating": 84,
+      "positions": {
+        "GK": 3,
+        "DEF": 8,
+        "MID": 8,
+        "ATT": 6,
+        "UNK": 0
+      }
+    }
+  ],
+  "strongest_clubs": [
+    {
+      "club_id": "club-004",
+      "club_name": "Beacon City",
+      "division": 1,
+      "squad_size": 25,
+      "average_rating": 92,
+      "strongest_rating": 92,
+      "weakest_rating": 92,
+      "positions": {
+        "GK": 3,
+        "DEF": 8,
+        "MID": 8,
+        "ATT": 6,
+        "UNK": 0
+      }
+    },
+    {
+      "club_id": "club-006",
+      "club_name": "Bramley Town",
+      "division": 1,
+      "squad_size": 25,
+      "average_rating": 91.96,
+      "strongest_rating": 93,
+      "weakest_rating": 91,
+      "positions": {
+        "GK": 3,
+        "DEF": 8,
+        "MID": 8,
+        "ATT": 6,
+        "UNK": 0
+      }
+    },
+    {
+      "club_id": "club-010",
+      "club_name": "Canning Athletic",
+      "division": 1,
+      "squad_size": 25,
+      "average_rating": 91.84,
+      "strongest_rating": 93,
+      "weakest_rating": 91,
+      "positions": {
+        "GK": 3,
+        "DEF": 8,
+        "MID": 8,
+        "ATT": 6,
+        "UNK": 0
+      }
+    },
+    {
+      "club_id": "club-011",
+      "club_name": "Carrowgate",
+      "division": 1,
+      "squad_size": 25,
+      "average_rating": 91.56,
+      "strongest_rating": 94,
+      "weakest_rating": 90,
+      "positions": {
+        "GK": 3,
+        "DEF": 8,
+        "MID": 8,
+        "ATT": 6,
+        "UNK": 0
+      }
+    },
+    {
+      "club_id": "club-012",
+      "club_name": "Castleford",
+      "division": 1,
+      "squad_size": 25,
+      "average_rating": 91.52,
+      "strongest_rating": 94,
+      "weakest_rating": 90,
+      "positions": {
+        "GK": 3,
+        "DEF": 8,
+        "MID": 8,
+        "ATT": 6,
+        "UNK": 0
+      }
+    },
+    {
+      "club_id": "club-019",
+      "club_name": "Eldon Athletic",
+      "division": 1,
+      "squad_size": 25,
+      "average_rating": 90.96,
+      "strongest_rating": 94,
+      "weakest_rating": 90,
+      "positions": {
+        "GK": 3,
+        "DEF": 8,
+        "MID": 8,
+        "ATT": 6,
+        "UNK": 0
+      }
+    },
+    {
+      "club_id": "club-013",
+      "club_name": "Chester Vale",
+      "division": 1,
+      "squad_size": 25,
+      "average_rating": 90.64,
+      "strongest_rating": 93,
+      "weakest_rating": 90,
+      "positions": {
+        "GK": 3,
+        "DEF": 8,
+        "MID": 8,
+        "ATT": 6,
+        "UNK": 0
+      }
+    },
+    {
+      "club_id": "club-007",
+      "club_name": "Bridgeford",
+      "division": 1,
+      "squad_size": 25,
+      "average_rating": 90.36,
+      "strongest_rating": 91,
+      "weakest_rating": 90,
+      "positions": {
+        "GK": 3,
+        "DEF": 8,
+        "MID": 8,
+        "ATT": 6,
+        "UNK": 0
+      }
+    },
+    {
+      "club_id": "club-014",
+      "club_name": "Claremont",
+      "division": 1,
+      "squad_size": 25,
+      "average_rating": 89.88,
+      "strongest_rating": 91,
+      "weakest_rating": 89,
+      "positions": {
+        "GK": 3,
+        "DEF": 8,
+        "MID": 8,
+        "ATT": 6,
+        "UNK": 0
+      }
+    },
+    {
+      "club_id": "club-015",
+      "club_name": "Cobalt City",
+      "division": 1,
+      "squad_size": 25,
+      "average_rating": 89.6,
+      "strongest_rating": 90,
+      "weakest_rating": 89,
+      "positions": {
+        "GK": 3,
+        "DEF": 8,
+        "MID": 8,
+        "ATT": 6,
+        "UNK": 0
+      }
     }
   ]
 }
