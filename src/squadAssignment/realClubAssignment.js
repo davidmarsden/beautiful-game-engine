@@ -1,9 +1,12 @@
+import { clubImportanceFor, selectGlobalImportanceClubs } from "./globalClubImportance.js";
+
 const DEFAULT_REAL_CLUB_RULES = {
   clubCount: 100,
   minSquadSize: 18,
   targetSquadSize: 25,
   divisions: 5,
   clubsPerDivision: 20,
+  selectionMode: "real-clubs",
   strengthWeights: {
     starters: 0.7,
     bench: 0.2,
@@ -93,16 +96,27 @@ function assignPlayerToRealClub(player, club, rank, division) {
     division,
     assignment_status: "assigned",
     real_club_rank: rank,
-    real_club_source_id: club.source_club_id
+    real_club_source_id: club.source_club_id,
+    continent: club.global_importance?.continent || "Unknown",
+    league: club.global_importance?.league || club.current_competition_code || "Unknown"
   };
 }
 
 function clubReport(club, rank, division, squad, strength, totalMarketValue) {
   const ratings = squad.map(rating).filter(Boolean);
+  const importance = club.global_importance || clubImportanceFor({
+    clubId: club.tbg_club_id,
+    clubName: club.club_name,
+    competitionCode: club.current_competition_code
+  });
   return {
     club_id: club.tbg_club_id,
     source_club_id: club.source_club_id,
     club_name: club.club_name,
+    continent: importance.continent,
+    league: importance.league || club.current_competition_code,
+    global_importance: importance.importance,
+    selection_reason: importance.selection_reason,
     current_competition_code: club.current_competition_code,
     real_club_rank: rank,
     division,
@@ -122,31 +136,56 @@ function toWorldClub(report) {
     name: report.club_name,
     division: report.division,
     rating: report.weighted_squad_strength,
+    continent: report.continent,
+    league: report.league,
     source_club_id: report.source_club_id,
     current_competition_code: report.current_competition_code
   };
+}
+
+function buildCandidateClubs(players, mergedRules) {
+  return groupByRealClub(players)
+    .filter((club) => club.players.length >= mergedRules.minSquadSize)
+    .map((club) => {
+      const globalImportance = clubImportanceFor({
+        clubId: club.tbg_club_id,
+        clubName: club.club_name,
+        competitionCode: club.current_competition_code
+      });
+      return {
+        ...club,
+        global_importance: globalImportance,
+        weighted_squad_strength: weightedSquadStrength(club.players, mergedRules.strengthWeights),
+        total_market_value_eur: clubMarketValue(club.players)
+      };
+    });
+}
+
+function selectClubs(candidateClubs, mergedRules) {
+  if (mergedRules.selectionMode === "global-importance") {
+    return selectGlobalImportanceClubs(candidateClubs, {
+      clubCount: mergedRules.clubCount,
+      continentTargets: mergedRules.continentTargets
+    });
+  }
+  return candidateClubs
+    .sort((a, b) => b.weighted_squad_strength - a.weighted_squad_strength
+      || b.total_market_value_eur - a.total_market_value_eur
+      || String(a.club_name).localeCompare(String(b.club_name)))
+    .slice(0, mergedRules.clubCount);
 }
 
 export function assignRealClubSquads({ players = [], rules = {} } = {}) {
   const mergedRules = {
     ...DEFAULT_REAL_CLUB_RULES,
     ...rules,
+    selectionMode: rules.selectionMode ?? rules.mode ?? DEFAULT_REAL_CLUB_RULES.selectionMode,
     strengthWeights: { ...DEFAULT_REAL_CLUB_RULES.strengthWeights, ...(rules.strengthWeights ?? {}) }
   };
 
-  const clubs = groupByRealClub(players)
-    .filter((club) => club.players.length >= mergedRules.minSquadSize)
-    .map((club) => ({
-      ...club,
-      weighted_squad_strength: weightedSquadStrength(club.players, mergedRules.strengthWeights),
-      total_market_value_eur: clubMarketValue(club.players)
-    }))
-    .sort((a, b) => b.weighted_squad_strength - a.weighted_squad_strength
-      || b.total_market_value_eur - a.total_market_value_eur
-      || String(a.club_name).localeCompare(String(b.club_name)))
-    .slice(0, mergedRules.clubCount);
-
-  const topClubIds = new Set(clubs.map((club) => club.tbg_club_id));
+  const candidateClubs = buildCandidateClubs(players, mergedRules);
+  const clubs = selectClubs(candidateClubs, mergedRules);
+  const selectedClubIds = new Set(clubs.map((club) => club.tbg_club_id));
   const assignedPlayers = [];
   const clubReports = [];
 
@@ -174,15 +213,25 @@ export function assignRealClubSquads({ players = [], rules = {} } = {}) {
     .map((player) => player.tbg_player_id)
     .filter((id, index, ids) => ids.indexOf(id) !== index);
 
+  const continent_counts = clubReports.reduce((memo, club) => {
+    memo[club.continent] = (memo[club.continent] ?? 0) + 1;
+    return memo;
+  }, {});
+  const league_counts = clubReports.reduce((memo, club) => {
+    memo[club.league] = (memo[club.league] ?? 0) + 1;
+    return memo;
+  }, {});
+
   return {
     assignedPlayers: assignedPlayers.sort((a, b) => Number(a.real_club_rank) - Number(b.real_club_rank) || rating(b) - rating(a)),
     unsignedPlayers,
     clubReports,
     clubs: clubReports.map(toWorldClub),
     summary: {
-      mode: "real-clubs",
+      mode: mergedRules.selectionMode,
       club_count_target: mergedRules.clubCount,
       clubs: clubReports.length,
+      candidate_clubs: candidateClubs.length,
       squad_size_target: mergedRules.targetSquadSize,
       min_squad_size: mergedRules.minSquadSize,
       assigned_players: assignedPlayers.length,
@@ -190,6 +239,8 @@ export function assignRealClubSquads({ players = [], rules = {} } = {}) {
       duplicate_assigned_ids: [...new Set(duplicateAssignedIds)],
       complete_squads: clubReports.filter((club) => club.squad_size >= mergedRules.targetSquadSize).length,
       incomplete_squads: clubReports.filter((club) => club.squad_size < mergedRules.targetSquadSize).length,
+      continent_counts,
+      league_counts,
       divisions: Array.from({ length: mergedRules.divisions }, (_, index) => {
         const division = index + 1;
         return {
@@ -198,13 +249,25 @@ export function assignRealClubSquads({ players = [], rules = {} } = {}) {
             rank: club.real_club_rank,
             club_id: club.club_id,
             club_name: club.club_name,
+            continent: club.continent,
+            league: club.league,
             strength: club.weighted_squad_strength,
             squad_size: club.squad_size
           }))
         };
       }),
       rules: mergedRules,
-      excluded_top_club_ids: [...topClubIds].length === clubReports.length ? [] : [...topClubIds].filter((clubId) => !clubReports.some((club) => club.club_id === clubId))
+      excluded_candidate_club_ids: candidateClubs
+        .filter((club) => !selectedClubIds.has(club.tbg_club_id))
+        .sort((a, b) => b.weighted_squad_strength - a.weighted_squad_strength)
+        .slice(0, 50)
+        .map((club) => ({
+          club_id: club.tbg_club_id,
+          club_name: club.club_name,
+          continent: club.global_importance?.continent || "Unknown",
+          league: club.global_importance?.league || club.current_competition_code || "Unknown",
+          strength: Number(club.weighted_squad_strength.toFixed(2))
+        }))
     }
   };
 }
