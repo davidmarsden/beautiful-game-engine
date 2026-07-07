@@ -18,9 +18,10 @@ on:
       assignmentMode:
         description: "Squad assignment mode"
         required: true
-        default: "real-clubs"
+        default: "global-importance"
         type: choice
         options:
+          - global-importance
           - real-clubs
           - snake-draft
           - banded
@@ -46,7 +47,7 @@ on:
         required: true
         default: "25"
       clubCount:
-        description: "Number of real clubs to include when using real-clubs mode"
+        description: "Number of real clubs to include when using real-clubs/global-importance mode"
         required: true
         default: "100"
       minSquadSize:
