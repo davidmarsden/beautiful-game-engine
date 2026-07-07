@@ -1,0 +1,18 @@
+{
+  "version": "tbg-manager-club-preferences-v0.1",
+  "lottery_seed": "season-001-club-lottery",
+  "managers": [
+    {
+      "manager_id": "manager-david",
+      "manager_name": "David Marsden",
+      "priority_weight": 1,
+      "preferences": ["Hamburger SV", "Real Madrid", "FC Barcelona", "CR Flamengo", "Al Ahly SC"]
+    },
+    {
+      "manager_id": "manager-example-2",
+      "manager_name": "Example Manager",
+      "priority_weight": 1,
+      "preferences": ["Manchester United", "Liverpool FC", "Boca Juniors", "Club América", "Auckland City FC"]
+    }
+  ]
+}
