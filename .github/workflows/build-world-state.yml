@@ -18,9 +18,10 @@ on:
       assignmentMode:
         description: "Squad assignment mode"
         required: true
-        default: "global-importance"
+        default: "club-universe"
         type: choice
         options:
+          - club-universe
           - global-importance
           - real-clubs
           - snake-draft
@@ -47,7 +48,7 @@ on:
         required: true
         default: "25"
       clubCount:
-        description: "Number of real clubs to include when using real-clubs/global-importance mode"
+        description: "Number of clubs to include"
         required: true
         default: "100"
       minSquadSize:
@@ -109,6 +110,7 @@ jobs:
             --globalPlayers=../beautiful-game-data/derived/tbg-player-pools/global-players.json \
             --unsignedPlayers=../beautiful-game-data/derived/tbg-player-pools/unsigned-players.json \
             --submittedPlayers=../beautiful-game-data/derived/tbg-player-pools/submitted-players.json \
+            --clubUniverse=../beautiful-game-data/data/config/tbg-club-universe.json \
             --seasonId=${{ github.event.inputs.seasonId }} \
             --worldId=${{ github.event.inputs.worldId }} \
             --squadSize=${{ github.event.inputs.squadSize }} \
