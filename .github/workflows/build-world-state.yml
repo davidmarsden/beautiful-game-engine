@@ -18,9 +18,10 @@ on:
       assignmentMode:
         description: "Squad assignment mode"
         required: true
-        default: "snake-draft"
+        default: "real-clubs"
         type: choice
         options:
+          - real-clubs
           - snake-draft
           - banded
       draftOrder:
@@ -44,6 +45,14 @@ on:
         description: "Target squad size when assigning squads"
         required: true
         default: "25"
+      clubCount:
+        description: "Number of real clubs to include when using real-clubs mode"
+        required: true
+        default: "100"
+      minSquadSize:
+        description: "Minimum real-club squad size required for inclusion"
+        required: true
+        default: "18"
 
 permissions:
   contents: write
@@ -102,6 +111,8 @@ jobs:
             --seasonId=${{ github.event.inputs.seasonId }} \
             --worldId=${{ github.event.inputs.worldId }} \
             --squadSize=${{ github.event.inputs.squadSize }} \
+            --clubCount=${{ github.event.inputs.clubCount }} \
+            --minSquadSize=${{ github.event.inputs.minSquadSize }} \
             --assignmentMode=${{ github.event.inputs.assignmentMode }} \
             --draftOrder=${{ github.event.inputs.draftOrder }} \
             --worldOutput=derived/world-state/tbg-alpha-world.json \
@@ -118,6 +129,7 @@ jobs:
             beautiful-game-engine/derived/squad-assignment/unsigned-players-after-assignment.json
             beautiful-game-engine/derived/squad-assignment/club-squad-report.json
             beautiful-game-engine/derived/squad-assignment/summary.json
+            beautiful-game-engine/derived/squad-assignment/real-clubs.json
             beautiful-game-engine/derived/squad-assignment/draft-picks.json
           if-no-files-found: ignore
 
