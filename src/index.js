@@ -93,6 +93,7 @@ export {
   clubImportanceFor,
   selectGlobalImportanceClubs
 } from "./squadAssignment/globalClubImportance.js";
+export { allocateManagerClubs } from "./clubAllocation/allocateManagerClubs.js";
 export { averageClubRating } from "./ratings/index.js";
 export { generateWorld } from "./world/generateWorld.js";
 export { createSeasonShell } from "./world/seasonShell.js";
