@@ -4,6 +4,8 @@
     "name": "Real Madrid",
     "division": 1,
     "rating": 92.95,
+    "continent": "Europe",
+    "league": "LaLiga",
     "source_club_id": "418",
     "current_competition_code": "ES1"
   },
@@ -12,6 +14,8 @@
     "name": "Manchester City",
     "division": 1,
     "rating": 92.2,
+    "continent": "Europe",
+    "league": "Premier League",
     "source_club_id": "281",
     "current_competition_code": "GB1"
   },
@@ -20,6 +24,8 @@
     "name": "Arsenal FC",
     "division": 1,
     "rating": 92.06,
+    "continent": "Europe",
+    "league": "Premier League",
     "source_club_id": "11",
     "current_competition_code": "GB1"
   },
@@ -28,6 +34,8 @@
     "name": "Bayern Munich",
     "division": 1,
     "rating": 91.92,
+    "continent": "Europe",
+    "league": "Bundesliga",
     "source_club_id": "27",
     "current_competition_code": "L1"
   },
@@ -36,6 +44,8 @@
     "name": "Paris Saint-Germain",
     "division": 1,
     "rating": 91.58,
+    "continent": "Europe",
+    "league": "Ligue 1",
     "source_club_id": "583",
     "current_competition_code": "FR1"
   },
@@ -44,6 +54,8 @@
     "name": "Liverpool FC",
     "division": 1,
     "rating": 91.35,
+    "continent": "Europe",
+    "league": "Premier League",
     "source_club_id": "31",
     "current_competition_code": "GB1"
   },
@@ -52,6 +64,8 @@
     "name": "FC Barcelona",
     "division": 1,
     "rating": 91.33,
+    "continent": "Europe",
+    "league": "LaLiga",
     "source_club_id": "131",
     "current_competition_code": "ES1"
   },
@@ -60,6 +74,8 @@
     "name": "Chelsea FC",
     "division": 1,
     "rating": 90.59,
+    "continent": "Europe",
+    "league": "Premier League",
     "source_club_id": "631",
     "current_competition_code": "GB1"
   },
@@ -68,6 +84,8 @@
     "name": "Manchester United",
     "division": 1,
     "rating": 90.36,
+    "continent": "Europe",
+    "league": "Premier League",
     "source_club_id": "985",
     "current_competition_code": "GB1"
   },
@@ -76,6 +94,8 @@
     "name": "Tottenham Hotspur",
     "division": 1,
     "rating": 90.25,
+    "continent": "Europe",
+    "league": "Premier League",
     "source_club_id": "148",
     "current_competition_code": "GB1"
   },
@@ -84,6 +104,8 @@
     "name": "Atlético de Madrid",
     "division": 1,
     "rating": 90.23,
+    "continent": "Europe",
+    "league": "LaLiga",
     "source_club_id": "13",
     "current_competition_code": "ES1"
   },
@@ -92,6 +114,8 @@
     "name": "Inter Milan",
     "division": 1,
     "rating": 90.2,
+    "continent": "Europe",
+    "league": "Serie A",
     "source_club_id": "46",
     "current_competition_code": "IT1"
   },
@@ -100,6 +124,8 @@
     "name": "Aston Villa",
     "division": 1,
     "rating": 89.66,
+    "continent": "Europe",
+    "league": "GB1",
     "source_club_id": "405",
     "current_competition_code": "GB1"
   },
@@ -108,6 +134,8 @@
     "name": "SSC Napoli",
     "division": 1,
     "rating": 89.55,
+    "continent": "Europe",
+    "league": "IT1",
     "source_club_id": "6195",
     "current_competition_code": "IT1"
   },
@@ -116,6 +144,8 @@
     "name": "AC Milan",
     "division": 1,
     "rating": 89.45,
+    "continent": "Europe",
+    "league": "Serie A",
     "source_club_id": "5",
     "current_competition_code": "IT1"
   },
@@ -124,6 +154,8 @@
     "name": "Newcastle United",
     "division": 1,
     "rating": 89.41,
+    "continent": "Europe",
+    "league": "GB1",
     "source_club_id": "762",
     "current_competition_code": "GB1"
   },
@@ -132,6 +164,8 @@
     "name": "Juventus FC",
     "division": 1,
     "rating": 89.36,
+    "continent": "Europe",
+    "league": "Serie A",
     "source_club_id": "506",
     "current_competition_code": "IT1"
   },
@@ -140,6 +174,8 @@
     "name": "Fenerbahce",
     "division": 1,
     "rating": 89.16,
+    "continent": "Europe",
+    "league": "Süper Lig",
     "source_club_id": "36",
     "current_competition_code": "TR1"
   },
@@ -148,6 +184,8 @@
     "name": "Crystal Palace",
     "division": 1,
     "rating": 89.06,
+    "continent": "Europe",
+    "league": "GB1",
     "source_club_id": "873",
     "current_competition_code": "GB1"
   },
@@ -156,6 +194,8 @@
     "name": "Borussia Dortmund",
     "division": 1,
     "rating": 88.74,
+    "continent": "Europe",
+    "league": "Bundesliga",
     "source_club_id": "16",
     "current_competition_code": "L1"
   },
@@ -164,6 +204,8 @@
     "name": "Nottingham Forest",
     "division": 2,
     "rating": 88.62,
+    "continent": "Europe",
+    "league": "GB1",
     "source_club_id": "703",
     "current_competition_code": "GB1"
   },
@@ -172,6 +214,8 @@
     "name": "AFC Bournemouth",
     "division": 2,
     "rating": 88.54,
+    "continent": "Europe",
+    "league": "GB1",
     "source_club_id": "989",
     "current_competition_code": "GB1"
   },
@@ -180,6 +224,8 @@
     "name": "Al-Hilal SFC",
     "division": 2,
     "rating": 88.54,
+    "continent": "Asia",
+    "league": "Saudi Pro League",
     "source_club_id": "1114",
     "current_competition_code": "SA1"
   },
@@ -188,6 +234,8 @@
     "name": "Atalanta BC",
     "division": 2,
     "rating": 88.49,
+    "continent": "Europe",
+    "league": "IT1",
     "source_club_id": "800",
     "current_competition_code": "IT1"
   },
@@ -196,6 +244,8 @@
     "name": "Fulham FC",
     "division": 2,
     "rating": 88.47,
+    "continent": "Europe",
+    "league": "GB1",
     "source_club_id": "931",
     "current_competition_code": "GB1"
   },
@@ -204,6 +254,8 @@
     "name": "Brighton & Hove Albion",
     "division": 2,
     "rating": 88.47,
+    "continent": "Europe",
+    "league": "GB1",
     "source_club_id": "1237",
     "current_competition_code": "GB1"
   },
@@ -212,6 +264,8 @@
     "name": "Bayer 04 Leverkusen",
     "division": 2,
     "rating": 88.46,
+    "continent": "Europe",
+    "league": "Bundesliga",
     "source_club_id": "15",
     "current_competition_code": "L1"
   },
@@ -220,6 +274,8 @@
     "name": "Galatasaray",
     "division": 2,
     "rating": 88.44,
+    "continent": "Europe",
+    "league": "Süper Lig",
     "source_club_id": "141",
     "current_competition_code": "TR1"
   },
@@ -228,6 +284,8 @@
     "name": "Everton FC",
     "division": 2,
     "rating": 88.43,
+    "continent": "Europe",
+    "league": "GB1",
     "source_club_id": "29",
     "current_competition_code": "GB1"
   },
@@ -236,6 +294,8 @@
     "name": "Olympique Marseille",
     "division": 2,
     "rating": 88.41,
+    "continent": "Europe",
+    "league": "Ligue 1",
     "source_club_id": "244",
     "current_competition_code": "FR1"
   },
@@ -244,6 +304,8 @@
     "name": "Brentford FC",
     "division": 2,
     "rating": 88.4,
+    "continent": "Europe",
+    "league": "GB1",
     "source_club_id": "1148",
     "current_competition_code": "GB1"
   },
@@ -252,6 +314,8 @@
     "name": "RB Leipzig",
     "division": 2,
     "rating": 88.23,
+    "continent": "Europe",
+    "league": "Bundesliga",
     "source_club_id": "23826",
     "current_competition_code": "L1"
   },
@@ -260,6 +324,8 @@
     "name": "West Ham United",
     "division": 2,
     "rating": 88.16,
+    "continent": "Europe",
+    "league": "GB2",
     "source_club_id": "379",
     "current_competition_code": "GB2"
   },
@@ -268,6 +334,8 @@
     "name": "Leeds United",
     "division": 2,
     "rating": 88.06,
+    "continent": "Europe",
+    "league": "GB1",
     "source_club_id": "399",
     "current_competition_code": "GB1"
   },
@@ -276,6 +344,8 @@
     "name": "Athletic Bilbao",
     "division": 2,
     "rating": 87.93,
+    "continent": "Europe",
+    "league": "LaLiga",
     "source_club_id": "621",
     "current_competition_code": "ES1"
   },
@@ -284,6 +354,8 @@
     "name": "AS Roma",
     "division": 2,
     "rating": 87.91,
+    "continent": "Europe",
+    "league": "Serie A",
     "source_club_id": "12",
     "current_competition_code": "IT1"
   },
@@ -292,6 +364,8 @@
     "name": "Wolverhampton Wanderers",
     "division": 2,
     "rating": 87.86,
+    "continent": "Europe",
+    "league": "GB2",
     "source_club_id": "543",
     "current_competition_code": "GB2"
   },
@@ -300,6 +374,8 @@
     "name": "Sunderland AFC",
     "division": 2,
     "rating": 87.79,
+    "continent": "Europe",
+    "league": "GB1",
     "source_club_id": "289",
     "current_competition_code": "GB1"
   },
@@ -308,6 +384,8 @@
     "name": "VfB Stuttgart",
     "division": 2,
     "rating": 87.71,
+    "continent": "Europe",
+    "league": "L1",
     "source_club_id": "79",
     "current_competition_code": "L1"
   },
@@ -316,6 +394,8 @@
     "name": "Como 1907",
     "division": 2,
     "rating": 87.61,
+    "continent": "Europe",
+    "league": "IT1",
     "source_club_id": "1047",
     "current_competition_code": "IT1"
   },
@@ -324,6 +404,8 @@
     "name": "Villarreal CF",
     "division": 3,
     "rating": 87.55,
+    "continent": "Europe",
+    "league": "LaLiga",
     "source_club_id": "1050",
     "current_competition_code": "ES1"
   },
@@ -332,6 +414,8 @@
     "name": "LOSC Lille",
     "division": 3,
     "rating": 87.51,
+    "continent": "Europe",
+    "league": "Ligue 1",
     "source_club_id": "1082",
     "current_competition_code": "FR1"
   },
@@ -340,6 +424,8 @@
     "name": "Real Betis Balompié",
     "division": 3,
     "rating": 87.46,
+    "continent": "Europe",
+    "league": "LaLiga",
     "source_club_id": "150",
     "current_competition_code": "ES1"
   },
@@ -348,6 +434,8 @@
     "name": "Stade Rennais FC",
     "division": 3,
     "rating": 87.39,
+    "continent": "Europe",
+    "league": "FR1",
     "source_club_id": "273",
     "current_competition_code": "FR1"
   },
@@ -356,6 +444,8 @@
     "name": "Real Sociedad",
     "division": 3,
     "rating": 87.31,
+    "continent": "Europe",
+    "league": "LaLiga",
     "source_club_id": "681",
     "current_competition_code": "ES1"
   },
@@ -364,6 +454,8 @@
     "name": "Olympique Lyon",
     "division": 3,
     "rating": 87.25,
+    "continent": "Europe",
+    "league": "FR1",
     "source_club_id": "1041",
     "current_competition_code": "FR1"
   },
@@ -372,6 +464,8 @@
     "name": "ACF Fiorentina",
     "division": 3,
     "rating": 87.16,
+    "continent": "Europe",
+    "league": "IT1",
     "source_club_id": "430",
     "current_competition_code": "IT1"
   },
@@ -380,6 +474,8 @@
     "name": "Bologna FC 1909",
     "division": 3,
     "rating": 87.11,
+    "continent": "Europe",
+    "league": "IT1",
     "source_club_id": "1025",
     "current_competition_code": "IT1"
   },
@@ -388,6 +484,8 @@
     "name": "SC Freiburg",
     "division": 3,
     "rating": 87.07,
+    "continent": "Europe",
+    "league": "L1",
     "source_club_id": "60",
     "current_competition_code": "L1"
   },
@@ -396,6 +494,8 @@
     "name": "SS Lazio",
     "division": 3,
     "rating": 87.05,
+    "continent": "Europe",
+    "league": "Serie A",
     "source_club_id": "398",
     "current_competition_code": "IT1"
   },
@@ -404,6 +504,8 @@
     "name": "Burnley FC",
     "division": 3,
     "rating": 86.95,
+    "continent": "Europe",
+    "league": "GB2",
     "source_club_id": "1132",
     "current_competition_code": "GB2"
   },
@@ -412,6 +514,8 @@
     "name": "Al-Qadsiah FC",
     "division": 3,
     "rating": 86.84,
+    "continent": "Asia",
+    "league": "Saudi Pro League",
     "source_club_id": "26069",
     "current_competition_code": "SA1"
   },
@@ -420,6 +524,8 @@
     "name": "Celta de Vigo",
     "division": 3,
     "rating": 86.71,
+    "continent": "Europe",
+    "league": "ES1",
     "source_club_id": "940",
     "current_competition_code": "ES1"
   },
@@ -428,6 +534,8 @@
     "name": "Udinese Calcio",
     "division": 3,
     "rating": 86.68,
+    "continent": "Europe",
+    "league": "IT1",
     "source_club_id": "410",
     "current_competition_code": "IT1"
   },
@@ -436,6 +544,8 @@
     "name": "Besiktas JK",
     "division": 3,
     "rating": 86.65,
+    "continent": "Europe",
+    "league": "Süper Lig",
     "source_club_id": "114",
     "current_competition_code": "TR1"
   },
@@ -444,6 +554,8 @@
     "name": "Trabzonspor",
     "division": 3,
     "rating": 86.61,
+    "continent": "Europe",
+    "league": "TR1",
     "source_club_id": "449",
     "current_competition_code": "TR1"
   },
@@ -452,6 +564,8 @@
     "name": "Coventry City",
     "division": 3,
     "rating": 86.61,
+    "continent": "Europe",
+    "league": "GB1",
     "source_club_id": "990",
     "current_competition_code": "GB1"
   },
@@ -460,6 +574,8 @@
     "name": "RC Lens",
     "division": 3,
     "rating": 86.6,
+    "continent": "Europe",
+    "league": "FR1",
     "source_club_id": "826",
     "current_competition_code": "FR1"
   },
@@ -468,6 +584,8 @@
     "name": "Valencia CF",
     "division": 3,
     "rating": 86.6,
+    "continent": "Europe",
+    "league": "ES1",
     "source_club_id": "1049",
     "current_competition_code": "ES1"
   },
@@ -476,6 +594,8 @@
     "name": "Al-Nassr FC",
     "division": 3,
     "rating": 86.55,
+    "continent": "Asia",
+    "league": "Saudi Pro League",
     "source_club_id": "18544",
     "current_competition_code": "SA1"
   },
@@ -484,6 +604,8 @@
     "name": "Ipswich Town",
     "division": 4,
     "rating": 86.5,
+    "continent": "Europe",
+    "league": "GB1",
     "source_club_id": "677",
     "current_competition_code": "GB1"
   },
@@ -492,6 +614,8 @@
     "name": "RC Strasbourg Alsace",
     "division": 4,
     "rating": 86.48,
+    "continent": "Europe",
+    "league": "FR1",
     "source_club_id": "667",
     "current_competition_code": "FR1"
   },
@@ -500,6 +624,8 @@
     "name": "US Sassuolo",
     "division": 4,
     "rating": 86.47,
+    "continent": "Europe",
+    "league": "IT1",
     "source_club_id": "6574",
     "current_competition_code": "IT1"
   },
@@ -508,6 +634,8 @@
     "name": "Sevilla FC",
     "division": 4,
     "rating": 86.42,
+    "continent": "Europe",
+    "league": "ES1",
     "source_club_id": "368",
     "current_competition_code": "ES1"
   },
@@ -516,6 +644,8 @@
     "name": "FC Augsburg",
     "division": 4,
     "rating": 86.25,
+    "continent": "Europe",
+    "league": "L1",
     "source_club_id": "167",
     "current_competition_code": "L1"
   },
@@ -524,6 +654,8 @@
     "name": "Al-Ittihad Club",
     "division": 4,
     "rating": 86.21,
+    "continent": "Asia",
+    "league": "Saudi Pro League",
     "source_club_id": "8023",
     "current_competition_code": "SA1"
   },
@@ -532,6 +664,8 @@
     "name": "Inter Miami CF",
     "division": 4,
     "rating": 86.2,
+    "continent": "North America",
+    "league": "MLS",
     "source_club_id": "69261",
     "current_competition_code": "MLS1"
   },
@@ -540,6 +674,8 @@
     "name": "Rayo Vallecano",
     "division": 4,
     "rating": 86.2,
+    "continent": "Europe",
+    "league": "ES1",
     "source_club_id": "367",
     "current_competition_code": "ES1"
   },
@@ -548,6 +684,8 @@
     "name": "Club Brugge KV",
     "division": 4,
     "rating": 86.11,
+    "continent": "Europe",
+    "league": "BE1",
     "source_club_id": "2282",
     "current_competition_code": "BE1"
   },
@@ -556,6 +694,8 @@
     "name": "OGC Nice",
     "division": 4,
     "rating": 86.1,
+    "continent": "Europe",
+    "league": "FR1",
     "source_club_id": "417",
     "current_competition_code": "FR1"
   },
@@ -564,6 +704,8 @@
     "name": "Los Angeles FC",
     "division": 4,
     "rating": 86.05,
+    "continent": "North America",
+    "league": "MLS",
     "source_club_id": "51828",
     "current_competition_code": "MLS1"
   },
@@ -572,6 +714,8 @@
     "name": "Al-Ahli SFC",
     "division": 4,
     "rating": 86.04,
+    "continent": "Asia",
+    "league": "Saudi Pro League",
     "source_club_id": "18487",
     "current_competition_code": "SA1"
   },
@@ -580,6 +724,8 @@
     "name": "Wrexham AFC",
     "division": 4,
     "rating": 86,
+    "continent": "Europe",
+    "league": "GB2",
     "source_club_id": "1112",
     "current_competition_code": "GB2"
   },
@@ -588,6 +734,8 @@
     "name": "Basaksehir FK",
     "division": 4,
     "rating": 85.98,
+    "continent": "Europe",
+    "league": "TR1",
     "source_club_id": "6890",
     "current_competition_code": "TR1"
   },
@@ -596,6 +744,8 @@
     "name": "CA Osasuna",
     "division": 4,
     "rating": 85.93,
+    "continent": "Europe",
+    "league": "ES1",
     "source_club_id": "331",
     "current_competition_code": "ES1"
   },
@@ -604,6 +754,8 @@
     "name": "Genoa CFC",
     "division": 4,
     "rating": 85.87,
+    "continent": "Europe",
+    "league": "IT1",
     "source_club_id": "252",
     "current_competition_code": "IT1"
   },
@@ -612,6 +764,8 @@
     "name": "Torino FC",
     "division": 4,
     "rating": 85.8,
+    "continent": "Europe",
+    "league": "IT1",
     "source_club_id": "416",
     "current_competition_code": "IT1"
   },
@@ -620,6 +774,8 @@
     "name": "Houston Dynamo FC",
     "division": 4,
     "rating": 85.78,
+    "continent": "North America",
+    "league": "MLS",
     "source_club_id": "9168",
     "current_competition_code": "MLS1"
   },
@@ -628,6 +784,8 @@
     "name": "Birmingham City",
     "division": 4,
     "rating": 85.73,
+    "continent": "Europe",
+    "league": "GB2",
     "source_club_id": "337",
     "current_competition_code": "GB2"
   },
@@ -636,6 +794,8 @@
     "name": "Seattle Sounders FC",
     "division": 4,
     "rating": 85.71,
+    "continent": "North America",
+    "league": "MLS",
     "source_club_id": "9636",
     "current_competition_code": "MLS1"
   },
@@ -644,110 +804,48 @@
     "name": "Corum FK",
     "division": 5,
     "rating": 85.71,
+    "continent": "Europe",
+    "league": "TR1",
     "source_club_id": "37951",
     "current_competition_code": "TR1"
-  },
-  {
-    "id": "tm-club-350",
-    "name": "Sheffield United",
-    "division": 5,
-    "rating": 85.68,
-    "source_club_id": "350",
-    "current_competition_code": "GB2"
-  },
-  {
-    "id": "tm-club-1184",
-    "name": "KRC Genk",
-    "division": 5,
-    "rating": 85.62,
-    "source_club_id": "1184",
-    "current_competition_code": "BE1"
-  },
-  {
-    "id": "tm-club-3948",
-    "name": "Union Saint-Gilloise",
-    "division": 5,
-    "rating": 85.61,
-    "source_club_id": "3948",
-    "current_competition_code": "BE1"
   },
   {
     "id": "tm-club-51663",
     "name": "Atlanta United FC",
     "division": 5,
     "rating": 85.59,
+    "continent": "North America",
+    "league": "MLS",
     "source_club_id": "51663",
     "current_competition_code": "MLS1"
-  },
-  {
-    "id": "tm-club-3008",
-    "name": "Hull City",
-    "division": 5,
-    "rating": 85.57,
-    "source_club_id": "3008",
-    "current_competition_code": "GB1"
-  },
-  {
-    "id": "tm-club-130",
-    "name": "Parma Calcio 1913",
-    "division": 5,
-    "rating": 85.56,
-    "source_club_id": "130",
-    "current_competition_code": "IT1"
-  },
-  {
-    "id": "tm-club-714",
-    "name": "RCD Espanyol Barcelona",
-    "division": 5,
-    "rating": 85.56,
-    "source_club_id": "714",
-    "current_competition_code": "ES1"
-  },
-  {
-    "id": "tm-club-1108",
-    "name": "Deportivo Alavés",
-    "division": 5,
-    "rating": 85.5,
-    "source_club_id": "1108",
-    "current_competition_code": "ES1"
   },
   {
     "id": "tm-club-34911",
     "name": "NEOM SC",
     "division": 5,
     "rating": 85.49,
+    "continent": "Asia",
+    "league": "Saudi Pro League",
     "source_club_id": "34911",
     "current_competition_code": "SA1"
-  },
-  {
-    "id": "tm-club-641",
-    "name": "Middlesbrough FC",
-    "division": 5,
-    "rating": 85.43,
-    "source_club_id": "641",
-    "current_competition_code": "GB2"
   },
   {
     "id": "tm-club-1061",
     "name": "Los Angeles Galaxy",
     "division": 5,
     "rating": 85.41,
+    "continent": "North America",
+    "league": "MLS",
     "source_club_id": "1061",
     "current_competition_code": "MLS1"
-  },
-  {
-    "id": "tm-club-3709",
-    "name": "Getafe CF",
-    "division": 5,
-    "rating": 85.4,
-    "source_club_id": "3709",
-    "current_competition_code": "ES1"
   },
   {
     "id": "tm-club-6321",
     "name": "Vancouver Whitecaps FC",
     "division": 5,
     "rating": 85.38,
+    "continent": "North America",
+    "league": "MLS1",
     "source_club_id": "6321",
     "current_competition_code": "MLS1"
   },
@@ -756,47 +854,79 @@
     "name": "Austin FC",
     "division": 5,
     "rating": 85.36,
+    "continent": "North America",
+    "league": "MLS1",
     "source_club_id": "72309",
     "current_competition_code": "MLS1"
   },
   {
-    "id": "tm-club-78435",
-    "name": "Charlotte FC",
+    "id": "tm-club-897",
+    "name": "Deportivo A Coruña",
     "division": 5,
-    "rating": 85.35,
-    "source_club_id": "78435",
-    "current_competition_code": "MLS1"
+    "rating": 85.16,
+    "continent": "South America",
+    "league": "Chile Primera División",
+    "source_club_id": "897",
+    "current_competition_code": "ES1"
   },
   {
-    "id": "tm-club-51772",
-    "name": "FC Cincinnati",
+    "id": "tm-club-31008",
+    "name": "Al-Riyadh SC",
     "division": 5,
-    "rating": 85.32,
-    "source_club_id": "51772",
-    "current_competition_code": "MLS1"
+    "rating": 84.96,
+    "continent": "Asia",
+    "league": "SA1",
+    "source_club_id": "31008",
+    "current_competition_code": "SA1"
   },
   {
-    "id": "tm-club-114977",
-    "name": "San Diego FC",
+    "id": "tm-club-9840",
+    "name": "Al-Shabab FC",
     "division": 5,
-    "rating": 85.32,
-    "source_club_id": "114977",
-    "current_competition_code": "MLS1"
+    "rating": 84.94,
+    "continent": "Asia",
+    "league": "SA1",
+    "source_club_id": "9840",
+    "current_competition_code": "SA1"
   },
   {
-    "id": "tm-club-2288",
-    "name": "Swansea City",
+    "id": "tm-club-7732",
+    "name": "Al-Ettifaq FC",
     "division": 5,
-    "rating": 85.31,
-    "source_club_id": "2288",
-    "current_competition_code": "GB2"
+    "rating": 84.79,
+    "continent": "Asia",
+    "league": "SA1",
+    "source_club_id": "7732",
+    "current_competition_code": "SA1"
   },
   {
-    "id": "tm-club-432",
-    "name": "Chicago Fire FC",
+    "id": "tm-club-630",
+    "name": "Racing Santander",
     "division": 5,
-    "rating": 85.29,
-    "source_club_id": "432",
-    "current_competition_code": "MLS1"
+    "rating": 84.56,
+    "continent": "North America",
+    "league": "Liga MX",
+    "source_club_id": "630",
+    "current_competition_code": "ES1"
+  },
+  {
+    "id": "tm-club-2727",
+    "name": "Oud-Heverlee Leuven",
+    "division": 5,
+    "rating": 84.36,
+    "continent": "Africa",
+    "league": "Moroccan Botola",
+    "source_club_id": "2727",
+    "current_competition_code": "BE1"
+  },
+  {
+    "id": "tm-club-28844",
+    "name": "Al-Taawoun FC",
+    "division": 5,
+    "rating": 84.05,
+    "continent": "Asia",
+    "league": "SA1",
+    "source_club_id": "28844",
+    "current_competition_code": "SA1"
   }
 ]
