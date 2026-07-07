@@ -34,30 +34,32 @@ const args = parseArgs(process.argv.slice(2));
 const globalPlayersPath = args.globalPlayers ?? "../beautiful-game-data/derived/tbg-player-pools/global-players.json";
 const unsignedPlayersPath = args.unsignedPlayers ?? "../beautiful-game-data/derived/tbg-player-pools/unsigned-players.json";
 const submittedPlayersPath = args.submittedPlayers ?? "../beautiful-game-data/derived/tbg-player-pools/submitted-players.json";
+const clubUniversePath = args.clubUniverse ?? "../beautiful-game-data/data/config/tbg-club-universe.json";
 const seed = args.seed ?? "tbg-alpha-squad-assignment";
 const seasonId = args.seasonId ?? "season-001";
 const worldId = args.worldId ?? "tbg-alpha-world";
 const squadSize = Number(args.squadSize ?? 25);
-const assignmentMode = args.assignmentMode ?? "global-importance";
+const assignmentMode = args.assignmentMode ?? "club-universe";
 const draftOrder = args.draftOrder ?? "division-balanced";
 const clubCount = Number(args.clubCount ?? 100);
 const minSquadSize = Number(args.minSquadSize ?? 18);
 
-const [globalPlayers, unsignedPlayers, submittedPlayers] = await Promise.all([
+const [globalPlayers, unsignedPlayers, submittedPlayers, clubUniverse] = await Promise.all([
   readJson(globalPlayersPath, []),
   readJson(unsignedPlayersPath, []),
-  readJson(submittedPlayersPath, [])
+  readJson(submittedPlayersPath, []),
+  readJson(clubUniversePath, null)
 ]);
 
 const sourcePlayers = globalPlayers.length ? globalPlayers : unsignedPlayers;
-const usesRealClubSource = assignmentMode === "real-clubs" || assignmentMode === "global-importance";
+const usesRealClubSource = ["real-clubs", "global-importance", "club-universe"].includes(assignmentMode);
 const worldShell = usesRealClubSource
   ? { clubs: [] }
   : generateWorld({ seed, season: Number(String(seasonId).replace(/[^0-9]/g, "")) || 1 });
 const assignment = usesRealClubSource
   ? assignRealClubSquads({
     players: sourcePlayers,
-    rules: { clubCount, targetSquadSize: squadSize, minSquadSize, selectionMode: assignmentMode }
+    rules: { clubCount, targetSquadSize: squadSize, minSquadSize, selectionMode: assignmentMode, clubUniverse }
   })
   : assignmentMode === "snake-draft"
     ? runSnakeDraft({
