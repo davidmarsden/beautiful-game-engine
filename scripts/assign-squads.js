@@ -3,6 +3,7 @@ import { dirname } from "node:path";
 import { generateWorld } from "../src/world/generateWorld.js";
 import { assignSquadsToClubs } from "../src/squadAssignment/assignSquads.js";
 import { runSnakeDraft } from "../src/squadAssignment/snakeDraft.js";
+import { assignRealClubSquads } from "../src/squadAssignment/realClubAssignment.js";
 import { buildWorldStateFromPlayerPools, summariseWorldState } from "../src/worldState/buildWorldState.js";
 
 function parseArgs(argv) {
@@ -37,8 +38,10 @@ const seed = args.seed ?? "tbg-alpha-squad-assignment";
 const seasonId = args.seasonId ?? "season-001";
 const worldId = args.worldId ?? "tbg-alpha-world";
 const squadSize = Number(args.squadSize ?? 25);
-const assignmentMode = args.assignmentMode ?? "banded";
+const assignmentMode = args.assignmentMode ?? "real-clubs";
 const draftOrder = args.draftOrder ?? "division-balanced";
+const clubCount = Number(args.clubCount ?? 100);
+const minSquadSize = Number(args.minSquadSize ?? 18);
 
 const [globalPlayers, unsignedPlayers, submittedPlayers] = await Promise.all([
   readJson(globalPlayersPath, []),
@@ -46,21 +49,28 @@ const [globalPlayers, unsignedPlayers, submittedPlayers] = await Promise.all([
   readJson(submittedPlayersPath, [])
 ]);
 
-const sourcePlayers = unsignedPlayers.length ? unsignedPlayers : globalPlayers;
-const worldShell = generateWorld({ seed, season: Number(String(seasonId).replace(/\D/g, "")) || 1 });
-const assignment = assignmentMode === "snake-draft"
-  ? runSnakeDraft({
+const sourcePlayers = globalPlayers.length ? globalPlayers : unsignedPlayers;
+const worldShell = assignmentMode === "real-clubs"
+  ? { clubs: [] }
+  : generateWorld({ seed, season: Number(String(seasonId).replace(/\D/g, "")) || 1 });
+const assignment = assignmentMode === "real-clubs"
+  ? assignRealClubSquads({
     players: sourcePlayers,
-    clubs: worldShell.clubs,
-    squadSize,
-    seed,
-    order: draftOrder
+    rules: { clubCount, targetSquadSize: squadSize, minSquadSize }
   })
-  : assignSquadsToClubs({
-    players: sourcePlayers,
-    clubs: worldShell.clubs,
-    rules: { squadSize }
-  });
+  : assignmentMode === "snake-draft"
+    ? runSnakeDraft({
+      players: sourcePlayers,
+      clubs: worldShell.clubs,
+      squadSize,
+      seed,
+      order: draftOrder
+    })
+    : assignSquadsToClubs({
+      players: sourcePlayers,
+      clubs: worldShell.clubs,
+      rules: { squadSize }
+    });
 
 if (assignment.summary.duplicate_assigned_ids.length) {
   throw new Error(`Duplicate assigned players: ${assignment.summary.duplicate_assigned_ids.join(", ")}`);
@@ -74,15 +84,16 @@ const worldState = buildWorldStateFromPlayerPools({
   worldId
 });
 const worldSummary = summariseWorldState(worldState);
+const strengthKey = assignmentMode === "real-clubs" ? "weighted_squad_strength" : "average_rating";
 const fullSummary = {
   ...worldSummary,
   squad_assignment: assignment.summary,
   weakest_complete_clubs: assignment.clubReports
     .filter((club) => club.squad_size >= squadSize)
-    .sort((a, b) => a.average_rating - b.average_rating)
+    .sort((a, b) => Number(a[strengthKey] ?? a.average_rating) - Number(b[strengthKey] ?? b.average_rating))
     .slice(0, 10),
   strongest_clubs: assignment.clubReports
-    .sort((a, b) => b.average_rating - a.average_rating)
+    .sort((a, b) => Number(b[strengthKey] ?? b.average_rating) - Number(a[strengthKey] ?? a.average_rating))
     .slice(0, 10)
 };
 
@@ -90,6 +101,7 @@ await writeJson(args.assignedPlayersOutput ?? "derived/squad-assignment/assigned
 await writeJson(args.unsignedPlayersOutput ?? "derived/squad-assignment/unsigned-players-after-assignment.json", assignment.unsignedPlayers);
 await writeJson(args.clubReportOutput ?? "derived/squad-assignment/club-squad-report.json", assignment.clubReports);
 await writeJson(args.assignmentSummaryOutput ?? "derived/squad-assignment/summary.json", assignment.summary);
+if (assignment.clubs) await writeJson(args.clubsOutput ?? "derived/squad-assignment/real-clubs.json", assignment.clubs);
 if (assignment.draftPicks) await writeJson(args.draftPicksOutput ?? "derived/squad-assignment/draft-picks.json", assignment.draftPicks);
 await writeJson(args.worldOutput ?? "derived/world-state/tbg-alpha-world.json", worldState);
 await writeJson(args.worldSummaryOutput ?? "derived/world-state/tbg-alpha-world-summary.json", fullSummary);
