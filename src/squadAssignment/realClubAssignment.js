@@ -7,6 +7,7 @@ const DEFAULT_REAL_CLUB_RULES = {
   divisions: 5,
   clubsPerDivision: 20,
   selectionMode: "real-clubs",
+  clubUniverse: null,
   strengthWeights: {
     starters: 0.7,
     bench: 0.2,
@@ -24,6 +25,15 @@ function value(player) {
 
 function clone(item) {
   return JSON.parse(JSON.stringify(item));
+}
+
+function normalise(value) {
+  return String(value || "")
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/gi, " ")
+    .trim()
+    .toLowerCase();
 }
 
 function activePlayers(players) {
@@ -98,7 +108,8 @@ function assignPlayerToRealClub(player, club, rank, division) {
     real_club_rank: rank,
     real_club_source_id: club.source_club_id,
     continent: club.global_importance?.continent || "Unknown",
-    league: club.global_importance?.league || club.current_competition_code || "Unknown"
+    league: club.global_importance?.league || club.current_competition_code || "Unknown",
+    club_universe_slot: club.universe_slot ?? null
   };
 }
 
@@ -113,6 +124,8 @@ function clubReport(club, rank, division, squad, strength, totalMarketValue) {
     club_id: club.tbg_club_id,
     source_club_id: club.source_club_id,
     club_name: club.club_name,
+    universe_slot: club.universe_slot ?? null,
+    universe_name: club.universe_name || "",
     continent: importance.continent,
     league: importance.league || club.current_competition_code,
     global_importance: importance.importance,
@@ -138,6 +151,7 @@ function toWorldClub(report) {
     rating: report.weighted_squad_strength,
     continent: report.continent,
     league: report.league,
+    universe_slot: report.universe_slot,
     source_club_id: report.source_club_id,
     current_competition_code: report.current_competition_code
   };
@@ -161,18 +175,79 @@ function buildCandidateClubs(players, mergedRules) {
     });
 }
 
-function selectClubs(candidateClubs, mergedRules) {
-  if (mergedRules.selectionMode === "global-importance") {
-    return selectGlobalImportanceClubs(candidateClubs, {
-      clubCount: mergedRules.clubCount,
-      continentTargets: mergedRules.continentTargets
+function selectClubUniverse(candidateClubs, mergedRules) {
+  const universeClubs = mergedRules.clubUniverse?.clubs || [];
+  const byTmId = new Map(candidateClubs.map((club) => [String(club.source_club_id), club]));
+  const byName = new Map(candidateClubs.map((club) => [normalise(club.club_name), club]));
+  const missingClubUniverseClubs = [];
+  const duplicateUniverseIds = [];
+  const seenIds = new Set();
+  const selected = [];
+
+  for (const universeClub of universeClubs) {
+    const tmId = String(universeClub.transfermarkt_club_id || "").trim();
+    if (tmId) {
+      if (seenIds.has(tmId)) duplicateUniverseIds.push({ slot: universeClub.slot, name: universeClub.name, transfermarkt_club_id: tmId });
+      seenIds.add(tmId);
+    }
+    const candidate = (tmId && byTmId.get(tmId)) || byName.get(normalise(universeClub.name));
+    if (!candidate) {
+      missingClubUniverseClubs.push({
+        slot: universeClub.slot,
+        club_name: universeClub.name,
+        transfermarkt_club_id: tmId,
+        continent: universeClub.continent,
+        country: universeClub.country,
+        league: universeClub.league,
+        reason: tmId ? "not_imported_or_below_min_squad_size" : "missing_transfermarkt_club_id"
+      });
+      continue;
+    }
+    selected.push({
+      ...candidate,
+      universe_slot: universeClub.slot,
+      universe_name: universeClub.name,
+      global_importance: {
+        ...(candidate.global_importance || {}),
+        continent: universeClub.continent || candidate.global_importance?.continent || "Unknown",
+        league: universeClub.league || candidate.global_importance?.league || candidate.current_competition_code || "Unknown",
+        importance: universeClub.importance ?? candidate.global_importance?.importance ?? 0,
+        country: universeClub.country || "",
+        selection_reason: "club_universe"
+      }
     });
   }
-  return candidateClubs
-    .sort((a, b) => b.weighted_squad_strength - a.weighted_squad_strength
-      || b.total_market_value_eur - a.total_market_value_eur
-      || String(a.club_name).localeCompare(String(b.club_name)))
-    .slice(0, mergedRules.clubCount);
+
+  return {
+    clubs: selected
+      .sort((a, b) => b.weighted_squad_strength - a.weighted_squad_strength || Number(a.universe_slot ?? 9999) - Number(b.universe_slot ?? 9999))
+      .slice(0, mergedRules.clubCount),
+    missingClubUniverseClubs,
+    duplicateUniverseIds
+  };
+}
+
+function selectClubs(candidateClubs, mergedRules) {
+  if (mergedRules.selectionMode === "club-universe") return selectClubUniverse(candidateClubs, mergedRules);
+  if (mergedRules.selectionMode === "global-importance") {
+    return {
+      clubs: selectGlobalImportanceClubs(candidateClubs, {
+        clubCount: mergedRules.clubCount,
+        continentTargets: mergedRules.continentTargets
+      }),
+      missingClubUniverseClubs: [],
+      duplicateUniverseIds: []
+    };
+  }
+  return {
+    clubs: candidateClubs
+      .sort((a, b) => b.weighted_squad_strength - a.weighted_squad_strength
+        || b.total_market_value_eur - a.total_market_value_eur
+        || String(a.club_name).localeCompare(String(b.club_name)))
+      .slice(0, mergedRules.clubCount),
+    missingClubUniverseClubs: [],
+    duplicateUniverseIds: []
+  };
 }
 
 export function assignRealClubSquads({ players = [], rules = {} } = {}) {
@@ -184,7 +259,8 @@ export function assignRealClubSquads({ players = [], rules = {} } = {}) {
   };
 
   const candidateClubs = buildCandidateClubs(players, mergedRules);
-  const clubs = selectClubs(candidateClubs, mergedRules);
+  const selection = selectClubs(candidateClubs, mergedRules);
+  const clubs = selection.clubs;
   const selectedClubIds = new Set(clubs.map((club) => club.tbg_club_id));
   const assignedPlayers = [];
   const clubReports = [];
@@ -237,6 +313,8 @@ export function assignRealClubSquads({ players = [], rules = {} } = {}) {
       assigned_players: assignedPlayers.length,
       unsigned_players: unsignedPlayers.length,
       duplicate_assigned_ids: [...new Set(duplicateAssignedIds)],
+      duplicate_universe_club_ids: selection.duplicateUniverseIds || [],
+      missing_club_universe_clubs: selection.missingClubUniverseClubs || [],
       complete_squads: clubReports.filter((club) => club.squad_size >= mergedRules.targetSquadSize).length,
       incomplete_squads: clubReports.filter((club) => club.squad_size < mergedRules.targetSquadSize).length,
       continent_counts,
@@ -249,6 +327,7 @@ export function assignRealClubSquads({ players = [], rules = {} } = {}) {
             rank: club.real_club_rank,
             club_id: club.club_id,
             club_name: club.club_name,
+            universe_slot: club.universe_slot,
             continent: club.continent,
             league: club.league,
             strength: club.weighted_squad_strength,
