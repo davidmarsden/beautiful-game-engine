@@ -38,7 +38,7 @@ const seed = args.seed ?? "tbg-alpha-squad-assignment";
 const seasonId = args.seasonId ?? "season-001";
 const worldId = args.worldId ?? "tbg-alpha-world";
 const squadSize = Number(args.squadSize ?? 25);
-const assignmentMode = args.assignmentMode ?? "real-clubs";
+const assignmentMode = args.assignmentMode ?? "global-importance";
 const draftOrder = args.draftOrder ?? "division-balanced";
 const clubCount = Number(args.clubCount ?? 100);
 const minSquadSize = Number(args.minSquadSize ?? 18);
@@ -50,13 +50,14 @@ const [globalPlayers, unsignedPlayers, submittedPlayers] = await Promise.all([
 ]);
 
 const sourcePlayers = globalPlayers.length ? globalPlayers : unsignedPlayers;
-const worldShell = assignmentMode === "real-clubs"
+const usesRealClubSource = assignmentMode === "real-clubs" || assignmentMode === "global-importance";
+const worldShell = usesRealClubSource
   ? { clubs: [] }
-  : generateWorld({ seed, season: Number(String(seasonId).replace(/\D/g, "")) || 1 });
-const assignment = assignmentMode === "real-clubs"
+  : generateWorld({ seed, season: Number(String(seasonId).replace(/[^0-9]/g, "")) || 1 });
+const assignment = usesRealClubSource
   ? assignRealClubSquads({
     players: sourcePlayers,
-    rules: { clubCount, targetSquadSize: squadSize, minSquadSize }
+    rules: { clubCount, targetSquadSize: squadSize, minSquadSize, selectionMode: assignmentMode }
   })
   : assignmentMode === "snake-draft"
     ? runSnakeDraft({
@@ -84,7 +85,7 @@ const worldState = buildWorldStateFromPlayerPools({
   worldId
 });
 const worldSummary = summariseWorldState(worldState);
-const strengthKey = assignmentMode === "real-clubs" ? "weighted_squad_strength" : "average_rating";
+const strengthKey = usesRealClubSource ? "weighted_squad_strength" : "average_rating";
 const fullSummary = {
   ...worldSummary,
   squad_assignment: assignment.summary,
