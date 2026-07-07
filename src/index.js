@@ -87,6 +87,12 @@ export {
 } from "./squadAssignment/assignSquads.js";
 export { runSnakeDraft } from "./squadAssignment/snakeDraft.js";
 export { assignRealClubSquads } from "./squadAssignment/realClubAssignment.js";
+export {
+  CLUB_IMPORTANCE,
+  DEFAULT_CONTINENT_TARGETS,
+  clubImportanceFor,
+  selectGlobalImportanceClubs
+} from "./squadAssignment/globalClubImportance.js";
 export { averageClubRating } from "./ratings/index.js";
 export { generateWorld } from "./world/generateWorld.js";
 export { createSeasonShell } from "./world/seasonShell.js";
