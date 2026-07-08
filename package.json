@@ -9,6 +9,7 @@
     "demo": "node src/index.js",
     "build:world-state": "node scripts/build-world-state.js",
     "assign:squads": "node scripts/assign-squads.js",
+    "simulate:seasons": "node scripts/simulate-seasons.js",
     "allocate:clubs": "node scripts/allocate-manager-clubs.js"
   },
   "engines": {
