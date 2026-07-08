@@ -8,6 +8,7 @@ const DEFAULT_REAL_CLUB_RULES = {
   clubsPerDivision: 20,
   selectionMode: "real-clubs",
   clubUniverse: null,
+  allowClubUniverseNameMismatches: false,
   strengthWeights: {
     starters: 0.7,
     bench: 0.2,
@@ -31,9 +32,33 @@ function normalise(value) {
   return String(value || "")
     .normalize("NFKD")
     .replace(/[\u0300-\u036f]/g, "")
+    .replace(/football club|futbol club|sociedade esportiva|sport club|club atletico|atletico clube|associacao|association|de futbol|fc|cf|sc|ac|bc|fr|kv|jk|sfc|uanl|the|club/gi, " ")
     .replace(/[^a-z0-9]+/gi, " ")
     .trim()
     .toLowerCase();
+}
+
+function tokens(value) {
+  return new Set(normalise(value).split(" ").filter((token) => token.length >= 3));
+}
+
+function nameSimilarity(a, b) {
+  const left = tokens(a);
+  const right = tokens(b);
+  if (!left.size || !right.size) return 0;
+  const intersection = [...left].filter((token) => right.has(token)).length;
+  const union = new Set([...left, ...right]).size;
+  return intersection / union;
+}
+
+function isClubNameMatch(expected, actual, aliases = []) {
+  const expectedNorm = normalise(expected);
+  const actualNorm = normalise(actual);
+  if (!expectedNorm || !actualNorm) return false;
+  if (expectedNorm === actualNorm) return true;
+  if (expectedNorm.includes(actualNorm) || actualNorm.includes(expectedNorm)) return true;
+  if (nameSimilarity(expected, actual) >= 0.45) return true;
+  return aliases.some((alias) => isClubNameMatch(alias, actual, []));
 }
 
 function activePlayers(players) {
@@ -181,6 +206,7 @@ function selectClubUniverse(candidateClubs, mergedRules) {
   const byName = new Map(candidateClubs.map((club) => [normalise(club.club_name), club]));
   const missingClubUniverseClubs = [];
   const duplicateUniverseIds = [];
+  const clubUniverseNameMismatches = [];
   const seenIds = new Set();
   const selected = [];
 
@@ -203,6 +229,21 @@ function selectClubUniverse(candidateClubs, mergedRules) {
       });
       continue;
     }
+    if (!mergedRules.allowClubUniverseNameMismatches && !isClubNameMatch(universeClub.name, candidate.club_name, universeClub.aliases || [])) {
+      const mismatch = {
+        slot: universeClub.slot,
+        club_name: universeClub.name,
+        transfermarkt_club_id: tmId,
+        imported_club_name: candidate.club_name,
+        continent: universeClub.continent,
+        country: universeClub.country,
+        league: universeClub.league,
+        reason: "club_id_name_mismatch"
+      };
+      clubUniverseNameMismatches.push(mismatch);
+      missingClubUniverseClubs.push(mismatch);
+      continue;
+    }
     selected.push({
       ...candidate,
       universe_slot: universeClub.slot,
@@ -223,7 +264,8 @@ function selectClubUniverse(candidateClubs, mergedRules) {
       .sort((a, b) => b.weighted_squad_strength - a.weighted_squad_strength || Number(a.universe_slot ?? 9999) - Number(b.universe_slot ?? 9999))
       .slice(0, mergedRules.clubCount),
     missingClubUniverseClubs,
-    duplicateUniverseIds
+    duplicateUniverseIds,
+    clubUniverseNameMismatches
   };
 }
 
@@ -236,7 +278,8 @@ function selectClubs(candidateClubs, mergedRules) {
         continentTargets: mergedRules.continentTargets
       }),
       missingClubUniverseClubs: [],
-      duplicateUniverseIds: []
+      duplicateUniverseIds: [],
+      clubUniverseNameMismatches: []
     };
   }
   return {
@@ -246,7 +289,8 @@ function selectClubs(candidateClubs, mergedRules) {
         || String(a.club_name).localeCompare(String(b.club_name)))
       .slice(0, mergedRules.clubCount),
     missingClubUniverseClubs: [],
-    duplicateUniverseIds: []
+    duplicateUniverseIds: [],
+    clubUniverseNameMismatches: []
   };
 }
 
@@ -314,6 +358,7 @@ export function assignRealClubSquads({ players = [], rules = {} } = {}) {
       unsigned_players: unsignedPlayers.length,
       duplicate_assigned_ids: [...new Set(duplicateAssignedIds)],
       duplicate_universe_club_ids: selection.duplicateUniverseIds || [],
+      club_universe_name_mismatches: selection.clubUniverseNameMismatches || [],
       missing_club_universe_clubs: selection.missingClubUniverseClubs || [],
       complete_squads: clubReports.filter((club) => club.squad_size >= mergedRules.targetSquadSize).length,
       incomplete_squads: clubReports.filter((club) => club.squad_size < mergedRules.targetSquadSize).length,
