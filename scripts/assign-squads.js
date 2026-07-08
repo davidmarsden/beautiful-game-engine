@@ -53,11 +53,13 @@ const submittedPlayersPath = args.submittedPlayers ?? "../beautiful-game-data/de
 const clubUniversePath = args.clubUniverse ?? "../beautiful-game-data/data/config/tbg-club-universe.json";
 const seed = args.seed ?? "tbg-alpha-squad-assignment";
 const seasonId = args.seasonId ?? "season-001";
-const worldId = args.worldId ?? "tbg-alpha-world";
+const worldId = args.worldId ?? "tbg-top-80-world";
 const squadSize = Number(args.squadSize ?? 25);
 const assignmentMode = args.assignmentMode ?? "club-universe";
 const draftOrder = args.draftOrder ?? "division-balanced";
-const clubCount = Number(args.clubCount ?? 100);
+const clubCount = Number(args.clubCount ?? 80);
+const divisions = Number(args.divisions ?? 4);
+const clubsPerDivision = Number(args.clubsPerDivision ?? 20);
 const minSquadSize = Number(args.minSquadSize ?? 18);
 
 const [globalPlayers, unsignedPlayers, submittedPlayers, clubUniverse] = await Promise.all([
@@ -72,22 +74,23 @@ const usesRealClubSource = ["real-clubs", "global-importance", "club-universe"].
 const worldShell = usesRealClubSource
   ? { clubs: [] }
   : generateWorld({ seed, season: Number(String(seasonId).replace(/[^0-9]/g, "")) || 1 });
+const assignmentRules = { clubCount, divisions, clubsPerDivision, targetSquadSize: squadSize, minSquadSize, selectionMode: assignmentMode, clubUniverse };
 const assignment = usesRealClubSource
   ? assignRealClubSquads({
     players: sourcePlayers,
-    rules: { clubCount, targetSquadSize: squadSize, minSquadSize, selectionMode: assignmentMode, clubUniverse }
+    rules: assignmentRules
   })
   : assignmentMode === "snake-draft"
     ? runSnakeDraft({
       players: sourcePlayers,
-      clubs: worldShell.clubs,
+      clubs: worldShell.clubs.slice(0, clubCount),
       squadSize,
       seed,
       order: draftOrder
     })
     : assignSquadsToClubs({
       players: sourcePlayers,
-      clubs: worldShell.clubs,
+      clubs: worldShell.clubs.slice(0, clubCount),
       rules: { squadSize }
     });
 
@@ -109,6 +112,12 @@ const worldSummary = summariseWorldState(worldState);
 const strengthKey = usesRealClubSource ? "weighted_squad_strength" : "average_rating";
 const fullSummary = {
   ...worldSummary,
+  format: {
+    club_count: clubCount,
+    divisions,
+    clubs_per_division: clubsPerDivision,
+    label: `Top ${clubCount} / ${divisions} divisions of ${clubsPerDivision}`
+  },
   squad_assignment: assignment.summary,
   weakest_complete_clubs: assignment.clubReports
     .filter((club) => club.squad_size >= squadSize)
