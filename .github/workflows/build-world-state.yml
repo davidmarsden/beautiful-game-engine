@@ -42,7 +42,7 @@ on:
       worldId:
         description: "World ID for the generated world state"
         required: true
-        default: "tbg-alpha-world"
+        default: "tbg-top-80-world"
       squadSize:
         description: "Target squad size when assigning squads"
         required: true
@@ -50,7 +50,15 @@ on:
       clubCount:
         description: "Number of clubs to include"
         required: true
-        default: "100"
+        default: "80"
+      divisions:
+        description: "Number of divisions"
+        required: true
+        default: "4"
+      clubsPerDivision:
+        description: "Clubs per division"
+        required: true
+        default: "20"
       minSquadSize:
         description: "Minimum real-club squad size required for inclusion"
         required: true
@@ -115,6 +123,8 @@ jobs:
             --worldId=${{ github.event.inputs.worldId }} \
             --squadSize=${{ github.event.inputs.squadSize }} \
             --clubCount=${{ github.event.inputs.clubCount }} \
+            --divisions=${{ github.event.inputs.divisions }} \
+            --clubsPerDivision=${{ github.event.inputs.clubsPerDivision }} \
             --minSquadSize=${{ github.event.inputs.minSquadSize }} \
             --assignmentMode=${{ github.event.inputs.assignmentMode }} \
             --draftOrder=${{ github.event.inputs.draftOrder }} \
@@ -146,5 +156,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add derived/world-state derived/squad-assignment
-          git commit -m "Build TBG playable world state"
+          git commit -m "Build TBG Top 80 playable world state"
           git push
