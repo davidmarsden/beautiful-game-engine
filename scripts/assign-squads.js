@@ -30,6 +30,22 @@ async function writeJson(path, data) {
   await writeFile(path, JSON.stringify(data, null, 2) + "\n", "utf8");
 }
 
+function dedupePlayersByTbgId(players) {
+  const seen = new Set();
+  const deduped = [];
+  const duplicates = [];
+  for (const player of players) {
+    const id = player.tbg_player_id;
+    if (!id || seen.has(id)) {
+      if (id) duplicates.push(id);
+      continue;
+    }
+    seen.add(id);
+    deduped.push(player);
+  }
+  return { deduped, duplicates: [...new Set(duplicates)] };
+}
+
 const args = parseArgs(process.argv.slice(2));
 const globalPlayersPath = args.globalPlayers ?? "../beautiful-game-data/derived/tbg-player-pools/global-players.json";
 const unsignedPlayersPath = args.unsignedPlayers ?? "../beautiful-game-data/derived/tbg-player-pools/unsigned-players.json";
@@ -75,8 +91,11 @@ const assignment = usesRealClubSource
       rules: { squadSize }
     });
 
-if (assignment.summary.duplicate_assigned_ids.length) {
-  throw new Error(`Duplicate assigned players: ${assignment.summary.duplicate_assigned_ids.join(", ")}`);
+const assignedDeduplication = dedupePlayersByTbgId(assignment.assignedPlayers);
+if (assignedDeduplication.duplicates.length) {
+  console.warn(`Duplicate assigned players removed from world state: ${assignedDeduplication.duplicates.join(", ")}`);
+  assignment.summary.duplicate_assigned_ids = assignedDeduplication.duplicates;
+  assignment.assignedPlayers = assignedDeduplication.deduped;
 }
 
 const worldState = buildWorldStateFromPlayerPools({
