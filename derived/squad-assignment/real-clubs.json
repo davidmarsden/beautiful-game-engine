@@ -627,17 +627,6 @@
     "current_competition_code": "NL1"
   },
   {
-    "id": "tm-club-2462",
-    "name": "Fluminense Football Club",
-    "division": 3,
-    "rating": 86.83,
-    "continent": "South America",
-    "league": "Brasileirão",
-    "universe_slot": 74,
-    "source_club_id": "2462",
-    "current_competition_code": "BRA1"
-  },
-  {
     "id": "tm-club-221",
     "name": "Santos FC",
     "division": 3,
@@ -662,7 +651,7 @@
   {
     "id": "tm-club-114",
     "name": "Besiktas JK",
-    "division": 4,
+    "division": 3,
     "rating": 86.67,
     "continent": "Europe",
     "league": "Süper Lig",
@@ -724,17 +713,6 @@
     "universe_slot": 59,
     "source_club_id": "371",
     "current_competition_code": "SC1"
-  },
-  {
-    "id": "tm-club-330",
-    "name": "Clube Atlético Mineiro",
-    "division": 4,
-    "rating": 86.27,
-    "continent": "South America",
-    "league": "Brasileirão",
-    "universe_slot": 75,
-    "source_club_id": "330",
-    "current_competition_code": "BRA1"
   },
   {
     "id": "tm-club-8023",
@@ -882,7 +860,7 @@
   {
     "id": "tm-club-338",
     "name": "Dynamo Kyiv",
-    "division": 5,
+    "division": 4,
     "rating": 85.56,
     "continent": "Europe",
     "league": "Ukrainian Premier League",
@@ -893,7 +871,7 @@
   {
     "id": "tm-club-124",
     "name": "Rangers FC",
-    "division": 5,
+    "division": 4,
     "rating": 85.45,
     "continent": "Europe",
     "league": "Scottish Premiership",
@@ -913,17 +891,6 @@
     "current_competition_code": "DK1"
   },
   {
-    "id": "tm-club-995",
-    "name": "FC Nantes",
-    "division": 5,
-    "rating": 85.24,
-    "continent": "Asia",
-    "league": "J1 League",
-    "universe_slot": 86,
-    "source_club_id": "995",
-    "current_competition_code": "FR2"
-  },
-  {
     "id": "tm-club-409",
     "name": "Red Bull Salzburg",
     "division": 5,
@@ -933,27 +900,5 @@
     "universe_slot": 64,
     "source_club_id": "409",
     "current_competition_code": "A1"
-  },
-  {
-    "id": "tm-club-630",
-    "name": "Racing Santander",
-    "division": 5,
-    "rating": 84.56,
-    "continent": "North America",
-    "league": "Liga MX",
-    "universe_slot": 89,
-    "source_club_id": "630",
-    "current_competition_code": "ES1"
-  },
-  {
-    "id": "tm-club-2727",
-    "name": "Oud-Heverlee Leuven",
-    "division": 5,
-    "rating": 84.36,
-    "continent": "Africa",
-    "league": "Moroccan Botola",
-    "universe_slot": 96,
-    "source_club_id": "2727",
-    "current_competition_code": "BE1"
   }
 ]
