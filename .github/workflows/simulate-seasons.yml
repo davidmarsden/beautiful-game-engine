@@ -1,0 +1,94 @@
+name: Simulate TBG Seasons
+
+on:
+  workflow_dispatch:
+    inputs:
+      seasons:
+        description: "Number of seasons to simulate"
+        required: true
+        default: "20"
+      seed:
+        description: "Simulation seed"
+        required: true
+        default: "tbg-alpha-season-test"
+      promotionPlaces:
+        description: "Promotion places per division"
+        required: true
+        default: "4"
+      relegationPlaces:
+        description: "Relegation places per division"
+        required: true
+        default: "4"
+      baseGoals:
+        description: "Baseline team goals expectation"
+        required: true
+        default: "1.28"
+      homeAdvantage:
+        description: "Home advantage goal expectation"
+        required: true
+        default: "0.18"
+      gapScale:
+        description: "Strength gap to goal expectation scale"
+        required: true
+        default: "0.095"
+      matchVariance:
+        description: "Per-match random variance"
+        required: true
+        default: "0.22"
+
+permissions:
+  contents: write
+
+jobs:
+  simulate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out engine repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
+
+      - name: Simulate seasons
+        run: |
+          npm run simulate:seasons -- \
+            --clubs=derived/squad-assignment/real-clubs.json \
+            --seasons=${{ github.event.inputs.seasons }} \
+            --seed=${{ github.event.inputs.seed }} \
+            --promotionPlaces=${{ github.event.inputs.promotionPlaces }} \
+            --relegationPlaces=${{ github.event.inputs.relegationPlaces }} \
+            --baseGoals=${{ github.event.inputs.baseGoals }} \
+            --homeAdvantage=${{ github.event.inputs.homeAdvantage }} \
+            --gapScale=${{ github.event.inputs.gapScale }} \
+            --matchVariance=${{ github.event.inputs.matchVariance }} \
+            --output=derived/season-simulation/season-simulation-report.json \
+            --markdown=derived/season-simulation/season-simulation-report.md
+
+      - name: Upload simulation artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: tbg-season-simulation
+          path: |
+            derived/season-simulation/season-simulation-report.json
+            derived/season-simulation/season-simulation-report.md
+          if-no-files-found: error
+
+      - name: Commit simulation output
+        run: |
+          if [ -z "$(git status --porcelain derived/season-simulation)" ]; then
+            echo "No simulation changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add derived/season-simulation
+          git commit -m "Simulate TBG seasons"
+          git push
