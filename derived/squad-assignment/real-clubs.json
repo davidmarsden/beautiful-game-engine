@@ -627,6 +627,17 @@
     "current_competition_code": "NL1"
   },
   {
+    "id": "tm-club-2462",
+    "name": "Fluminense Football Club",
+    "division": 3,
+    "rating": 86.83,
+    "continent": "South America",
+    "league": "Brasileirão",
+    "universe_slot": 75,
+    "source_club_id": "2462",
+    "current_competition_code": "BRA1"
+  },
+  {
     "id": "tm-club-221",
     "name": "Santos FC",
     "division": 3,
@@ -651,7 +662,7 @@
   {
     "id": "tm-club-114",
     "name": "Besiktas JK",
-    "division": 3,
+    "division": 4,
     "rating": 86.67,
     "continent": "Europe",
     "league": "Süper Lig",
@@ -713,6 +724,17 @@
     "universe_slot": 59,
     "source_club_id": "371",
     "current_competition_code": "SC1"
+  },
+  {
+    "id": "tm-club-330",
+    "name": "Clube Atlético Mineiro",
+    "division": 4,
+    "rating": 86.27,
+    "continent": "South America",
+    "league": "Brasileirão",
+    "universe_slot": 76,
+    "source_club_id": "330",
+    "current_competition_code": "BRA1"
   },
   {
     "id": "tm-club-8023",
@@ -856,49 +878,5 @@
     "universe_slot": 80,
     "source_club_id": "866",
     "current_competition_code": "URUI"
-  },
-  {
-    "id": "tm-club-338",
-    "name": "Dynamo Kyiv",
-    "division": 4,
-    "rating": 85.56,
-    "continent": "Europe",
-    "league": "Ukrainian Premier League",
-    "universe_slot": 62,
-    "source_club_id": "338",
-    "current_competition_code": "UKR1"
-  },
-  {
-    "id": "tm-club-124",
-    "name": "Rangers FC",
-    "division": 4,
-    "rating": 85.45,
-    "continent": "Europe",
-    "league": "Scottish Premiership",
-    "universe_slot": 60,
-    "source_club_id": "124",
-    "current_competition_code": "SC1"
-  },
-  {
-    "id": "tm-club-190",
-    "name": "FC Copenhagen",
-    "division": 5,
-    "rating": 85.34,
-    "continent": "Europe",
-    "league": "Superliga",
-    "universe_slot": 63,
-    "source_club_id": "190",
-    "current_competition_code": "DK1"
-  },
-  {
-    "id": "tm-club-409",
-    "name": "Red Bull Salzburg",
-    "division": 5,
-    "rating": 84.85,
-    "continent": "Europe",
-    "league": "Austrian Bundesliga",
-    "universe_slot": 64,
-    "source_club_id": "409",
-    "current_competition_code": "A1"
   }
 ]

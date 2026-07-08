@@ -1,11 +1,11 @@
 {
-  "world_id": "tbg-alpha-world",
+  "world_id": "tbg-top-80-world",
   "contract_version": "tbg-contract-v0.1",
-  "data_snapshot_id": "6cd2bcb7f817ce5c",
+  "data_snapshot_id": "d5dea1fc157a7661",
   "players": 6450,
-  "clubs": 82,
-  "assigned_players": 2041,
-  "unsigned_players": 4409,
+  "clubs": 80,
+  "assigned_players": 1991,
+  "unsigned_players": 4459,
   "average_ability": 85.23,
   "top_players": [
     {
@@ -69,69 +69,24 @@
       "club": "Inter Miami CF"
     }
   ],
+  "format": {
+    "club_count": 80,
+    "divisions": 4,
+    "clubs_per_division": 20,
+    "label": "Top 80 / 4 divisions of 20"
+  },
   "squad_assignment": {
     "mode": "club-universe",
-    "club_count_target": 100,
-    "clubs": 82,
+    "club_count_target": 80,
+    "clubs": 80,
     "candidate_clubs": 202,
     "squad_size_target": 25,
     "min_squad_size": 18,
-    "assigned_players": 2041,
-    "unsigned_players": 4409,
+    "assigned_players": 1991,
+    "unsigned_players": 4459,
     "duplicate_assigned_ids": [],
     "duplicate_universe_club_ids": [],
-    "club_universe_name_mismatches": [
-      {
-        "slot": 74,
-        "club_name": "Botafogo FR",
-        "transfermarkt_club_id": "2462",
-        "imported_club_name": "Fluminense Football Club",
-        "continent": "South America",
-        "country": "Brazil",
-        "league": "Brasileirão",
-        "reason": "club_id_name_mismatch"
-      },
-      {
-        "slot": 75,
-        "club_name": "Fluminense FC",
-        "transfermarkt_club_id": "330",
-        "imported_club_name": "Clube Atlético Mineiro",
-        "continent": "South America",
-        "country": "Brazil",
-        "league": "Brasileirão",
-        "reason": "club_id_name_mismatch"
-      },
-      {
-        "slot": 86,
-        "club_name": "Kashima Antlers",
-        "transfermarkt_club_id": "995",
-        "imported_club_name": "FC Nantes",
-        "continent": "Asia",
-        "country": "Japan",
-        "league": "J1 League",
-        "reason": "club_id_name_mismatch"
-      },
-      {
-        "slot": 89,
-        "club_name": "CF Monterrey",
-        "transfermarkt_club_id": "630",
-        "imported_club_name": "Racing Santander",
-        "continent": "North America",
-        "country": "Mexico",
-        "league": "Liga MX",
-        "reason": "club_id_name_mismatch"
-      },
-      {
-        "slot": 96,
-        "club_name": "Wydad Casablanca",
-        "transfermarkt_club_id": "2727",
-        "imported_club_name": "Oud-Heverlee Leuven",
-        "continent": "Africa",
-        "country": "Morocco",
-        "league": "Moroccan Botola",
-        "reason": "club_id_name_mismatch"
-      }
-    ],
+    "club_universe_name_mismatches": [],
     "missing_club_universe_clubs": [
       {
         "slot": 71,
@@ -145,27 +100,7 @@
       {
         "slot": 74,
         "club_name": "Botafogo FR",
-        "transfermarkt_club_id": "2462",
-        "imported_club_name": "Fluminense Football Club",
-        "continent": "South America",
-        "country": "Brazil",
-        "league": "Brasileirão",
-        "reason": "club_id_name_mismatch"
-      },
-      {
-        "slot": 75,
-        "club_name": "Fluminense FC",
-        "transfermarkt_club_id": "330",
-        "imported_club_name": "Clube Atlético Mineiro",
-        "continent": "South America",
-        "country": "Brazil",
-        "league": "Brasileirão",
-        "reason": "club_id_name_mismatch"
-      },
-      {
-        "slot": 76,
-        "club_name": "Atlético Mineiro",
-        "transfermarkt_club_id": "1459",
+        "transfermarkt_club_id": "537",
         "continent": "South America",
         "country": "Brazil",
         "league": "Brasileirão",
@@ -174,20 +109,20 @@
       {
         "slot": 78,
         "club_name": "Racing Club",
-        "transfermarkt_club_id": "",
+        "transfermarkt_club_id": "1444",
         "continent": "South America",
         "country": "Argentina",
         "league": "Argentina Primera División",
-        "reason": "missing_transfermarkt_club_id"
+        "reason": "not_imported_or_below_min_squad_size"
       },
       {
         "slot": 79,
         "club_name": "Independiente",
-        "transfermarkt_club_id": "",
+        "transfermarkt_club_id": "1234",
         "continent": "South America",
         "country": "Argentina",
         "league": "Argentina Primera División",
-        "reason": "missing_transfermarkt_club_id"
+        "reason": "not_imported_or_below_min_squad_size"
       },
       {
         "slot": 85,
@@ -201,17 +136,16 @@
       {
         "slot": 86,
         "club_name": "Kashima Antlers",
-        "transfermarkt_club_id": "995",
-        "imported_club_name": "FC Nantes",
+        "transfermarkt_club_id": "2241",
         "continent": "Asia",
         "country": "Japan",
         "league": "J1 League",
-        "reason": "club_id_name_mismatch"
+        "reason": "not_imported_or_below_min_squad_size"
       },
       {
         "slot": 87,
         "club_name": "Ulsan HD",
-        "transfermarkt_club_id": "1416",
+        "transfermarkt_club_id": "3535",
         "continent": "Asia",
         "country": "South Korea",
         "league": "K League 1",
@@ -220,7 +154,7 @@
       {
         "slot": 88,
         "club_name": "Club América",
-        "transfermarkt_club_id": "363",
+        "transfermarkt_club_id": "3631",
         "continent": "North America",
         "country": "Mexico",
         "league": "Liga MX",
@@ -229,17 +163,16 @@
       {
         "slot": 89,
         "club_name": "CF Monterrey",
-        "transfermarkt_club_id": "630",
-        "imported_club_name": "Racing Santander",
+        "transfermarkt_club_id": "2407",
         "continent": "North America",
         "country": "Mexico",
         "league": "Liga MX",
-        "reason": "club_id_name_mismatch"
+        "reason": "not_imported_or_below_min_squad_size"
       },
       {
         "slot": 90,
         "club_name": "Tigres UANL",
-        "transfermarkt_club_id": "4494",
+        "transfermarkt_club_id": "7055",
         "continent": "North America",
         "country": "Mexico",
         "league": "Liga MX",
@@ -248,7 +181,7 @@
       {
         "slot": 95,
         "club_name": "Zamalek SC",
-        "transfermarkt_club_id": "3587",
+        "transfermarkt_club_id": "664",
         "continent": "Africa",
         "country": "Egypt",
         "league": "Egyptian Premier League",
@@ -257,17 +190,16 @@
       {
         "slot": 96,
         "club_name": "Wydad Casablanca",
-        "transfermarkt_club_id": "2727",
-        "imported_club_name": "Oud-Heverlee Leuven",
+        "transfermarkt_club_id": "6603",
         "continent": "Africa",
         "country": "Morocco",
         "league": "Moroccan Botola",
-        "reason": "club_id_name_mismatch"
+        "reason": "not_imported_or_below_min_squad_size"
       },
       {
         "slot": 97,
         "club_name": "Raja Casablanca",
-        "transfermarkt_club_id": "2728",
+        "transfermarkt_club_id": "2068",
         "continent": "Africa",
         "country": "Morocco",
         "league": "Moroccan Botola",
@@ -276,7 +208,7 @@
       {
         "slot": 98,
         "club_name": "Mamelodi Sundowns",
-        "transfermarkt_club_id": "3674",
+        "transfermarkt_club_id": "6356",
         "continent": "Africa",
         "country": "South Africa",
         "league": "South African Premiership",
@@ -285,7 +217,7 @@
       {
         "slot": 99,
         "club_name": "Espérance Tunis",
-        "transfermarkt_club_id": "3675",
+        "transfermarkt_club_id": "3342",
         "continent": "Africa",
         "country": "Tunisia",
         "league": "Tunisian Ligue Professionnelle 1",
@@ -293,20 +225,20 @@
       },
       {
         "slot": 100,
-        "club_name": "Auckland City FC",
-        "transfermarkt_club_id": "6357",
+        "club_name": "Sydney FC",
+        "transfermarkt_club_id": "8054",
         "continent": "Oceania",
-        "country": "New Zealand",
-        "league": "New Zealand National League",
+        "country": "Australia",
+        "league": "A-League",
         "reason": "not_imported_or_below_min_squad_size"
       }
     ],
-    "complete_squads": 78,
+    "complete_squads": 76,
     "incomplete_squads": 4,
     "continent_counts": {
-      "Europe": 66,
+      "Europe": 62,
       "Asia": 4,
-      "South America": 8,
+      "South America": 10,
       "North America": 3,
       "Africa": 1
     },
@@ -319,18 +251,16 @@
       "Süper Lig": 4,
       "Saudi Pro League": 4,
       "Liga Portugal": 3,
-      "Brasileirão": 5,
+      "Brasileirão": 7,
       "Eredivisie": 3,
       "Super League Greece": 2,
       "Argentina Primera División": 2,
-      "Scottish Premiership": 2,
+      "Scottish Premiership": 1,
       "MLS": 3,
       "Belgian Pro League": 1,
       "Egyptian Premier League": 1,
-      "Ukrainian Premier League": 2,
-      "Uruguay Primera División": 1,
-      "Superliga": 1,
-      "Austrian Bundesliga": 1
+      "Ukrainian Premier League": 1,
+      "Uruguay Primera División": 1
     },
     "divisions": [
       {
@@ -918,6 +848,16 @@
           },
           {
             "rank": 58,
+            "club_id": "tm-club-2462",
+            "club_name": "Fluminense Football Club",
+            "universe_slot": 75,
+            "continent": "South America",
+            "league": "Brasileirão",
+            "strength": 86.83,
+            "squad_size": 25
+          },
+          {
+            "rank": 59,
             "club_id": "tm-club-221",
             "club_name": "Santos FC",
             "universe_slot": 73,
@@ -927,22 +867,12 @@
             "squad_size": 25
           },
           {
-            "rank": 59,
+            "rank": 60,
             "club_id": "tm-club-1049",
             "club_name": "Valencia CF",
             "universe_slot": 47,
             "continent": "Europe",
             "league": "LaLiga",
-            "strength": 86.67,
-            "squad_size": 25
-          },
-          {
-            "rank": 60,
-            "club_id": "tm-club-114",
-            "club_name": "Besiktas JK",
-            "universe_slot": 50,
-            "continent": "Europe",
-            "league": "Süper Lig",
             "strength": 86.67,
             "squad_size": 25
           }
@@ -953,6 +883,16 @@
         "clubs": [
           {
             "rank": 61,
+            "club_id": "tm-club-114",
+            "club_name": "Besiktas JK",
+            "universe_slot": 50,
+            "continent": "Europe",
+            "league": "Süper Lig",
+            "strength": 86.67,
+            "squad_size": 25
+          },
+          {
+            "rank": 62,
             "club_id": "tm-club-449",
             "club_name": "Trabzonspor",
             "universe_slot": 51,
@@ -962,7 +902,7 @@
             "squad_size": 25
           },
           {
-            "rank": 62,
+            "rank": 63,
             "club_id": "tm-club-826",
             "club_name": "RC Lens",
             "universe_slot": 29,
@@ -972,7 +912,7 @@
             "squad_size": 25
           },
           {
-            "rank": 63,
+            "rank": 64,
             "club_id": "tm-club-18544",
             "club_name": "Al-Nassr FC",
             "universe_slot": 82,
@@ -982,7 +922,7 @@
             "squad_size": 25
           },
           {
-            "rank": 64,
+            "rank": 65,
             "club_id": "tm-club-368",
             "club_name": "Sevilla FC",
             "universe_slot": 46,
@@ -992,7 +932,7 @@
             "squad_size": 25
           },
           {
-            "rank": 65,
+            "rank": 66,
             "club_id": "tm-club-371",
             "club_name": "Celtic FC",
             "universe_slot": 59,
@@ -1002,7 +942,17 @@
             "squad_size": 25
           },
           {
-            "rank": 66,
+            "rank": 67,
+            "club_id": "tm-club-330",
+            "club_name": "Clube Atlético Mineiro",
+            "universe_slot": 76,
+            "continent": "South America",
+            "league": "Brasileirão",
+            "strength": 86.27,
+            "squad_size": 25
+          },
+          {
+            "rank": 68,
             "club_id": "tm-club-8023",
             "club_name": "Al-Ittihad Club",
             "universe_slot": 83,
@@ -1012,7 +962,7 @@
             "squad_size": 25
           },
           {
-            "rank": 67,
+            "rank": 69,
             "club_id": "tm-club-265",
             "club_name": "Panathinaikos",
             "universe_slot": 66,
@@ -1022,7 +972,7 @@
             "squad_size": 25
           },
           {
-            "rank": 68,
+            "rank": 70,
             "club_id": "tm-club-69261",
             "club_name": "Inter Miami CF",
             "universe_slot": 91,
@@ -1032,7 +982,7 @@
             "squad_size": 25
           },
           {
-            "rank": 69,
+            "rank": 71,
             "club_id": "tm-club-189",
             "club_name": "CA Boca Juniors",
             "universe_slot": 70,
@@ -1042,7 +992,7 @@
             "squad_size": 25
           },
           {
-            "rank": 70,
+            "rank": 72,
             "club_id": "tm-club-51828",
             "club_name": "Los Angeles FC",
             "universe_slot": 92,
@@ -1052,7 +1002,7 @@
             "squad_size": 22
           },
           {
-            "rank": 71,
+            "rank": 73,
             "club_id": "tm-club-610",
             "club_name": "Ajax Amsterdam",
             "universe_slot": 53,
@@ -1062,7 +1012,7 @@
             "squad_size": 25
           },
           {
-            "rank": 72,
+            "rank": 74,
             "club_id": "tm-club-2282",
             "club_name": "Club Brugge KV",
             "universe_slot": 52,
@@ -1072,7 +1022,7 @@
             "squad_size": 25
           },
           {
-            "rank": 73,
+            "rank": 75,
             "club_id": "tm-club-18487",
             "club_name": "Al-Ahli SFC",
             "universe_slot": 84,
@@ -1082,7 +1032,7 @@
             "squad_size": 25
           },
           {
-            "rank": 74,
+            "rank": 76,
             "club_id": "tm-club-6600",
             "club_name": "Sport Club Internacional",
             "universe_slot": 77,
@@ -1092,7 +1042,7 @@
             "squad_size": 25
           },
           {
-            "rank": 75,
+            "rank": 77,
             "club_id": "tm-club-7",
             "club_name": "Al Ahly FC",
             "universe_slot": 94,
@@ -1102,7 +1052,7 @@
             "squad_size": 25
           },
           {
-            "rank": 76,
+            "rank": 78,
             "club_id": "tm-club-9636",
             "club_name": "Seattle Sounders FC",
             "universe_slot": 93,
@@ -1112,7 +1062,7 @@
             "squad_size": 25
           },
           {
-            "rank": 77,
+            "rank": 79,
             "club_id": "tm-club-660",
             "club_name": "Shakhtar Donetsk",
             "universe_slot": 61,
@@ -1122,7 +1072,7 @@
             "squad_size": 25
           },
           {
-            "rank": 78,
+            "rank": 80,
             "club_id": "tm-club-866",
             "club_name": "Club Nacional",
             "universe_slot": 80,
@@ -1130,64 +1080,19 @@
             "league": "Uruguay Primera División",
             "strength": 85.74,
             "squad_size": 25
-          },
-          {
-            "rank": 79,
-            "club_id": "tm-club-338",
-            "club_name": "Dynamo Kyiv",
-            "universe_slot": 62,
-            "continent": "Europe",
-            "league": "Ukrainian Premier League",
-            "strength": 85.56,
-            "squad_size": 25
-          },
-          {
-            "rank": 80,
-            "club_id": "tm-club-124",
-            "club_name": "Rangers FC",
-            "universe_slot": 60,
-            "continent": "Europe",
-            "league": "Scottish Premiership",
-            "strength": 85.45,
-            "squad_size": 25
-          }
-        ]
-      },
-      {
-        "division": 5,
-        "clubs": [
-          {
-            "rank": 81,
-            "club_id": "tm-club-190",
-            "club_name": "FC Copenhagen",
-            "universe_slot": 63,
-            "continent": "Europe",
-            "league": "Superliga",
-            "strength": 85.34,
-            "squad_size": 25
-          },
-          {
-            "rank": 82,
-            "club_id": "tm-club-409",
-            "club_name": "Red Bull Salzburg",
-            "universe_slot": 64,
-            "continent": "Europe",
-            "league": "Austrian Bundesliga",
-            "strength": 84.85,
-            "squad_size": 25
           }
         ]
       }
     ],
     "rules": {
-      "clubCount": 100,
+      "clubCount": 80,
       "minSquadSize": 18,
       "targetSquadSize": 25,
-      "divisions": 5,
+      "divisions": 4,
       "clubsPerDivision": 20,
       "selectionMode": "club-universe",
       "clubUniverse": {
-        "version": "tbg-club-universe-v0.1",
+        "version": "tbg-club-universe-v0.2",
         "description": "Canonical playable club universe for The Beautiful Game. These clubs define the launch world; divisions are still assigned by weighted TBG squad strength after import.",
         "selection_policy": {
           "playable_clubs": 100,
@@ -1863,7 +1768,7 @@
           {
             "slot": 74,
             "name": "Botafogo FR",
-            "transfermarkt_club_id": "2462",
+            "transfermarkt_club_id": "537",
             "continent": "South America",
             "country": "Brazil",
             "league": "Brasileirão",
@@ -1872,7 +1777,7 @@
           {
             "slot": 75,
             "name": "Fluminense FC",
-            "transfermarkt_club_id": "330",
+            "transfermarkt_club_id": "2462",
             "continent": "South America",
             "country": "Brazil",
             "league": "Brasileirão",
@@ -1881,7 +1786,7 @@
           {
             "slot": 76,
             "name": "Atlético Mineiro",
-            "transfermarkt_club_id": "1459",
+            "transfermarkt_club_id": "330",
             "continent": "South America",
             "country": "Brazil",
             "league": "Brasileirão",
@@ -1894,28 +1799,25 @@
             "continent": "South America",
             "country": "Brazil",
             "league": "Brasileirão",
-            "importance": 86,
-            "needs_transfermarkt_id_review": true
+            "importance": 86
           },
           {
             "slot": 78,
             "name": "Racing Club",
-            "transfermarkt_club_id": null,
+            "transfermarkt_club_id": "1444",
             "continent": "South America",
             "country": "Argentina",
             "league": "Argentina Primera División",
-            "importance": 86,
-            "needs_transfermarkt_id_review": true
+            "importance": 86
           },
           {
             "slot": 79,
             "name": "Independiente",
-            "transfermarkt_club_id": null,
+            "transfermarkt_club_id": "1234",
             "continent": "South America",
             "country": "Argentina",
             "league": "Argentina Primera División",
-            "importance": 85,
-            "needs_transfermarkt_id_review": true
+            "importance": 85
           },
           {
             "slot": 80,
@@ -1974,7 +1876,7 @@
           {
             "slot": 86,
             "name": "Kashima Antlers",
-            "transfermarkt_club_id": "995",
+            "transfermarkt_club_id": "2241",
             "continent": "Asia",
             "country": "Japan",
             "league": "J1 League",
@@ -1983,7 +1885,7 @@
           {
             "slot": 87,
             "name": "Ulsan HD",
-            "transfermarkt_club_id": "1416",
+            "transfermarkt_club_id": "3535",
             "continent": "Asia",
             "country": "South Korea",
             "league": "K League 1",
@@ -1992,7 +1894,7 @@
           {
             "slot": 88,
             "name": "Club América",
-            "transfermarkt_club_id": "363",
+            "transfermarkt_club_id": "3631",
             "continent": "North America",
             "country": "Mexico",
             "league": "Liga MX",
@@ -2001,7 +1903,7 @@
           {
             "slot": 89,
             "name": "CF Monterrey",
-            "transfermarkt_club_id": "630",
+            "transfermarkt_club_id": "2407",
             "continent": "North America",
             "country": "Mexico",
             "league": "Liga MX",
@@ -2010,7 +1912,7 @@
           {
             "slot": 90,
             "name": "Tigres UANL",
-            "transfermarkt_club_id": "4494",
+            "transfermarkt_club_id": "7055",
             "continent": "North America",
             "country": "Mexico",
             "league": "Liga MX",
@@ -2055,7 +1957,7 @@
           {
             "slot": 95,
             "name": "Zamalek SC",
-            "transfermarkt_club_id": "3587",
+            "transfermarkt_club_id": "664",
             "continent": "Africa",
             "country": "Egypt",
             "league": "Egyptian Premier League",
@@ -2064,7 +1966,7 @@
           {
             "slot": 96,
             "name": "Wydad Casablanca",
-            "transfermarkt_club_id": "2727",
+            "transfermarkt_club_id": "6603",
             "continent": "Africa",
             "country": "Morocco",
             "league": "Moroccan Botola",
@@ -2073,7 +1975,7 @@
           {
             "slot": 97,
             "name": "Raja Casablanca",
-            "transfermarkt_club_id": "2728",
+            "transfermarkt_club_id": "2068",
             "continent": "Africa",
             "country": "Morocco",
             "league": "Moroccan Botola",
@@ -2082,7 +1984,7 @@
           {
             "slot": 98,
             "name": "Mamelodi Sundowns",
-            "transfermarkt_club_id": "3674",
+            "transfermarkt_club_id": "6356",
             "continent": "Africa",
             "country": "South Africa",
             "league": "South African Premiership",
@@ -2091,7 +1993,7 @@
           {
             "slot": 99,
             "name": "Espérance Tunis",
-            "transfermarkt_club_id": "3675",
+            "transfermarkt_club_id": "3342",
             "continent": "Africa",
             "country": "Tunisia",
             "league": "Tunisian Ligue Professionnelle 1",
@@ -2099,11 +2001,11 @@
           },
           {
             "slot": 100,
-            "name": "Auckland City FC",
-            "transfermarkt_club_id": "6357",
+            "name": "Sydney FC",
+            "transfermarkt_club_id": "8054",
             "continent": "Oceania",
-            "country": "New Zealand",
-            "league": "New Zealand National League",
+            "country": "Australia",
+            "league": "A-League",
             "importance": 85
           }
         ]
@@ -2150,13 +2052,6 @@
         "continent": "Asia",
         "league": "Saudi Pro League",
         "strength": 86.84
-      },
-      {
-        "club_id": "tm-club-2462",
-        "club_name": "Fluminense Football Club",
-        "continent": "South America",
-        "league": "Brasileirão",
-        "strength": 86.83
       },
       {
         "club_id": "tm-club-1132",
@@ -2206,13 +2101,6 @@
         "continent": "Europe",
         "league": "IT1",
         "strength": 86.47
-      },
-      {
-        "club_id": "tm-club-330",
-        "club_name": "Clube Atlético Mineiro",
-        "continent": "South America",
-        "league": "Brasileirão",
-        "strength": 86.27
       },
       {
         "club_id": "tm-club-167",
@@ -2334,6 +2222,13 @@
         "strength": 85.56
       },
       {
+        "club_id": "tm-club-338",
+        "club_name": "Dynamo Kyiv",
+        "continent": "Unknown",
+        "league": "UKR1",
+        "strength": 85.56
+      },
+      {
         "club_id": "tm-club-714",
         "club_name": "RCD Espanyol Barcelona",
         "continent": "Europe",
@@ -2360,6 +2255,13 @@
         "continent": "Europe",
         "league": "ES1",
         "strength": 85.48
+      },
+      {
+        "club_id": "tm-club-124",
+        "club_name": "Rangers FC",
+        "continent": "Unknown",
+        "league": "SC1",
+        "strength": 85.45
       },
       {
         "club_id": "tm-club-641",
@@ -2395,6 +2297,13 @@
         "continent": "North America",
         "league": "MLS1",
         "strength": 85.35
+      },
+      {
+        "club_id": "tm-club-190",
+        "club_name": "FC Copenhagen",
+        "continent": "Unknown",
+        "league": "DK1",
+        "strength": 85.34
       },
       {
         "club_id": "tm-club-51772",
@@ -2458,125 +2367,10 @@
         "continent": "Europe",
         "league": "ES1",
         "strength": 85.21
-      },
-      {
-        "club_id": "tm-club-415",
-        "club_name": "FC Toulouse",
-        "continent": "Europe",
-        "league": "FR1",
-        "strength": 85.19
       }
     ]
   },
   "weakest_complete_clubs": [
-    {
-      "club_id": "tm-club-409",
-      "source_club_id": "409",
-      "club_name": "Red Bull Salzburg",
-      "universe_slot": 64,
-      "universe_name": "Red Bull Salzburg",
-      "continent": "Europe",
-      "league": "Austrian Bundesliga",
-      "global_importance": 78,
-      "selection_reason": "club_universe",
-      "current_competition_code": "A1",
-      "real_club_rank": 82,
-      "division": 5,
-      "squad_size": 25,
-      "average_rating": 84.32,
-      "weighted_squad_strength": 84.85,
-      "strongest_rating": 87,
-      "weakest_rating": 83,
-      "total_market_value_eur": 123950000,
-      "positions": {
-        "GK": 1,
-        "DEF": 12,
-        "MID": 5,
-        "ATT": 7,
-        "UNK": 0
-      }
-    },
-    {
-      "club_id": "tm-club-190",
-      "source_club_id": "190",
-      "club_name": "FC Copenhagen",
-      "universe_slot": 63,
-      "universe_name": "FC Copenhagen",
-      "continent": "Europe",
-      "league": "Superliga",
-      "global_importance": 74,
-      "selection_reason": "club_universe",
-      "current_competition_code": "DK1",
-      "real_club_rank": 81,
-      "division": 5,
-      "squad_size": 25,
-      "average_rating": 84.6,
-      "weighted_squad_strength": 85.34,
-      "strongest_rating": 87,
-      "weakest_rating": 81,
-      "total_market_value_eur": 70950000,
-      "positions": {
-        "GK": 2,
-        "DEF": 10,
-        "MID": 5,
-        "ATT": 8,
-        "UNK": 0
-      }
-    },
-    {
-      "club_id": "tm-club-124",
-      "source_club_id": "124",
-      "club_name": "Rangers FC",
-      "universe_slot": 60,
-      "universe_name": "Rangers FC",
-      "continent": "Europe",
-      "league": "Scottish Premiership",
-      "global_importance": 81,
-      "selection_reason": "club_universe",
-      "current_competition_code": "SC1",
-      "real_club_rank": 80,
-      "division": 4,
-      "squad_size": 25,
-      "average_rating": 84.96,
-      "weighted_squad_strength": 85.45,
-      "strongest_rating": 87,
-      "weakest_rating": 83,
-      "total_market_value_eur": 124250000,
-      "positions": {
-        "GK": 2,
-        "DEF": 9,
-        "MID": 6,
-        "ATT": 8,
-        "UNK": 0
-      }
-    },
-    {
-      "club_id": "tm-club-338",
-      "source_club_id": "338",
-      "club_name": "Dynamo Kyiv",
-      "universe_slot": 62,
-      "universe_name": "Dynamo Kyiv",
-      "continent": "Europe",
-      "league": "Ukrainian Premier League",
-      "global_importance": 78,
-      "selection_reason": "club_universe",
-      "current_competition_code": "UKR1",
-      "real_club_rank": 79,
-      "division": 4,
-      "squad_size": 25,
-      "average_rating": 84.88,
-      "weighted_squad_strength": 85.56,
-      "strongest_rating": 89,
-      "weakest_rating": 83,
-      "total_market_value_eur": 92875000,
-      "positions": {
-        "GK": 1,
-        "DEF": 12,
-        "MID": 5,
-        "ATT": 7,
-        "UNK": 0
-      }
-    },
     {
       "club_id": "tm-club-866",
       "source_club_id": "866",
@@ -2588,7 +2382,7 @@
       "global_importance": 84,
       "selection_reason": "club_universe",
       "current_competition_code": "URUI",
-      "real_club_rank": 78,
+      "real_club_rank": 80,
       "division": 4,
       "squad_size": 25,
       "average_rating": 84.84,
@@ -2615,7 +2409,7 @@
       "global_importance": 83,
       "selection_reason": "club_universe",
       "current_competition_code": "MLS1",
-      "real_club_rank": 76,
+      "real_club_rank": 78,
       "division": 4,
       "squad_size": 25,
       "average_rating": 84.88,
@@ -2642,7 +2436,7 @@
       "global_importance": 80,
       "selection_reason": "club_universe",
       "current_competition_code": "UKR1",
-      "real_club_rank": 77,
+      "real_club_rank": 79,
       "division": 4,
       "squad_size": 25,
       "average_rating": 85.2,
@@ -2669,7 +2463,7 @@
       "global_importance": 95,
       "selection_reason": "club_universe",
       "current_competition_code": "EGY1",
-      "real_club_rank": 75,
+      "real_club_rank": 77,
       "division": 4,
       "squad_size": 25,
       "average_rating": 85.16,
@@ -2696,7 +2490,7 @@
       "global_importance": 86,
       "selection_reason": "club_universe",
       "current_competition_code": "BRA1",
-      "real_club_rank": 74,
+      "real_club_rank": 76,
       "division": 4,
       "squad_size": 25,
       "average_rating": 85.32,
@@ -2723,7 +2517,7 @@
       "global_importance": 88,
       "selection_reason": "club_universe",
       "current_competition_code": "SA1",
-      "real_club_rank": 73,
+      "real_club_rank": 75,
       "division": 4,
       "squad_size": 25,
       "average_rating": 84.96,
@@ -2734,6 +2528,114 @@
       "positions": {
         "GK": 2,
         "DEF": 13,
+        "MID": 4,
+        "ATT": 6,
+        "UNK": 0
+      }
+    },
+    {
+      "club_id": "tm-club-2282",
+      "source_club_id": "2282",
+      "club_name": "Club Brugge KV",
+      "universe_slot": 52,
+      "universe_name": "Club Brugge KV",
+      "continent": "Europe",
+      "league": "Belgian Pro League",
+      "global_importance": 78,
+      "selection_reason": "club_universe",
+      "current_competition_code": "BE1",
+      "real_club_rank": 74,
+      "division": 4,
+      "squad_size": 25,
+      "average_rating": 85.04,
+      "weighted_squad_strength": 86.06,
+      "strongest_rating": 89,
+      "weakest_rating": 82,
+      "total_market_value_eur": 227200000,
+      "positions": {
+        "GK": 2,
+        "DEF": 10,
+        "MID": 6,
+        "ATT": 7,
+        "UNK": 0
+      }
+    },
+    {
+      "club_id": "tm-club-610",
+      "source_club_id": "610",
+      "club_name": "Ajax Amsterdam",
+      "universe_slot": 53,
+      "universe_name": "Ajax Amsterdam",
+      "continent": "Europe",
+      "league": "Eredivisie",
+      "global_importance": 88,
+      "selection_reason": "club_universe",
+      "current_competition_code": "NL1",
+      "real_club_rank": 73,
+      "division": 4,
+      "squad_size": 25,
+      "average_rating": 85.28,
+      "weighted_squad_strength": 86.09,
+      "strongest_rating": 88,
+      "weakest_rating": 82,
+      "total_market_value_eur": 180200000,
+      "positions": {
+        "GK": 2,
+        "DEF": 11,
+        "MID": 6,
+        "ATT": 6,
+        "UNK": 0
+      }
+    },
+    {
+      "club_id": "tm-club-189",
+      "source_club_id": "189",
+      "club_name": "CA Boca Juniors",
+      "universe_slot": 70,
+      "universe_name": "Boca Juniors",
+      "continent": "South America",
+      "league": "Argentina Primera División",
+      "global_importance": 93,
+      "selection_reason": "club_universe",
+      "current_competition_code": "ARGC",
+      "real_club_rank": 71,
+      "division": 4,
+      "squad_size": 25,
+      "average_rating": 85.6,
+      "weighted_squad_strength": 86.15,
+      "strongest_rating": 89,
+      "weakest_rating": 84,
+      "total_market_value_eur": 102600000,
+      "positions": {
+        "GK": 1,
+        "DEF": 13,
+        "MID": 3,
+        "ATT": 8,
+        "UNK": 0
+      }
+    },
+    {
+      "club_id": "tm-club-69261",
+      "source_club_id": "69261",
+      "club_name": "Inter Miami CF",
+      "universe_slot": 91,
+      "universe_name": "Inter Miami CF",
+      "continent": "North America",
+      "league": "MLS",
+      "global_importance": 87,
+      "selection_reason": "club_universe",
+      "current_competition_code": "MLS1",
+      "real_club_rank": 70,
+      "division": 4,
+      "squad_size": 25,
+      "average_rating": 84.96,
+      "weighted_squad_strength": 86.2,
+      "strongest_rating": 96,
+      "weakest_rating": 81,
+      "total_market_value_eur": 85675000,
+      "positions": {
+        "GK": 3,
+        "DEF": 12,
         "MID": 4,
         "ATT": 6,
         "UNK": 0
