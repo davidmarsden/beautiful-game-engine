@@ -41,7 +41,7 @@ jobs:
 
       - name: Build foundation and seed inaugural divisions
         working-directory: beautiful-game-engine
-        run: npm run build:inaugural-world -- --dataRoot=../beautiful-game-data --outputDir=derived/world
+        run: npm run build:inaugural-world
 
       - name: Verify frozen four-division membership
         working-directory: beautiful-game-engine
