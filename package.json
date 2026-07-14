@@ -8,6 +8,8 @@
     "test": "node --test",
     "demo": "node src/index.js",
     "build:world-foundation": "node scripts/build-world-foundation.js",
+    "seed:world-divisions": "node scripts/seed-world-divisions.js",
+    "build:inaugural-world": "npm run build:world-foundation && npm run seed:world-divisions",
     "seed:inaugural-divisions": "node scripts/seed-inaugural-divisions.js",
     "build:world-phase-2b": "npm run build:world-foundation && npm run seed:inaugural-divisions",
     "build:world-state": "node scripts/build-world-state.js",
