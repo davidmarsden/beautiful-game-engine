@@ -1,4 +1,4 @@
-name: Build TBG World Foundation
+name: Build Inaugural TBG World
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: build-tbg-world-foundation
+  group: build-inaugural-tbg-world
   cancel-in-progress: false
 
 jobs:
@@ -39,26 +39,39 @@ jobs:
         working-directory: beautiful-game-engine
         run: npm test
 
-      - name: Build canonical world foundation
+      - name: Build foundation and seed inaugural divisions
         working-directory: beautiful-game-engine
-        run: npm run build:world-foundation -- --dataRoot=../beautiful-game-data --outputDir=derived/world
+        run: npm run build:inaugural-world -- --dataRoot=../beautiful-game-data --outputDir=derived/world
 
-      - name: Upload world foundation artifact
+      - name: Verify frozen four-division membership
+        working-directory: beautiful-game-engine
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFile } from 'node:fs/promises';
+          const divisions = JSON.parse(await readFile('derived/world/divisions.json', 'utf8'));
+          if (divisions.length !== 4 || divisions.some(d => d.club_ids.length !== 20 || d.seeding_status !== 'frozen_inaugural_membership')) {
+            console.error('Inaugural world must contain four frozen divisions of twenty clubs.');
+            process.exit(1);
+          }
+          console.log('Verified four frozen divisions of twenty clubs.');
+          NODE
+
+      - name: Upload inaugural world artifact
         uses: actions/upload-artifact@v4
         with:
-          name: tbg-world-foundation
+          name: tbg-inaugural-world
           path: beautiful-game-engine/derived/world/**
           if-no-files-found: error
 
-      - name: Commit generated world foundation
+      - name: Commit generated inaugural world
         working-directory: beautiful-game-engine
         run: |
           if [ -z "$(git status --porcelain derived/world)" ]; then
-            echo "No world-foundation changes."
+            echo "No inaugural-world changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add derived/world
-          git commit -m "Build TBG world foundation"
+          git commit -m "Build and seed inaugural TBG world"
           git push
