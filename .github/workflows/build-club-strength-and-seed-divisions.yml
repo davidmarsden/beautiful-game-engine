@@ -39,9 +39,13 @@ jobs:
         working-directory: beautiful-game-engine
         run: npm test
 
-      - name: Build foundation and seed four divisions
+      - name: Build current world foundation
         working-directory: beautiful-game-engine
-        run: npm run build:world-phase-2b -- --dataRoot=../beautiful-game-data --outputDir=derived/world
+        run: npm run build:world-foundation -- --dataRoot=../beautiful-game-data --outputDir=derived/world
+
+      - name: Calculate strength and seed four divisions
+        working-directory: beautiful-game-engine
+        run: npm run seed:inaugural-divisions -- --world=derived/world/world.json --outputDir=derived/world
 
       - name: Verify frozen league membership
         working-directory: beautiful-game-engine
