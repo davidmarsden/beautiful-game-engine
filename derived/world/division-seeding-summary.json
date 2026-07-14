@@ -1,0 +1,155 @@
+{
+  "world_id": "tbg-world-001",
+  "status": "inaugural_divisions_seeded",
+  "strength_version": "tbg-club-strength-v0.1",
+  "clubs": 80,
+  "divisions": 4,
+  "clubs_per_division": 20,
+  "strongest_club": {
+    "tbg_club_id": "tbg-club-001",
+    "club_name": "Real Madrid",
+    "strength_score": 93.74,
+    "components": {
+      "starting_xi_average": 94.09,
+      "first_team_depth_average": 90.44,
+      "positional_balance_score": 100,
+      "youth_strength_average": 87.71
+    },
+    "squad": {
+      "assigned_players": 27,
+      "rated_players": 27,
+      "first_team_players_used": 20,
+      "starting_xi_player_ids": [
+        "tbg-tm-00108390",
+        "tbg-tm-00314353",
+        "tbg-tm-00413112",
+        "tbg-tm-00284857",
+        "tbg-tm-00321528",
+        "tbg-tm-00369081",
+        "tbg-tm-00581678",
+        "tbg-tm-00241641",
+        "tbg-tm-00342229",
+        "tbg-tm-00371998",
+        "tbg-tm-00412363"
+      ],
+      "depth_player_ids": [
+        "tbg-tm-00861410",
+        "tbg-tm-00357119",
+        "tbg-tm-00640428",
+        "tbg-tm-00890290",
+        "tbg-tm-00086202",
+        "tbg-tm-00314678",
+        "tbg-tm-00401530",
+        "tbg-tm-00811778",
+        "tbg-tm-00971570"
+      ],
+      "youth_player_ids": [
+        "tbg-tm-00861410",
+        "tbg-tm-00890290",
+        "tbg-tm-00971570",
+        "tbg-tm-01057316",
+        "tbg-tm-01375227",
+        "tbg-tm-00948272",
+        "tbg-tm-01055220"
+      ],
+      "position_counts": {
+        "ATT": 5,
+        "MID": 5,
+        "GK": 1,
+        "DEF": 9
+      },
+      "position_shortages": 0
+    },
+    "world_rank": 1,
+    "division_level": 1,
+    "division_seed": 1
+  },
+  "weakest_club": {
+    "tbg_club_id": "tbg-club-070",
+    "club_name": "Boca Juniors",
+    "strength_score": 85.03,
+    "components": {
+      "starting_xi_average": 86.55,
+      "first_team_depth_average": 85.11,
+      "positional_balance_score": 78.82,
+      "youth_strength_average": 82.6
+    },
+    "squad": {
+      "assigned_players": 25,
+      "rated_players": 25,
+      "first_team_players_used": 20,
+      "starting_xi_player_ids": [
+        "tbg-tm-00007966",
+        "tbg-tm-00166237",
+        "tbg-tm-00423436",
+        "tbg-tm-00089297",
+        "tbg-tm-00334055",
+        "tbg-tm-00190756",
+        "tbg-tm-00262262",
+        "tbg-tm-00481367",
+        "tbg-tm-00514120",
+        "tbg-tm-00054534",
+        "tbg-tm-00552185"
+      ],
+      "depth_player_ids": [
+        "tbg-tm-00842910",
+        "tbg-tm-00289149",
+        "tbg-tm-00373916",
+        "tbg-tm-00483446",
+        "tbg-tm-00661132",
+        "tbg-tm-00665101",
+        "tbg-tm-00730779",
+        "tbg-tm-00831161",
+        "tbg-tm-01019744"
+      ],
+      "youth_player_ids": [
+        "tbg-tm-01236677",
+        "tbg-tm-01322355",
+        "tbg-tm-01000671",
+        "tbg-tm-01236684",
+        "tbg-tm-01342677"
+      ],
+      "position_counts": {
+        "DEF": 11,
+        "GK": 2,
+        "MID": 1,
+        "ATT": 6
+      },
+      "position_shortages": 2
+    },
+    "world_rank": 80,
+    "division_level": 4,
+    "division_seed": 20
+  },
+  "division_summaries": [
+    {
+      "division_id": "division-1",
+      "name": "Division 1",
+      "clubs": 20,
+      "strongest_score": 93.74,
+      "weakest_score": 90.01
+    },
+    {
+      "division_id": "division-2",
+      "name": "Division 2",
+      "clubs": 20,
+      "strongest_score": 89.98,
+      "weakest_score": 88.97
+    },
+    {
+      "division_id": "division-3",
+      "name": "Division 3",
+      "clubs": 20,
+      "strongest_score": 88.92,
+      "weakest_score": 87.79
+    },
+    {
+      "division_id": "division-4",
+      "name": "Division 4",
+      "clubs": 20,
+      "strongest_score": 87.79,
+      "weakest_score": 85.03
+    }
+  ],
+  "validation_errors": []
+}

@@ -9,9 +9,9 @@
     "continent": "Europe",
     "real_world_league": "LaLiga",
     "importance": 100,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-1",
+    "division_seed": 1,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-001",
     "squad": {
       "player_ids": [
@@ -68,6 +68,65 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-001",
+      "club_name": "Real Madrid",
+      "strength_score": 93.74,
+      "components": {
+        "starting_xi_average": 94.09,
+        "first_team_depth_average": 90.44,
+        "positional_balance_score": 100,
+        "youth_strength_average": 87.71
+      },
+      "squad": {
+        "assigned_players": 27,
+        "rated_players": 27,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00108390",
+          "tbg-tm-00314353",
+          "tbg-tm-00413112",
+          "tbg-tm-00284857",
+          "tbg-tm-00321528",
+          "tbg-tm-00369081",
+          "tbg-tm-00581678",
+          "tbg-tm-00241641",
+          "tbg-tm-00342229",
+          "tbg-tm-00371998",
+          "tbg-tm-00412363"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00861410",
+          "tbg-tm-00357119",
+          "tbg-tm-00640428",
+          "tbg-tm-00890290",
+          "tbg-tm-00086202",
+          "tbg-tm-00314678",
+          "tbg-tm-00401530",
+          "tbg-tm-00811778",
+          "tbg-tm-00971570"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00861410",
+          "tbg-tm-00890290",
+          "tbg-tm-00971570",
+          "tbg-tm-01057316",
+          "tbg-tm-01375227",
+          "tbg-tm-00948272",
+          "tbg-tm-01055220"
+        ],
+        "position_counts": {
+          "ATT": 5,
+          "MID": 5,
+          "GK": 1,
+          "DEF": 9
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 1,
+      "division_level": 1,
+      "division_seed": 1
     }
   },
   {
@@ -80,9 +139,9 @@
     "continent": "Europe",
     "real_world_league": "LaLiga",
     "importance": 99,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-1",
+    "division_seed": 6,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-002",
     "squad": {
       "player_ids": [
@@ -139,6 +198,68 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-002",
+      "club_name": "FC Barcelona",
+      "strength_score": 92.51,
+      "components": {
+        "starting_xi_average": 92.45,
+        "first_team_depth_average": 89.56,
+        "positional_balance_score": 100,
+        "youth_strength_average": 86.7
+      },
+      "squad": {
+        "assigned_players": 27,
+        "rated_players": 27,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00074857",
+          "tbg-tm-00411975",
+          "tbg-tm-00962110",
+          "tbg-tm-00466794",
+          "tbg-tm-00480267",
+          "tbg-tm-00683840",
+          "tbg-tm-00326330",
+          "tbg-tm-00636703",
+          "tbg-tm-00937958",
+          "tbg-tm-00411295",
+          "tbg-tm-00398184"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00293385",
+          "tbg-tm-00503733",
+          "tbg-tm-00561613",
+          "tbg-tm-00636688",
+          "tbg-tm-00646740",
+          "tbg-tm-00044058",
+          "tbg-tm-00196948",
+          "tbg-tm-00705395",
+          "tbg-tm-00636695"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00937958",
+          "tbg-tm-00962110",
+          "tbg-tm-00646740",
+          "tbg-tm-01018920",
+          "tbg-tm-00792331",
+          "tbg-tm-00937955",
+          "tbg-tm-00924610",
+          "tbg-tm-00938145",
+          "tbg-tm-00938156",
+          "tbg-tm-01018912"
+        ],
+        "position_counts": {
+          "ATT": 4,
+          "MID": 5,
+          "DEF": 8,
+          "GK": 3
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 6,
+      "division_level": 1,
+      "division_seed": 6
     }
   },
   {
@@ -151,9 +272,9 @@
     "continent": "Europe",
     "real_world_league": "Premier League",
     "importance": 99,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-1",
+    "division_seed": 2,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-003",
     "squad": {
       "player_ids": [
@@ -210,6 +331,65 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-003",
+      "club_name": "Manchester City",
+      "strength_score": 93.1,
+      "components": {
+        "starting_xi_average": 93.09,
+        "first_team_depth_average": 90.56,
+        "positional_balance_score": 100,
+        "youth_strength_average": 86.43
+      },
+      "squad": {
+        "assigned_players": 27,
+        "rated_players": 27,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00315858",
+          "tbg-tm-00357565",
+          "tbg-tm-00258004",
+          "tbg-tm-00392757",
+          "tbg-tm-00475959",
+          "tbg-tm-00406635",
+          "tbg-tm-00460939",
+          "tbg-tm-00051471",
+          "tbg-tm-00418560",
+          "tbg-tm-00203460",
+          "tbg-tm-00445939"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00583255",
+          "tbg-tm-00486049",
+          "tbg-tm-00567576",
+          "tbg-tm-00601883",
+          "tbg-tm-00607223",
+          "tbg-tm-00466805",
+          "tbg-tm-00578391",
+          "tbg-tm-00743413",
+          "tbg-tm-00743591"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00743413",
+          "tbg-tm-00701057",
+          "tbg-tm-01005575",
+          "tbg-tm-00994536",
+          "tbg-tm-00911736",
+          "tbg-tm-01121298",
+          "tbg-tm-00843595"
+        ],
+        "position_counts": {
+          "ATT": 6,
+          "DEF": 8,
+          "MID": 5,
+          "GK": 1
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 2,
+      "division_level": 1,
+      "division_seed": 2
     }
   },
   {
@@ -222,9 +402,9 @@
     "continent": "Europe",
     "real_world_league": "Premier League",
     "importance": 98,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-1",
+    "division_seed": 7,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-004",
     "squad": {
       "player_ids": [
@@ -279,6 +459,63 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-004",
+      "club_name": "Liverpool FC",
+      "strength_score": 92.48,
+      "components": {
+        "starting_xi_average": 92.73,
+        "first_team_depth_average": 88.78,
+        "positional_balance_score": 100,
+        "youth_strength_average": 86.2
+      },
+      "squad": {
+        "assigned_players": 25,
+        "rated_players": 25,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00105470",
+          "tbg-tm-00139208",
+          "tbg-tm-00478573",
+          "tbg-tm-01004301",
+          "tbg-tm-00256178",
+          "tbg-tm-00451276",
+          "tbg-tm-00534033",
+          "tbg-tm-00598577",
+          "tbg-tm-00349066",
+          "tbg-tm-00434675",
+          "tbg-tm-00709726"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00433188",
+          "tbg-tm-00502676",
+          "tbg-tm-00341092",
+          "tbg-tm-00484547",
+          "tbg-tm-00730861",
+          "tbg-tm-00146310",
+          "tbg-tm-00338070",
+          "tbg-tm-00565822",
+          "tbg-tm-00624258"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01004301",
+          "tbg-tm-01086619",
+          "tbg-tm-01108466",
+          "tbg-tm-00864799",
+          "tbg-tm-01045123"
+        ],
+        "position_counts": {
+          "ATT": 4,
+          "DEF": 9,
+          "MID": 5,
+          "GK": 2
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 7,
+      "division_level": 1,
+      "division_seed": 7
     }
   },
   {
@@ -291,9 +528,9 @@
     "continent": "Europe",
     "real_world_league": "Bundesliga",
     "importance": 98,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-1",
+    "division_seed": 4,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-005",
     "squad": {
       "player_ids": [
@@ -349,6 +586,64 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-005",
+      "club_name": "Bayern Munich",
+      "strength_score": 92.71,
+      "components": {
+        "starting_xi_average": 92.64,
+        "first_team_depth_average": 90.22,
+        "positional_balance_score": 100,
+        "youth_strength_average": 85.67
+      },
+      "squad": {
+        "assigned_players": 26,
+        "rated_players": 26,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00017259",
+          "tbg-tm-00161056",
+          "tbg-tm-00344695",
+          "tbg-tm-00196357",
+          "tbg-tm-00223967",
+          "tbg-tm-00580195",
+          "tbg-tm-01075147",
+          "tbg-tm-00702869",
+          "tbg-tm-00132098",
+          "tbg-tm-00566723",
+          "tbg-tm-00480692"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00159471",
+          "tbg-tm-00257455",
+          "tbg-tm-00424204",
+          "tbg-tm-00503482",
+          "tbg-tm-00792380",
+          "tbg-tm-00483046",
+          "tbg-tm-00353892",
+          "tbg-tm-00691892",
+          "tbg-tm-00822959"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01075147",
+          "tbg-tm-00822959",
+          "tbg-tm-00744728",
+          "tbg-tm-00904974",
+          "tbg-tm-00892973",
+          "tbg-tm-00744729"
+        ],
+        "position_counts": {
+          "ATT": 4,
+          "MID": 4,
+          "DEF": 11,
+          "GK": 1
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 4,
+      "division_level": 1,
+      "division_seed": 4
     }
   },
   {
@@ -361,9 +656,9 @@
     "continent": "Europe",
     "real_world_league": "Ligue 1",
     "importance": 97,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-1",
+    "division_seed": 5,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-006",
     "squad": {
       "player_ids": [
@@ -420,6 +715,68 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-006",
+      "club_name": "Paris Saint-Germain",
+      "strength_score": 92.62,
+      "components": {
+        "starting_xi_average": 92.55,
+        "first_team_depth_average": 89.78,
+        "positional_balance_score": 100,
+        "youth_strength_average": 86.9
+      },
+      "squad": {
+        "assigned_players": 27,
+        "rated_players": 27,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00318470",
+          "tbg-tm-00181767",
+          "tbg-tm-00398073",
+          "tbg-tm-00487469",
+          "tbg-tm-00616341",
+          "tbg-tm-00670681",
+          "tbg-tm-00350219",
+          "tbg-tm-00810092",
+          "tbg-tm-00288230",
+          "tbg-tm-00502670",
+          "tbg-tm-00914562"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00661171",
+          "tbg-tm-00281963",
+          "tbg-tm-00708265",
+          "tbg-tm-00487969",
+          "tbg-tm-00659089",
+          "tbg-tm-00463600",
+          "tbg-tm-00557149",
+          "tbg-tm-00903693",
+          "tbg-tm-00872171"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00670681",
+          "tbg-tm-00914562",
+          "tbg-tm-00810092",
+          "tbg-tm-00903693",
+          "tbg-tm-01185888",
+          "tbg-tm-01071596",
+          "tbg-tm-01053208",
+          "tbg-tm-01086636",
+          "tbg-tm-01047097",
+          "tbg-tm-01053148"
+        ],
+        "position_counts": {
+          "ATT": 5,
+          "DEF": 8,
+          "MID": 5,
+          "GK": 2
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 5,
+      "division_level": 1,
+      "division_seed": 5
     }
   },
   {
@@ -432,9 +789,9 @@
     "continent": "Europe",
     "real_world_league": "Premier League",
     "importance": 97,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-1",
+    "division_seed": 3,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-007",
     "squad": {
       "player_ids": [
@@ -488,6 +845,62 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-007",
+      "club_name": "Arsenal FC",
+      "strength_score": 92.93,
+      "components": {
+        "starting_xi_average": 92.91,
+        "first_team_depth_average": 90.33,
+        "positional_balance_score": 100,
+        "youth_strength_average": 86.25
+      },
+      "squad": {
+        "assigned_players": 24,
+        "rated_players": 24,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00262749",
+          "tbg-tm-00423440",
+          "tbg-tm-00435338",
+          "tbg-tm-00495666",
+          "tbg-tm-00420243",
+          "tbg-tm-00357662",
+          "tbg-tm-00316264",
+          "tbg-tm-00338424",
+          "tbg-tm-00433177",
+          "tbg-tm-00309400",
+          "tbg-tm-00325443"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00479999",
+          "tbg-tm-00655488",
+          "tbg-tm-00659813",
+          "tbg-tm-00144028",
+          "tbg-tm-00335721",
+          "tbg-tm-00363205",
+          "tbg-tm-00502821",
+          "tbg-tm-00503987",
+          "tbg-tm-00646750"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00890719",
+          "tbg-tm-00890721",
+          "tbg-tm-01187629",
+          "tbg-tm-00848753"
+        ],
+        "position_counts": {
+          "MID": 4,
+          "ATT": 7,
+          "DEF": 8,
+          "GK": 1
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 3,
+      "division_level": 1,
+      "division_seed": 3
     }
   },
   {
@@ -500,9 +913,9 @@
     "continent": "Europe",
     "real_world_league": "Premier League",
     "importance": 96,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-1",
+    "division_seed": 9,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-008",
     "squad": {
       "player_ids": [
@@ -561,6 +974,68 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-008",
+      "club_name": "Manchester United",
+      "strength_score": 91.55,
+      "components": {
+        "starting_xi_average": 91.09,
+        "first_team_depth_average": 89.22,
+        "positional_balance_score": 100,
+        "youth_strength_average": 85.3
+      },
+      "squad": {
+        "assigned_players": 29,
+        "rated_players": 29,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00503883",
+          "tbg-tm-00326031",
+          "tbg-tm-00480762",
+          "tbg-tm-00177907",
+          "tbg-tm-00357147",
+          "tbg-tm-00240306",
+          "tbg-tm-00346483",
+          "tbg-tm-00820374",
+          "tbg-tm-00258923",
+          "tbg-tm-00413039",
+          "tbg-tm-00517894"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00627442",
+          "tbg-tm-00476701",
+          "tbg-tm-00536835",
+          "tbg-tm-00923831",
+          "tbg-tm-00183288",
+          "tbg-tm-00340456",
+          "tbg-tm-00034130",
+          "tbg-tm-00435648",
+          "tbg-tm-00926952"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00820374",
+          "tbg-tm-00923831",
+          "tbg-tm-00926952",
+          "tbg-tm-01078163",
+          "tbg-tm-01011738",
+          "tbg-tm-00747153",
+          "tbg-tm-00911424",
+          "tbg-tm-01042886",
+          "tbg-tm-01283997",
+          "tbg-tm-01011140"
+        ],
+        "position_counts": {
+          "MID": 3,
+          "ATT": 7,
+          "DEF": 8,
+          "GK": 2
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 9,
+      "division_level": 1,
+      "division_seed": 9
     }
   },
   {
@@ -573,9 +1048,9 @@
     "continent": "Europe",
     "real_world_league": "Premier League",
     "importance": 95,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-1",
+    "division_seed": 8,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-009",
     "squad": {
       "player_ids": [
@@ -635,6 +1110,68 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-009",
+      "club_name": "Chelsea FC",
+      "strength_score": 91.7,
+      "components": {
+        "starting_xi_average": 91.27,
+        "first_team_depth_average": 88.89,
+        "positional_balance_score": 100,
+        "youth_strength_average": 87.6
+      },
+      "squad": {
+        "assigned_players": 30,
+        "rated_players": 30,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00403151",
+          "tbg-tm-00687626",
+          "tbg-tm-00472423",
+          "tbg-tm-00346314",
+          "tbg-tm-00475411",
+          "tbg-tm-00568177",
+          "tbg-tm-00648195",
+          "tbg-tm-00743600",
+          "tbg-tm-00487465",
+          "tbg-tm-00626724",
+          "tbg-tm-01056993"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00614258",
+          "tbg-tm-00776890",
+          "tbg-tm-00386047",
+          "tbg-tm-00620322",
+          "tbg-tm-00811779",
+          "tbg-tm-00904802",
+          "tbg-tm-00258878",
+          "tbg-tm-00463603",
+          "tbg-tm-00559328"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01056993",
+          "tbg-tm-00904802",
+          "tbg-tm-00670882",
+          "tbg-tm-00895937",
+          "tbg-tm-01138758",
+          "tbg-tm-00834397",
+          "tbg-tm-00910905",
+          "tbg-tm-01004708",
+          "tbg-tm-00670717",
+          "tbg-tm-00938158"
+        ],
+        "position_counts": {
+          "MID": 3,
+          "DEF": 10,
+          "ATT": 6,
+          "GK": 1
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 8,
+      "division_level": 1,
+      "division_seed": 8
     }
   },
   {
@@ -647,9 +1184,9 @@
     "continent": "Europe",
     "real_world_league": "Serie A",
     "importance": 95,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-1",
+    "division_seed": 16,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-010",
     "squad": {
       "player_ids": [
@@ -702,6 +1239,61 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-010",
+      "club_name": "Juventus FC",
+      "strength_score": 90.68,
+      "components": {
+        "starting_xi_average": 89.82,
+        "first_team_depth_average": 88.44,
+        "positional_balance_score": 100,
+        "youth_strength_average": 86.67
+      },
+      "squad": {
+        "assigned_players": 23,
+        "rated_players": 23,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00075411",
+          "tbg-tm-00516716",
+          "tbg-tm-00265088",
+          "tbg-tm-00360518",
+          "tbg-tm-00459658",
+          "tbg-tm-00332697",
+          "tbg-tm-00447661",
+          "tbg-tm-00463618",
+          "tbg-tm-00845654",
+          "tbg-tm-00368887",
+          "tbg-tm-00486031"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00533738",
+          "tbg-tm-00480116",
+          "tbg-tm-00585949",
+          "tbg-tm-00110923",
+          "tbg-tm-00301238",
+          "tbg-tm-00362842",
+          "tbg-tm-00487474",
+          "tbg-tm-00496857",
+          "tbg-tm-00509022"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00845654",
+          "tbg-tm-00934878",
+          "tbg-tm-00944570"
+        ],
+        "position_counts": {
+          "DEF": 7,
+          "ATT": 6,
+          "MID": 4,
+          "GK": 3
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 16,
+      "division_level": 1,
+      "division_seed": 16
     }
   },
   {
@@ -714,9 +1306,9 @@
     "continent": "Europe",
     "real_world_league": "Serie A",
     "importance": 95,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-1",
+    "division_seed": 15,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-011",
     "squad": {
       "player_ids": [
@@ -774,6 +1366,66 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-011",
+      "club_name": "AC Milan",
+      "strength_score": 90.71,
+      "components": {
+        "starting_xi_average": 90.18,
+        "first_team_depth_average": 88.11,
+        "positional_balance_score": 100,
+        "youth_strength_average": 84.38
+      },
+      "squad": {
+        "assigned_players": 28,
+        "rated_players": 28,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00182906",
+          "tbg-tm-00574671",
+          "tbg-tm-00303254",
+          "tbg-tm-00349599",
+          "tbg-tm-00569598",
+          "tbg-tm-00182913",
+          "tbg-tm-00381950",
+          "tbg-tm-00202886",
+          "tbg-tm-00357164",
+          "tbg-tm-00315779",
+          "tbg-tm-00344381"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00550550",
+          "tbg-tm-00096254",
+          "tbg-tm-00323167",
+          "tbg-tm-00351816",
+          "tbg-tm-00401922",
+          "tbg-tm-00467992",
+          "tbg-tm-00490384",
+          "tbg-tm-00552955",
+          "tbg-tm-00608172"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00887638",
+          "tbg-tm-00990637",
+          "tbg-tm-01058368",
+          "tbg-tm-00897423",
+          "tbg-tm-00964087",
+          "tbg-tm-00883349",
+          "tbg-tm-00939745",
+          "tbg-tm-01058363"
+        ],
+        "position_counts": {
+          "ATT": 6,
+          "GK": 2,
+          "MID": 3,
+          "DEF": 9
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 15,
+      "division_level": 1,
+      "division_seed": 15
     }
   },
   {
@@ -786,9 +1438,9 @@
     "continent": "Europe",
     "real_world_league": "Serie A",
     "importance": 94,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-1",
+    "division_seed": 12,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-012",
     "squad": {
       "player_ids": [
@@ -841,6 +1493,61 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-012",
+      "club_name": "Inter Milan",
+      "strength_score": 91.37,
+      "components": {
+        "starting_xi_average": 91,
+        "first_team_depth_average": 88.33,
+        "positional_balance_score": 100,
+        "youth_strength_average": 86.67
+      },
+      "squad": {
+        "assigned_players": 23,
+        "rated_players": 23,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00388516",
+          "tbg-tm-00126414",
+          "tbg-tm-00198116",
+          "tbg-tm-00315853",
+          "tbg-tm-00284730",
+          "tbg-tm-00255942",
+          "tbg-tm-00181136",
+          "tbg-tm-00055735",
+          "tbg-tm-00406625",
+          "tbg-tm-00318528",
+          "tbg-tm-00930781"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00441986",
+          "tbg-tm-00353366",
+          "tbg-tm-00394300",
+          "tbg-tm-00585982",
+          "tbg-tm-00668207",
+          "tbg-tm-00691316",
+          "tbg-tm-00827734",
+          "tbg-tm-00543771",
+          "tbg-tm-00711976"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00930781",
+          "tbg-tm-00780136",
+          "tbg-tm-00969192"
+        ],
+        "position_counts": {
+          "ATT": 4,
+          "DEF": 8,
+          "MID": 7,
+          "GK": 1
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 12,
+      "division_level": 1,
+      "division_seed": 12
     }
   },
   {
@@ -853,9 +1560,9 @@
     "continent": "Europe",
     "real_world_league": "LaLiga",
     "importance": 94,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-1",
+    "division_seed": 11,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-013",
     "squad": {
       "player_ids": [
@@ -907,6 +1614,60 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-013",
+      "club_name": "Atlético de Madrid",
+      "strength_score": 91.46,
+      "components": {
+        "starting_xi_average": 91,
+        "first_team_depth_average": 88.89,
+        "positional_balance_score": 100,
+        "youth_strength_average": 86
+      },
+      "squad": {
+        "assigned_players": 22,
+        "rated_players": 22,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00121483",
+          "tbg-tm-00282411",
+          "tbg-tm-00193082",
+          "tbg-tm-00250845",
+          "tbg-tm-00351809",
+          "tbg-tm-00074229",
+          "tbg-tm-00775605",
+          "tbg-tm-00689505",
+          "tbg-tm-00576024",
+          "tbg-tm-00125781",
+          "tbg-tm-00406040"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00238407",
+          "tbg-tm-00404418",
+          "tbg-tm-00424042",
+          "tbg-tm-00548111",
+          "tbg-tm-00742201",
+          "tbg-tm-00242359",
+          "tbg-tm-00616631",
+          "tbg-tm-00844637",
+          "tbg-tm-00576028"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00961297",
+          "tbg-tm-00889435"
+        ],
+        "position_counts": {
+          "GK": 2,
+          "ATT": 7,
+          "DEF": 8,
+          "MID": 3
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 11,
+      "division_level": 1,
+      "division_seed": 11
     }
   },
   {
@@ -919,9 +1680,9 @@
     "continent": "Europe",
     "real_world_league": "Bundesliga",
     "importance": 92,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-1",
+    "division_seed": 18,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-014",
     "squad": {
       "player_ids": [
@@ -980,6 +1741,68 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-014",
+      "club_name": "Borussia Dortmund",
+      "strength_score": 90.22,
+      "components": {
+        "starting_xi_average": 89.82,
+        "first_team_depth_average": 87,
+        "positional_balance_score": 100,
+        "youth_strength_average": 83.8
+      },
+      "squad": {
+        "assigned_players": 29,
+        "rated_players": 29,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00257814",
+          "tbg-tm-00388198",
+          "tbg-tm-00370789",
+          "tbg-tm-00193004",
+          "tbg-tm-00284732",
+          "tbg-tm-00106987",
+          "tbg-tm-00406640",
+          "tbg-tm-00796297",
+          "tbg-tm-00270541",
+          "tbg-tm-00496094",
+          "tbg-tm-00578392"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00119296",
+          "tbg-tm-00579287",
+          "tbg-tm-00076158",
+          "tbg-tm-00094192",
+          "tbg-tm-00505653",
+          "tbg-tm-00627228",
+          "tbg-tm-00659459",
+          "tbg-tm-00448705",
+          "tbg-tm-01075577"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00796297",
+          "tbg-tm-01075577",
+          "tbg-tm-01058359",
+          "tbg-tm-01074990",
+          "tbg-tm-00866579",
+          "tbg-tm-00883007",
+          "tbg-tm-00884810",
+          "tbg-tm-00884820",
+          "tbg-tm-01185507",
+          "tbg-tm-01193849"
+        ],
+        "position_counts": {
+          "GK": 4,
+          "ATT": 4,
+          "DEF": 8,
+          "MID": 4
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 18,
+      "division_level": 1,
+      "division_seed": 18
     }
   },
   {
@@ -992,9 +1815,9 @@
     "continent": "Europe",
     "real_world_league": "Premier League",
     "importance": 92,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-1",
+    "division_seed": 10,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-015",
     "squad": {
       "player_ids": [
@@ -1054,6 +1877,67 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-015",
+      "club_name": "Tottenham Hotspur",
+      "strength_score": 91.49,
+      "components": {
+        "starting_xi_average": 90.73,
+        "first_team_depth_average": 89.67,
+        "positional_balance_score": 100,
+        "youth_strength_average": 86.56
+      },
+      "squad": {
+        "assigned_players": 30,
+        "rated_players": 30,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00286047",
+          "tbg-tm-00355915",
+          "tbg-tm-00397033",
+          "tbg-tm-00557459",
+          "tbg-tm-00234803",
+          "tbg-tm-00566931",
+          "tbg-tm-00294057",
+          "tbg-tm-00488362",
+          "tbg-tm-00258889",
+          "tbg-tm-00378710",
+          "tbg-tm-00543499"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00354362",
+          "tbg-tm-00469781",
+          "tbg-tm-00553875",
+          "tbg-tm-00576314",
+          "tbg-tm-00892160",
+          "tbg-tm-00263236",
+          "tbg-tm-00431755",
+          "tbg-tm-00483348",
+          "tbg-tm-00556385"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00892160",
+          "tbg-tm-00866246",
+          "tbg-tm-00922693",
+          "tbg-tm-00801734",
+          "tbg-tm-00743498",
+          "tbg-tm-01011147",
+          "tbg-tm-01086258",
+          "tbg-tm-00671108",
+          "tbg-tm-00859951"
+        ],
+        "position_counts": {
+          "DEF": 12,
+          "MID": 4,
+          "ATT": 3,
+          "GK": 1
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 10,
+      "division_level": 1,
+      "division_seed": 10
     }
   },
   {
@@ -1066,9 +1950,9 @@
     "continent": "Europe",
     "real_world_league": "Bundesliga",
     "importance": 89,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-2",
+    "division_seed": 6,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-016",
     "squad": {
       "player_ids": [
@@ -1128,6 +2012,68 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-016",
+      "club_name": "Bayer 04 Leverkusen",
+      "strength_score": 89.91,
+      "components": {
+        "starting_xi_average": 89,
+        "first_team_depth_average": 87.33,
+        "positional_balance_score": 100,
+        "youth_strength_average": 86
+      },
+      "squad": {
+        "assigned_players": 30,
+        "rated_players": 30,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00125714",
+          "tbg-tm-00564545",
+          "tbg-tm-00632349",
+          "tbg-tm-00159088",
+          "tbg-tm-00221316",
+          "tbg-tm-00401578",
+          "tbg-tm-00261504",
+          "tbg-tm-00467437",
+          "tbg-tm-00242086",
+          "tbg-tm-00442891",
+          "tbg-tm-01364454"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00905011",
+          "tbg-tm-00081173",
+          "tbg-tm-00730581",
+          "tbg-tm-00007161",
+          "tbg-tm-00340322",
+          "tbg-tm-00664708",
+          "tbg-tm-00718303",
+          "tbg-tm-00810895",
+          "tbg-tm-00085543"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00905011",
+          "tbg-tm-01364454",
+          "tbg-tm-00810895",
+          "tbg-tm-00919515",
+          "tbg-tm-00929994",
+          "tbg-tm-00952282",
+          "tbg-tm-01214123",
+          "tbg-tm-01058514",
+          "tbg-tm-01077670",
+          "tbg-tm-01182738"
+        ],
+        "position_counts": {
+          "DEF": 6,
+          "ATT": 6,
+          "MID": 5,
+          "GK": 3
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 26,
+      "division_level": 2,
+      "division_seed": 6
     }
   },
   {
@@ -1140,9 +2086,9 @@
     "continent": "Europe",
     "real_world_league": "Bundesliga",
     "importance": 86,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-2",
+    "division_seed": 9,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-017",
     "squad": {
       "player_ids": [
@@ -1199,6 +2145,68 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-017",
+      "club_name": "RB Leipzig",
+      "strength_score": 89.75,
+      "components": {
+        "starting_xi_average": 88.73,
+        "first_team_depth_average": 87.22,
+        "positional_balance_score": 100,
+        "youth_strength_average": 86.4
+      },
+      "squad": {
+        "assigned_players": 27,
+        "rated_players": 27,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00057071",
+          "tbg-tm-00318204",
+          "tbg-tm-00618472",
+          "tbg-tm-00093740",
+          "tbg-tm-00404950",
+          "tbg-tm-00324278",
+          "tbg-tm-00400489",
+          "tbg-tm-00467434",
+          "tbg-tm-01390649",
+          "tbg-tm-00565424",
+          "tbg-tm-00894914"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00327251",
+          "tbg-tm-00420210",
+          "tbg-tm-00957874",
+          "tbg-tm-00202591",
+          "tbg-tm-00215599",
+          "tbg-tm-00486046",
+          "tbg-tm-00897424",
+          "tbg-tm-00926694",
+          "tbg-tm-00160971"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01390649",
+          "tbg-tm-00894914",
+          "tbg-tm-00897424",
+          "tbg-tm-00926694",
+          "tbg-tm-00787912",
+          "tbg-tm-00807386",
+          "tbg-tm-00865682",
+          "tbg-tm-01130445",
+          "tbg-tm-00952779",
+          "tbg-tm-01235583"
+        ],
+        "position_counts": {
+          "DEF": 9,
+          "ATT": 4,
+          "MID": 4,
+          "GK": 3
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 29,
+      "division_level": 2,
+      "division_seed": 9
     }
   },
   {
@@ -1211,9 +2219,9 @@
     "continent": "Europe",
     "real_world_league": "Serie A",
     "importance": 88,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-1",
+    "division_seed": 14,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-018",
     "squad": {
       "player_ids": [
@@ -1267,6 +2275,62 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-018",
+      "club_name": "SSC Napoli",
+      "strength_score": 90.73,
+      "components": {
+        "starting_xi_average": 90.27,
+        "first_team_depth_average": 88.33,
+        "positional_balance_score": 100,
+        "youth_strength_average": 82.75
+      },
+      "squad": {
+        "assigned_players": 24,
+        "rated_players": 24,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00257474",
+          "tbg-tm-00192735",
+          "tbg-tm-00386446",
+          "tbg-tm-00169880",
+          "tbg-tm-00257732",
+          "tbg-tm-00088755",
+          "tbg-tm-00315969",
+          "tbg-tm-00354361",
+          "tbg-tm-00096341",
+          "tbg-tm-00469822",
+          "tbg-tm-00610442"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00339332",
+          "tbg-tm-00376514",
+          "tbg-tm-00433984",
+          "tbg-tm-00118689",
+          "tbg-tm-00165895",
+          "tbg-tm-00240414",
+          "tbg-tm-00423744",
+          "tbg-tm-00525299",
+          "tbg-tm-00572265"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00814446",
+          "tbg-tm-00936229",
+          "tbg-tm-00885235",
+          "tbg-tm-01195798"
+        ],
+        "position_counts": {
+          "MID": 3,
+          "ATT": 6,
+          "DEF": 9,
+          "GK": 2
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 14,
+      "division_level": 1,
+      "division_seed": 14
     }
   },
   {
@@ -1279,9 +2343,9 @@
     "continent": "Europe",
     "real_world_league": "Serie A",
     "importance": 88,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-2",
+    "division_seed": 14,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-019",
     "squad": {
       "player_ids": [
@@ -1337,6 +2401,65 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-019",
+      "club_name": "AS Roma",
+      "strength_score": 89.48,
+      "components": {
+        "starting_xi_average": 88.91,
+        "first_team_depth_average": 86.11,
+        "positional_balance_score": 100,
+        "youth_strength_average": 83.86
+      },
+      "squad": {
+        "assigned_players": 26,
+        "rated_players": 26,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00338670",
+          "tbg-tm-00371149",
+          "tbg-tm-00256448",
+          "tbg-tm-00964580",
+          "tbg-tm-00199248",
+          "tbg-tm-00624690",
+          "tbg-tm-00901019",
+          "tbg-tm-00813137",
+          "tbg-tm-00326029",
+          "tbg-tm-00343537",
+          "tbg-tm-00668951"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00281769",
+          "tbg-tm-00277179",
+          "tbg-tm-00701819",
+          "tbg-tm-00244192",
+          "tbg-tm-00485584",
+          "tbg-tm-01131161",
+          "tbg-tm-00371371",
+          "tbg-tm-00495722",
+          "tbg-tm-00557407"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00813137",
+          "tbg-tm-01131161",
+          "tbg-tm-01046867",
+          "tbg-tm-00659415",
+          "tbg-tm-00803005",
+          "tbg-tm-01053217",
+          "tbg-tm-01073023"
+        ],
+        "position_counts": {
+          "ATT": 4,
+          "GK": 3,
+          "DEF": 10,
+          "MID": 3
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 34,
+      "division_level": 2,
+      "division_seed": 14
     }
   },
   {
@@ -1349,9 +2472,9 @@
     "continent": "Europe",
     "real_world_league": "Serie A",
     "importance": 84,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-4",
+    "division_seed": 17,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-020",
     "squad": {
       "player_ids": [
@@ -1406,6 +2529,63 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-020",
+      "club_name": "SS Lazio",
+      "strength_score": 85.85,
+      "components": {
+        "starting_xi_average": 87.45,
+        "first_team_depth_average": 86.22,
+        "positional_balance_score": 78.82,
+        "youth_strength_average": 83.2
+      },
+      "squad": {
+        "assigned_players": 25,
+        "rated_players": 25,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00197929",
+          "tbg-tm-00618341",
+          "tbg-tm-00197747",
+          "tbg-tm-00525704",
+          "tbg-tm-00126729",
+          "tbg-tm-00470394",
+          "tbg-tm-00283735",
+          "tbg-tm-00462823",
+          "tbg-tm-00457736",
+          "tbg-tm-00199733",
+          "tbg-tm-00239802"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00276896",
+          "tbg-tm-00331401",
+          "tbg-tm-00535955",
+          "tbg-tm-00346567",
+          "tbg-tm-00356197",
+          "tbg-tm-00481675",
+          "tbg-tm-00626913",
+          "tbg-tm-00644408",
+          "tbg-tm-00846254"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00916430",
+          "tbg-tm-01018395",
+          "tbg-tm-01110645",
+          "tbg-tm-00883058",
+          "tbg-tm-00918957"
+        ],
+        "position_counts": {
+          "DEF": 12,
+          "ATT": 5,
+          "MID": 1,
+          "GK": 2
+        },
+        "position_shortages": 2
+      },
+      "world_rank": 77,
+      "division_level": 4,
+      "division_seed": 17
     }
   },
   {
@@ -1418,9 +2598,9 @@
     "continent": "Europe",
     "real_world_league": "Serie A",
     "importance": 82,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-1",
+    "division_seed": 20,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-021",
     "squad": {
       "player_ids": [
@@ -1471,6 +2651,59 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-021",
+      "club_name": "Atalanta BC",
+      "strength_score": 90.01,
+      "components": {
+        "starting_xi_average": 89,
+        "first_team_depth_average": 87.56,
+        "positional_balance_score": 100,
+        "youth_strength_average": 87
+      },
+      "squad": {
+        "assigned_players": 21,
+        "rated_players": 21,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00459763",
+          "tbg-tm-00094005",
+          "tbg-tm-00133179",
+          "tbg-tm-00165513",
+          "tbg-tm-00503075",
+          "tbg-tm-00607854",
+          "tbg-tm-00205938",
+          "tbg-tm-00435772",
+          "tbg-tm-00315867",
+          "tbg-tm-00434433",
+          "tbg-tm-00405885"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00173859",
+          "tbg-tm-00357992",
+          "tbg-tm-00550108",
+          "tbg-tm-00571604",
+          "tbg-tm-00644771",
+          "tbg-tm-00199976",
+          "tbg-tm-00528833",
+          "tbg-tm-00708635",
+          "tbg-tm-00746695"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01077175"
+        ],
+        "position_counts": {
+          "MID": 8,
+          "DEF": 6,
+          "ATT": 4,
+          "GK": 2
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 20,
+      "division_level": 1,
+      "division_seed": 20
     }
   },
   {
@@ -1483,9 +2716,9 @@
     "continent": "Europe",
     "real_world_league": "Serie A",
     "importance": 80,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-3",
+    "division_seed": 4,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-022",
     "squad": {
       "player_ids": [
@@ -1545,6 +2778,68 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-022",
+      "club_name": "ACF Fiorentina",
+      "strength_score": 88.73,
+      "components": {
+        "starting_xi_average": 87.73,
+        "first_team_depth_average": 85.89,
+        "positional_balance_score": 100,
+        "youth_strength_average": 83.9
+      },
+      "squad": {
+        "assigned_players": 30,
+        "rated_players": 30,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00059377",
+          "tbg-tm-00273132",
+          "tbg-tm-00401529",
+          "tbg-tm-00282144",
+          "tbg-tm-00308279",
+          "tbg-tm-00432090",
+          "tbg-tm-00272261",
+          "tbg-tm-00459128",
+          "tbg-tm-00364135",
+          "tbg-tm-00305947",
+          "tbg-tm-00432092"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00746712",
+          "tbg-tm-00135747",
+          "tbg-tm-00346561",
+          "tbg-tm-00354814",
+          "tbg-tm-00507486",
+          "tbg-tm-00633668",
+          "tbg-tm-00651005",
+          "tbg-tm-00386455",
+          "tbg-tm-00547985"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00746712",
+          "tbg-tm-00651005",
+          "tbg-tm-00984964",
+          "tbg-tm-00934159",
+          "tbg-tm-00950393",
+          "tbg-tm-00866247",
+          "tbg-tm-00932740",
+          "tbg-tm-01012731",
+          "tbg-tm-00934514",
+          "tbg-tm-00996453"
+        ],
+        "position_counts": {
+          "GK": 2,
+          "ATT": 5,
+          "DEF": 7,
+          "MID": 6
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 44,
+      "division_level": 3,
+      "division_seed": 4
     }
   },
   {
@@ -1557,9 +2852,9 @@
     "continent": "Europe",
     "real_world_league": "Serie A",
     "importance": 78,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-3",
+    "division_seed": 3,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-023",
     "squad": {
       "player_ids": [
@@ -1613,6 +2908,62 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-023",
+      "club_name": "Bologna FC 1909",
+      "strength_score": 88.85,
+      "components": {
+        "starting_xi_average": 87.73,
+        "first_team_depth_average": 86.33,
+        "positional_balance_score": 100,
+        "youth_strength_average": 84.5
+      },
+      "squad": {
+        "assigned_players": 24,
+        "rated_players": 24,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00080894",
+          "tbg-tm-00413565",
+          "tbg-tm-00033571",
+          "tbg-tm-00464469",
+          "tbg-tm-00316934",
+          "tbg-tm-00428563",
+          "tbg-tm-00345590",
+          "tbg-tm-00392538",
+          "tbg-tm-00368482",
+          "tbg-tm-00849520",
+          "tbg-tm-00197300"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00341227",
+          "tbg-tm-00459151",
+          "tbg-tm-00496745",
+          "tbg-tm-00672381",
+          "tbg-tm-00389837",
+          "tbg-tm-00392966",
+          "tbg-tm-00538964",
+          "tbg-tm-00652054",
+          "tbg-tm-00367992"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00849520",
+          "tbg-tm-01129198",
+          "tbg-tm-00992569",
+          "tbg-tm-01108253"
+        ],
+        "position_counts": {
+          "DEF": 9,
+          "GK": 1,
+          "ATT": 7,
+          "MID": 3
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 43,
+      "division_level": 3,
+      "division_seed": 3
     }
   },
   {
@@ -1625,9 +2976,9 @@
     "continent": "Europe",
     "real_world_league": "Ligue 1",
     "importance": 86,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-4",
+    "division_seed": 18,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-024",
     "squad": {
       "player_ids": [
@@ -1677,6 +3028,57 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-024",
+      "club_name": "Olympique Marseille",
+      "strength_score": 85.54,
+      "components": {
+        "starting_xi_average": 89,
+        "first_team_depth_average": 87,
+        "positional_balance_score": 100,
+        "youth_strength_average": 0
+      },
+      "squad": {
+        "assigned_players": 20,
+        "rated_players": 20,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00229604",
+          "tbg-tm-00167799",
+          "tbg-tm-00181778",
+          "tbg-tm-00361914",
+          "tbg-tm-00127189",
+          "tbg-tm-00420213",
+          "tbg-tm-00370846",
+          "tbg-tm-00392770",
+          "tbg-tm-00058864",
+          "tbg-tm-00532826",
+          "tbg-tm-00418659"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00653610",
+          "tbg-tm-00474800",
+          "tbg-tm-00575998",
+          "tbg-tm-00372711",
+          "tbg-tm-00391065",
+          "tbg-tm-00192616",
+          "tbg-tm-00217115",
+          "tbg-tm-00328609",
+          "tbg-tm-00581669"
+        ],
+        "youth_player_ids": [],
+        "position_counts": {
+          "DEF": 9,
+          "ATT": 7,
+          "GK": 1,
+          "MID": 3
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 78,
+      "division_level": 4,
+      "division_seed": 18
     }
   },
   {
@@ -1689,9 +3091,9 @@
     "continent": "Europe",
     "real_world_league": "Ligue 1",
     "importance": 84,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-4",
+    "division_seed": 5,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-025",
     "squad": {
       "player_ids": [
@@ -1751,6 +3153,68 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-025",
+      "club_name": "Olympique Lyon",
+      "strength_score": 87.51,
+      "components": {
+        "starting_xi_average": 87.82,
+        "first_team_depth_average": 86.33,
+        "positional_balance_score": 89.41,
+        "youth_strength_average": 84
+      },
+      "squad": {
+        "assigned_players": 30,
+        "rated_players": 30,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00316884",
+          "tbg-tm-00131225",
+          "tbg-tm-00291200",
+          "tbg-tm-00618494",
+          "tbg-tm-00187718",
+          "tbg-tm-00190393",
+          "tbg-tm-00500053",
+          "tbg-tm-00462832",
+          "tbg-tm-00743386",
+          "tbg-tm-00955070",
+          "tbg-tm-00425306"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00238266",
+          "tbg-tm-00285845",
+          "tbg-tm-00289592",
+          "tbg-tm-00646402",
+          "tbg-tm-00282028",
+          "tbg-tm-00578421",
+          "tbg-tm-00670096",
+          "tbg-tm-00802515",
+          "tbg-tm-00429901"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00743386",
+          "tbg-tm-00802515",
+          "tbg-tm-01187942",
+          "tbg-tm-00819215",
+          "tbg-tm-01200423",
+          "tbg-tm-01004486",
+          "tbg-tm-01053147",
+          "tbg-tm-01097113",
+          "tbg-tm-01275040",
+          "tbg-tm-01108478"
+        ],
+        "position_counts": {
+          "DEF": 11,
+          "MID": 4,
+          "GK": 3,
+          "ATT": 2
+        },
+        "position_shortages": 1
+      },
+      "world_rank": 65,
+      "division_level": 4,
+      "division_seed": 5
     }
   },
   {
@@ -1763,9 +3227,9 @@
     "continent": "Europe",
     "real_world_league": "Ligue 1",
     "importance": 82,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-4",
+    "division_seed": 10,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-026",
     "squad": {
       "player_ids": [
@@ -1822,6 +3286,68 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-026",
+      "club_name": "LOSC Lille",
+      "strength_score": 87.27,
+      "components": {
+        "starting_xi_average": 87.73,
+        "first_team_depth_average": 85.44,
+        "positional_balance_score": 89.41,
+        "youth_strength_average": 84.3
+      },
+      "squad": {
+        "assigned_players": 27,
+        "rated_players": 27,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00361256",
+          "tbg-tm-00084301",
+          "tbg-tm-00548254",
+          "tbg-tm-00648020",
+          "tbg-tm-00318523",
+          "tbg-tm-01097139",
+          "tbg-tm-00652275",
+          "tbg-tm-00082442",
+          "tbg-tm-00724129",
+          "tbg-tm-00885445",
+          "tbg-tm-00258364"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00353404",
+          "tbg-tm-00479648",
+          "tbg-tm-00580657",
+          "tbg-tm-00594991",
+          "tbg-tm-00816580",
+          "tbg-tm-01016015",
+          "tbg-tm-00417278",
+          "tbg-tm-00707230",
+          "tbg-tm-00903359"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01097139",
+          "tbg-tm-00724129",
+          "tbg-tm-01016015",
+          "tbg-tm-00903359",
+          "tbg-tm-00903666",
+          "tbg-tm-01078326",
+          "tbg-tm-01184007",
+          "tbg-tm-00920939",
+          "tbg-tm-00999886",
+          "tbg-tm-01160753"
+        ],
+        "position_counts": {
+          "ATT": 8,
+          "MID": 2,
+          "DEF": 8,
+          "GK": 2
+        },
+        "position_shortages": 1
+      },
+      "world_rank": 70,
+      "division_level": 4,
+      "division_seed": 10
     }
   },
   {
@@ -1834,9 +3360,9 @@
     "continent": "Europe",
     "real_world_league": "Ligue 1",
     "importance": 82,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-2",
+    "division_seed": 8,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-027",
     "squad": {
       "player_ids": [
@@ -1893,6 +3419,65 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-027",
+      "club_name": "AS Monaco",
+      "strength_score": 89.79,
+      "components": {
+        "starting_xi_average": 89.27,
+        "first_team_depth_average": 86.44,
+        "positional_balance_score": 100,
+        "youth_strength_average": 84.14
+      },
+      "squad": {
+        "assigned_players": 27,
+        "rated_players": 27,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00048015",
+          "tbg-tm-00334526",
+          "tbg-tm-00228948",
+          "tbg-tm-00175722",
+          "tbg-tm-00789082",
+          "tbg-tm-00122153",
+          "tbg-tm-00263918",
+          "tbg-tm-00918969",
+          "tbg-tm-00745200",
+          "tbg-tm-00503770",
+          "tbg-tm-00165793"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00466810",
+          "tbg-tm-00364245",
+          "tbg-tm-00563963",
+          "tbg-tm-00565821",
+          "tbg-tm-00251322",
+          "tbg-tm-00745173",
+          "tbg-tm-00975347",
+          "tbg-tm-01005240",
+          "tbg-tm-00346546"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00975347",
+          "tbg-tm-01005240",
+          "tbg-tm-01171981",
+          "tbg-tm-00743387",
+          "tbg-tm-00745178",
+          "tbg-tm-00810909",
+          "tbg-tm-00918414"
+        ],
+        "position_counts": {
+          "DEF": 8,
+          "GK": 3,
+          "MID": 4,
+          "ATT": 5
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 28,
+      "division_level": 2,
+      "division_seed": 8
     }
   },
   {
@@ -1905,9 +3490,9 @@
     "continent": "Europe",
     "real_world_league": "Ligue 1",
     "importance": 78,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-3",
+    "division_seed": 1,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-028",
     "squad": {
       "player_ids": [
@@ -1967,6 +3552,68 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-028",
+      "club_name": "Stade Rennais FC",
+      "strength_score": 88.92,
+      "components": {
+        "starting_xi_average": 87.91,
+        "first_team_depth_average": 86.33,
+        "positional_balance_score": 100,
+        "youth_strength_average": 83.6
+      },
+      "squad": {
+        "assigned_players": 30,
+        "rated_players": 30,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00191056",
+          "tbg-tm-00239743",
+          "tbg-tm-00485960",
+          "tbg-tm-00557613",
+          "tbg-tm-00690799",
+          "tbg-tm-00182893",
+          "tbg-tm-00288225",
+          "tbg-tm-00320748",
+          "tbg-tm-00237662",
+          "tbg-tm-00461607",
+          "tbg-tm-00551505"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00332889",
+          "tbg-tm-00215977",
+          "tbg-tm-00324795",
+          "tbg-tm-00242632",
+          "tbg-tm-00667517",
+          "tbg-tm-00798404",
+          "tbg-tm-00931160",
+          "tbg-tm-00967346",
+          "tbg-tm-00324811"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00967346",
+          "tbg-tm-01134251",
+          "tbg-tm-01153105",
+          "tbg-tm-00666974",
+          "tbg-tm-01176345",
+          "tbg-tm-00977877",
+          "tbg-tm-01078918",
+          "tbg-tm-00986285",
+          "tbg-tm-01119839",
+          "tbg-tm-01227106"
+        ],
+        "position_counts": {
+          "MID": 9,
+          "ATT": 5,
+          "GK": 1,
+          "DEF": 5
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 41,
+      "division_level": 3,
+      "division_seed": 1
     }
   },
   {
@@ -1979,9 +3626,9 @@
     "continent": "Europe",
     "real_world_league": "Ligue 1",
     "importance": 77,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-3",
+    "division_seed": 10,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-029",
     "squad": {
       "player_ids": [
@@ -2039,6 +3686,68 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-029",
+      "club_name": "RC Lens",
+      "strength_score": 88.27,
+      "components": {
+        "starting_xi_average": 87.27,
+        "first_team_depth_average": 85.11,
+        "positional_balance_score": 100,
+        "youth_strength_average": 83.7
+      },
+      "squad": {
+        "assigned_players": 28,
+        "rated_players": 28,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00743515",
+          "tbg-tm-00655217",
+          "tbg-tm-00126557",
+          "tbg-tm-00203746",
+          "tbg-tm-00344886",
+          "tbg-tm-00808348",
+          "tbg-tm-00250013",
+          "tbg-tm-00402008",
+          "tbg-tm-00184892",
+          "tbg-tm-00344152",
+          "tbg-tm-00354726"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00415383",
+          "tbg-tm-00631927",
+          "tbg-tm-01020191",
+          "tbg-tm-00344600",
+          "tbg-tm-00776798",
+          "tbg-tm-00525140",
+          "tbg-tm-00713787",
+          "tbg-tm-00819566",
+          "tbg-tm-00917778"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00743515",
+          "tbg-tm-01020191",
+          "tbg-tm-00819566",
+          "tbg-tm-00986291",
+          "tbg-tm-01160814",
+          "tbg-tm-01057820",
+          "tbg-tm-01160378",
+          "tbg-tm-01176271",
+          "tbg-tm-01179130",
+          "tbg-tm-01186789"
+        ],
+        "position_counts": {
+          "MID": 4,
+          "ATT": 6,
+          "DEF": 8,
+          "GK": 2
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 50,
+      "division_level": 3,
+      "division_seed": 10
     }
   },
   {
@@ -2051,9 +3760,9 @@
     "continent": "Europe",
     "real_world_league": "Premier League",
     "importance": 80,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-1",
+    "division_seed": 13,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-030",
     "squad": {
       "player_ids": [
@@ -2106,6 +3815,61 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-030",
+      "club_name": "Aston Villa",
+      "strength_score": 90.97,
+      "components": {
+        "starting_xi_average": 90.45,
+        "first_team_depth_average": 88.56,
+        "positional_balance_score": 100,
+        "youth_strength_average": 84.33
+      },
+      "squad": {
+        "assigned_players": 23,
+        "rated_players": 23,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00111873",
+          "tbg-tm-00413403",
+          "tbg-tm-00394327",
+          "tbg-tm-00399776",
+          "tbg-tm-00485706",
+          "tbg-tm-00249565",
+          "tbg-tm-00503743",
+          "tbg-tm-00193116",
+          "tbg-tm-00324358",
+          "tbg-tm-00321247",
+          "tbg-tm-00331726"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00126664",
+          "tbg-tm-00184573",
+          "tbg-tm-00425334",
+          "tbg-tm-00485585",
+          "tbg-tm-00500689",
+          "tbg-tm-00124884",
+          "tbg-tm-00131978",
+          "tbg-tm-00253677",
+          "tbg-tm-00387626"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01005583",
+          "tbg-tm-00848682",
+          "tbg-tm-01282860"
+        ],
+        "position_counts": {
+          "MID": 4,
+          "GK": 2,
+          "ATT": 5,
+          "DEF": 9
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 13,
+      "division_level": 1,
+      "division_seed": 13
     }
   },
   {
@@ -2118,9 +3882,9 @@
     "continent": "Europe",
     "real_world_league": "Premier League",
     "importance": 80,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-1",
+    "division_seed": 17,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-031",
     "squad": {
       "player_ids": [
@@ -2175,6 +3939,63 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-031",
+      "club_name": "Newcastle United",
+      "strength_score": 90.61,
+      "components": {
+        "starting_xi_average": 89.91,
+        "first_team_depth_average": 88,
+        "positional_balance_score": 100,
+        "youth_strength_average": 86
+      },
+      "squad": {
+        "assigned_players": 25,
+        "rated_players": 25,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00192080",
+          "tbg-tm-00361093",
+          "tbg-tm-00521964",
+          "tbg-tm-00503981",
+          "tbg-tm-00134270",
+          "tbg-tm-00520624",
+          "tbg-tm-00333241",
+          "tbg-tm-00503749",
+          "tbg-tm-00455661",
+          "tbg-tm-00388165",
+          "tbg-tm-00398065"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00583189",
+          "tbg-tm-00199527",
+          "tbg-tm-00135343",
+          "tbg-tm-00340329",
+          "tbg-tm-00670858",
+          "tbg-tm-01067904",
+          "tbg-tm-00142389",
+          "tbg-tm-00609556",
+          "tbg-tm-00922769"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00670858",
+          "tbg-tm-01067904",
+          "tbg-tm-00922769",
+          "tbg-tm-00923757",
+          "tbg-tm-01178393"
+        ],
+        "position_counts": {
+          "MID": 5,
+          "ATT": 7,
+          "DEF": 6,
+          "GK": 2
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 17,
+      "division_level": 1,
+      "division_seed": 17
     }
   },
   {
@@ -2187,9 +4008,9 @@
     "continent": "Europe",
     "real_world_league": "Premier League",
     "importance": 78,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-4",
+    "division_seed": 15,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-032",
     "squad": {
       "player_ids": [
@@ -2244,6 +4065,63 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-032",
+      "club_name": "West Ham United",
+      "strength_score": 87,
+      "components": {
+        "starting_xi_average": 89.09,
+        "first_team_depth_average": 86.78,
+        "positional_balance_score": 78.82,
+        "youth_strength_average": 84.2
+      },
+      "squad": {
+        "assigned_players": 25,
+        "rated_players": 25,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00120629",
+          "tbg-tm-00283628",
+          "tbg-tm-00401356",
+          "tbg-tm-00415912",
+          "tbg-tm-00477758",
+          "tbg-tm-00181579",
+          "tbg-tm-00314875",
+          "tbg-tm-00522784",
+          "tbg-tm-00123682",
+          "tbg-tm-00525247",
+          "tbg-tm-00605184"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00341051",
+          "tbg-tm-00400536",
+          "tbg-tm-00474701",
+          "tbg-tm-01111589",
+          "tbg-tm-00075489",
+          "tbg-tm-00745181",
+          "tbg-tm-00817665",
+          "tbg-tm-00234781",
+          "tbg-tm-00698164"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01111589",
+          "tbg-tm-00922563",
+          "tbg-tm-00845321",
+          "tbg-tm-00953135",
+          "tbg-tm-01081995"
+        ],
+        "position_counts": {
+          "ATT": 7,
+          "DEF": 10,
+          "GK": 2,
+          "MID": 1
+        },
+        "position_shortages": 2
+      },
+      "world_rank": 75,
+      "division_level": 4,
+      "division_seed": 15
     }
   },
   {
@@ -2256,9 +4134,9 @@
     "continent": "Europe",
     "real_world_league": "Premier League",
     "importance": 78,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-2",
+    "division_seed": 7,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-033",
     "squad": {
       "player_ids": [
@@ -2311,6 +4189,62 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-033",
+      "club_name": "Everton FC",
+      "strength_score": 89.89,
+      "components": {
+        "starting_xi_average": 89.18,
+        "first_team_depth_average": 86.89,
+        "positional_balance_score": 100,
+        "youth_strength_average": 85.25
+      },
+      "squad": {
+        "assigned_players": 23,
+        "rated_players": 23,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00130164",
+          "tbg-tm-00404842",
+          "tbg-tm-00505219",
+          "tbg-tm-00661053",
+          "tbg-tm-00173504",
+          "tbg-tm-00475188",
+          "tbg-tm-00608832",
+          "tbg-tm-00696589",
+          "tbg-tm-00623570",
+          "tbg-tm-00584769",
+          "tbg-tm-00595809"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00118534",
+          "tbg-tm-00538216",
+          "tbg-tm-00711544",
+          "tbg-tm-00937941",
+          "tbg-tm-00215810",
+          "tbg-tm-00424015",
+          "tbg-tm-00748319",
+          "tbg-tm-00866655",
+          "tbg-tm-00936874"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00866655",
+          "tbg-tm-00936874",
+          "tbg-tm-01107733",
+          "tbg-tm-00938146"
+        ],
+        "position_counts": {
+          "GK": 2,
+          "ATT": 6,
+          "DEF": 8,
+          "MID": 4
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 27,
+      "division_level": 2,
+      "division_seed": 7
     }
   },
   {
@@ -2323,9 +4257,9 @@
     "continent": "Europe",
     "real_world_league": "Premier League",
     "importance": 76,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-2",
+    "division_seed": 4,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-034",
     "squad": {
       "player_ids": [
@@ -2379,6 +4313,62 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-034",
+      "club_name": "Nottingham Forest",
+      "strength_score": 89.95,
+      "components": {
+        "starting_xi_average": 89.18,
+        "first_team_depth_average": 87.56,
+        "positional_balance_score": 100,
+        "youth_strength_average": 83.5
+      },
+      "squad": {
+        "assigned_players": 24,
+        "rated_players": 24,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00127202",
+          "tbg-tm-00375885",
+          "tbg-tm-00413507",
+          "tbg-tm-01005649",
+          "tbg-tm-00236490",
+          "tbg-tm-00429014",
+          "tbg-tm-00497291",
+          "tbg-tm-00741238",
+          "tbg-tm-00108725",
+          "tbg-tm-00365108",
+          "tbg-tm-00392768"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00503680",
+          "tbg-tm-00432164",
+          "tbg-tm-00540664",
+          "tbg-tm-00585959",
+          "tbg-tm-00295313",
+          "tbg-tm-00425902",
+          "tbg-tm-00583199",
+          "tbg-tm-00673492",
+          "tbg-tm-00708072"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00984096",
+          "tbg-tm-00933017",
+          "tbg-tm-01007720",
+          "tbg-tm-00897481"
+        ],
+        "position_counts": {
+          "MID": 5,
+          "DEF": 7,
+          "ATT": 7,
+          "GK": 1
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 24,
+      "division_level": 2,
+      "division_seed": 4
     }
   },
   {
@@ -2391,9 +4381,9 @@
     "continent": "Europe",
     "real_world_league": "Premier League",
     "importance": 76,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-2",
+    "division_seed": 3,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-035",
     "squad": {
       "player_ids": [
@@ -2453,6 +4443,68 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-035",
+      "club_name": "Brighton & Hove Albion",
+      "strength_score": 89.95,
+      "components": {
+        "starting_xi_average": 88.82,
+        "first_team_depth_average": 88,
+        "positional_balance_score": 100,
+        "youth_strength_average": 85.9
+      },
+      "squad": {
+        "assigned_players": 30,
+        "rated_players": 30,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00565093",
+          "tbg-tm-00369316",
+          "tbg-tm-00973085",
+          "tbg-tm-00415381",
+          "tbg-tm-00148153",
+          "tbg-tm-00082873",
+          "tbg-tm-00406634",
+          "tbg-tm-00667287",
+          "tbg-tm-00504849",
+          "tbg-tm-00067063",
+          "tbg-tm-00538977"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00073564",
+          "tbg-tm-00318508",
+          "tbg-tm-00380350",
+          "tbg-tm-00410708",
+          "tbg-tm-00429915",
+          "tbg-tm-00648046",
+          "tbg-tm-00700106",
+          "tbg-tm-00996897",
+          "tbg-tm-01012534"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00648046",
+          "tbg-tm-01012534",
+          "tbg-tm-00867688",
+          "tbg-tm-01060087",
+          "tbg-tm-00950091",
+          "tbg-tm-00983989",
+          "tbg-tm-01178758",
+          "tbg-tm-00670860",
+          "tbg-tm-00933018",
+          "tbg-tm-01110406"
+        ],
+        "position_counts": {
+          "DEF": 8,
+          "ATT": 5,
+          "GK": 2,
+          "MID": 5
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 23,
+      "division_level": 2,
+      "division_seed": 3
     }
   },
   {
@@ -2465,9 +4517,9 @@
     "continent": "Europe",
     "real_world_league": "Premier League",
     "importance": 74,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-4",
+    "division_seed": 3,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-036",
     "squad": {
       "player_ids": [
@@ -2522,6 +4574,63 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-036",
+      "club_name": "Crystal Palace",
+      "strength_score": 87.57,
+      "components": {
+        "starting_xi_average": 89.82,
+        "first_team_depth_average": 87.44,
+        "positional_balance_score": 78.82,
+        "youth_strength_average": 83.8
+      },
+      "squad": {
+        "assigned_players": 25,
+        "rated_players": 25,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00258919",
+          "tbg-tm-00493003",
+          "tbg-tm-00744149",
+          "tbg-tm-00434224",
+          "tbg-tm-00262980",
+          "tbg-tm-00207014",
+          "tbg-tm-00410225",
+          "tbg-tm-00420002",
+          "tbg-tm-00429983",
+          "tbg-tm-00470607",
+          "tbg-tm-00568157"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00578539",
+          "tbg-tm-00730893",
+          "tbg-tm-00085177",
+          "tbg-tm-00296802",
+          "tbg-tm-00340324",
+          "tbg-tm-00543387",
+          "tbg-tm-01006411",
+          "tbg-tm-00293194",
+          "tbg-tm-00689637"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01006411",
+          "tbg-tm-00967319",
+          "tbg-tm-00865993",
+          "tbg-tm-01047257",
+          "tbg-tm-01047261"
+        ],
+        "position_counts": {
+          "ATT": 6,
+          "DEF": 11,
+          "GK": 2,
+          "MID": 1
+        },
+        "position_shortages": 2
+      },
+      "world_rank": 63,
+      "division_level": 4,
+      "division_seed": 3
     }
   },
   {
@@ -2534,9 +4643,9 @@
     "continent": "Europe",
     "real_world_league": "Premier League",
     "importance": 72,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-2",
+    "division_seed": 2,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-037",
     "squad": {
       "player_ids": [
@@ -2595,6 +4704,67 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-037",
+      "club_name": "AFC Bournemouth",
+      "strength_score": 89.97,
+      "components": {
+        "starting_xi_average": 89,
+        "first_team_depth_average": 87.67,
+        "positional_balance_score": 100,
+        "youth_strength_average": 85.67
+      },
+      "squad": {
+        "assigned_players": 29,
+        "rated_players": 29,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00465555",
+          "tbg-tm-00332705",
+          "tbg-tm-00463605",
+          "tbg-tm-00611793",
+          "tbg-tm-00654539",
+          "tbg-tm-00330659",
+          "tbg-tm-00188077",
+          "tbg-tm-00399434",
+          "tbg-tm-00277033",
+          "tbg-tm-00711337",
+          "tbg-tm-00955357"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00855256",
+          "tbg-tm-01012564",
+          "tbg-tm-00052570",
+          "tbg-tm-00249089",
+          "tbg-tm-00532776",
+          "tbg-tm-00061841",
+          "tbg-tm-00251106",
+          "tbg-tm-00741257",
+          "tbg-tm-00513970"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00955357",
+          "tbg-tm-01012564",
+          "tbg-tm-00741257",
+          "tbg-tm-00719673",
+          "tbg-tm-00989112",
+          "tbg-tm-00998101",
+          "tbg-tm-01009658",
+          "tbg-tm-00854721",
+          "tbg-tm-00994604"
+        ],
+        "position_counts": {
+          "MID": 5,
+          "DEF": 7,
+          "ATT": 6,
+          "GK": 2
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 22,
+      "division_level": 2,
+      "division_seed": 2
     }
   },
   {
@@ -2607,9 +4777,9 @@
     "continent": "Europe",
     "real_world_league": "Premier League",
     "importance": 72,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-2",
+    "division_seed": 5,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-038",
     "squad": {
       "player_ids": [
@@ -2661,6 +4831,61 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-038",
+      "club_name": "Fulham FC",
+      "strength_score": 89.93,
+      "components": {
+        "starting_xi_average": 89,
+        "first_team_depth_average": 87.78,
+        "positional_balance_score": 100,
+        "youth_strength_average": 84.33
+      },
+      "squad": {
+        "assigned_players": 22,
+        "rated_players": 22,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00072476",
+          "tbg-tm-00260827",
+          "tbg-tm-00333014",
+          "tbg-tm-00349701",
+          "tbg-tm-00262226",
+          "tbg-tm-00123275",
+          "tbg-tm-00245056",
+          "tbg-tm-00392765",
+          "tbg-tm-00242631",
+          "tbg-tm-00661207",
+          "tbg-tm-00735571"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00392775",
+          "tbg-tm-00461883",
+          "tbg-tm-00127181",
+          "tbg-tm-00206746",
+          "tbg-tm-00272622",
+          "tbg-tm-00900195",
+          "tbg-tm-00226973",
+          "tbg-tm-01011131",
+          "tbg-tm-00494880"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01011131",
+          "tbg-tm-00817612",
+          "tbg-tm-01069512"
+        ],
+        "position_counts": {
+          "GK": 2,
+          "ATT": 4,
+          "DEF": 9,
+          "MID": 5
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 25,
+      "division_level": 2,
+      "division_seed": 5
     }
   },
   {
@@ -2673,9 +4898,9 @@
     "continent": "Europe",
     "real_world_league": "Premier League",
     "importance": 70,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-2",
+    "division_seed": 1,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-039",
     "squad": {
       "player_ids": [
@@ -2735,6 +4960,67 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-039",
+      "club_name": "Brentford FC",
+      "strength_score": 89.98,
+      "components": {
+        "starting_xi_average": 89.18,
+        "first_team_depth_average": 87.67,
+        "positional_balance_score": 100,
+        "youth_strength_average": 83.67
+      },
+      "squad": {
+        "assigned_players": 30,
+        "rated_players": 30,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00340918",
+          "tbg-tm-00061651",
+          "tbg-tm-00328658",
+          "tbg-tm-00339556",
+          "tbg-tm-00469050",
+          "tbg-tm-00319859",
+          "tbg-tm-00540941",
+          "tbg-tm-00644401",
+          "tbg-tm-00739443",
+          "tbg-tm-00473050",
+          "tbg-tm-00823231"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00541231",
+          "tbg-tm-00823486",
+          "tbg-tm-00270171",
+          "tbg-tm-00442248",
+          "tbg-tm-00684210",
+          "tbg-tm-00717411",
+          "tbg-tm-00591949",
+          "tbg-tm-00559263",
+          "tbg-tm-00683620"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00683620",
+          "tbg-tm-00915418",
+          "tbg-tm-01011936",
+          "tbg-tm-01086375",
+          "tbg-tm-00709767",
+          "tbg-tm-00954104",
+          "tbg-tm-01091562",
+          "tbg-tm-01141628",
+          "tbg-tm-01144158"
+        ],
+        "position_counts": {
+          "DEF": 9,
+          "GK": 1,
+          "ATT": 4,
+          "MID": 6
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 21,
+      "division_level": 2,
+      "division_seed": 1
     }
   },
   {
@@ -2747,9 +5033,9 @@
     "continent": "Europe",
     "real_world_league": "Premier League",
     "importance": 76,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-2",
+    "division_seed": 17,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-040",
     "squad": {
       "player_ids": [
@@ -2800,6 +5086,59 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-040",
+      "club_name": "Leeds United",
+      "strength_score": 89.39,
+      "components": {
+        "starting_xi_average": 88.55,
+        "first_team_depth_average": 87.11,
+        "positional_balance_score": 100,
+        "youth_strength_average": 82
+      },
+      "squad": {
+        "assigned_players": 21,
+        "rated_players": 21,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00352041",
+          "tbg-tm-00297212",
+          "tbg-tm-00344069",
+          "tbg-tm-00362108",
+          "tbg-tm-00371851",
+          "tbg-tm-00346707",
+          "tbg-tm-00393323",
+          "tbg-tm-00489359",
+          "tbg-tm-00306024",
+          "tbg-tm-00319301",
+          "tbg-tm-00346890"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00392771",
+          "tbg-tm-00413220",
+          "tbg-tm-00314288",
+          "tbg-tm-00369962",
+          "tbg-tm-00381753",
+          "tbg-tm-00417346",
+          "tbg-tm-00465717",
+          "tbg-tm-00503980",
+          "tbg-tm-00627626"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00883539"
+        ],
+        "position_counts": {
+          "ATT": 8,
+          "DEF": 8,
+          "MID": 3,
+          "GK": 1
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 37,
+      "division_level": 2,
+      "division_seed": 17
     }
   },
   {
@@ -2812,9 +5151,9 @@
     "continent": "Europe",
     "real_world_league": "Premier League",
     "importance": 70,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-2",
+    "division_seed": 18,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-041",
     "squad": {
       "player_ids": [
@@ -2868,6 +5207,62 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-041",
+      "club_name": "Wolverhampton Wanderers",
+      "strength_score": 89.21,
+      "components": {
+        "starting_xi_average": 88.27,
+        "first_team_depth_average": 86.67,
+        "positional_balance_score": 100,
+        "youth_strength_average": 83.5
+      },
+      "squad": {
+        "assigned_players": 24,
+        "rated_players": 24,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00110864",
+          "tbg-tm-00345911",
+          "tbg-tm-00606718",
+          "tbg-tm-00800176",
+          "tbg-tm-00095810",
+          "tbg-tm-00414908",
+          "tbg-tm-00735570",
+          "tbg-tm-00450050",
+          "tbg-tm-00206040",
+          "tbg-tm-00292246",
+          "tbg-tm-00683571"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00249994",
+          "tbg-tm-00136401",
+          "tbg-tm-00250426",
+          "tbg-tm-00438001",
+          "tbg-tm-00716276",
+          "tbg-tm-00667121",
+          "tbg-tm-00698678",
+          "tbg-tm-00848509",
+          "tbg-tm-01064471"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01230661",
+          "tbg-tm-01060740",
+          "tbg-tm-01193867",
+          "tbg-tm-00863741"
+        ],
+        "position_counts": {
+          "ATT": 4,
+          "DEF": 8,
+          "MID": 5,
+          "GK": 3
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 38,
+      "division_level": 2,
+      "division_seed": 18
     }
   },
   {
@@ -2880,9 +5275,9 @@
     "continent": "Europe",
     "real_world_league": "LaLiga",
     "importance": 84,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-2",
+    "division_seed": 13,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-042",
     "squad": {
       "player_ids": [
@@ -2934,6 +5329,60 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-042",
+      "club_name": "Athletic Bilbao",
+      "strength_score": 89.51,
+      "components": {
+        "starting_xi_average": 88.91,
+        "first_team_depth_average": 86.22,
+        "positional_balance_score": 100,
+        "youth_strength_average": 84
+      },
+      "squad": {
+        "assigned_players": 22,
+        "rated_players": 22,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00262396",
+          "tbg-tm-00176553",
+          "tbg-tm-00524000",
+          "tbg-tm-00061812",
+          "tbg-tm-00255488",
+          "tbg-tm-00571020",
+          "tbg-tm-00938729",
+          "tbg-tm-00126751",
+          "tbg-tm-00709187",
+          "tbg-tm-00255508",
+          "tbg-tm-00338425"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00300168",
+          "tbg-tm-00591916",
+          "tbg-tm-00625014",
+          "tbg-tm-00625047",
+          "tbg-tm-00289255",
+          "tbg-tm-00340205",
+          "tbg-tm-00488626",
+          "tbg-tm-00563137",
+          "tbg-tm-00671649"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01056966",
+          "tbg-tm-01312698"
+        ],
+        "position_counts": {
+          "DEF": 8,
+          "GK": 2,
+          "ATT": 6,
+          "MID": 4
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 33,
+      "division_level": 2,
+      "division_seed": 13
     }
   },
   {
@@ -2946,9 +5395,9 @@
     "continent": "Europe",
     "real_world_league": "LaLiga",
     "importance": 83,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-2",
+    "division_seed": 20,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-043",
     "squad": {
       "player_ids": [
@@ -3001,6 +5450,61 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-043",
+      "club_name": "Real Sociedad",
+      "strength_score": 88.97,
+      "components": {
+        "starting_xi_average": 88,
+        "first_team_depth_average": 86,
+        "positional_balance_score": 100,
+        "youth_strength_average": 85
+      },
+      "squad": {
+        "assigned_players": 23,
+        "rated_players": 23,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00212862",
+          "tbg-tm-00711374",
+          "tbg-tm-00355628",
+          "tbg-tm-00366930",
+          "tbg-tm-00661145",
+          "tbg-tm-00309110",
+          "tbg-tm-00372246",
+          "tbg-tm-00378293",
+          "tbg-tm-00351478",
+          "tbg-tm-00405398",
+          "tbg-tm-00225122"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00616369",
+          "tbg-tm-01018938",
+          "tbg-tm-00280730",
+          "tbg-tm-00502722",
+          "tbg-tm-00555143",
+          "tbg-tm-00634431",
+          "tbg-tm-00660438",
+          "tbg-tm-00517842",
+          "tbg-tm-00568158"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01018938",
+          "tbg-tm-00660438",
+          "tbg-tm-00915258"
+        ],
+        "position_counts": {
+          "ATT": 5,
+          "GK": 1,
+          "MID": 6,
+          "DEF": 8
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 40,
+      "division_level": 2,
+      "division_seed": 20
     }
   },
   {
@@ -3013,9 +5517,9 @@
     "continent": "Europe",
     "real_world_league": "LaLiga",
     "importance": 83,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-4",
+    "division_seed": 1,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-044",
     "squad": {
       "player_ids": [
@@ -3068,6 +5572,61 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-044",
+      "club_name": "Villarreal CF",
+      "strength_score": 87.79,
+      "components": {
+        "starting_xi_average": 88.18,
+        "first_team_depth_average": 86.56,
+        "positional_balance_score": 89.41,
+        "youth_strength_average": 84.33
+      },
+      "squad": {
+        "assigned_players": 23,
+        "rated_players": 23,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00712107",
+          "tbg-tm-00709372",
+          "tbg-tm-00805714",
+          "tbg-tm-00480763",
+          "tbg-tm-00484988",
+          "tbg-tm-00485963",
+          "tbg-tm-00380598",
+          "tbg-tm-00343052",
+          "tbg-tm-00729814",
+          "tbg-tm-00733576",
+          "tbg-tm-00177467"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00246968",
+          "tbg-tm-00638793",
+          "tbg-tm-00678406",
+          "tbg-tm-00953901",
+          "tbg-tm-00341713",
+          "tbg-tm-00709969",
+          "tbg-tm-00972465",
+          "tbg-tm-01061336",
+          "tbg-tm-00466783"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01061336",
+          "tbg-tm-00985806",
+          "tbg-tm-00780630"
+        ],
+        "position_counts": {
+          "MID": 2,
+          "ATT": 8,
+          "DEF": 7,
+          "GK": 3
+        },
+        "position_shortages": 1
+      },
+      "world_rank": 61,
+      "division_level": 4,
+      "division_seed": 1
     }
   },
   {
@@ -3080,9 +5639,9 @@
     "continent": "Europe",
     "real_world_league": "LaLiga",
     "importance": 82,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-2",
+    "division_seed": 19,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-045",
     "squad": {
       "player_ids": [
@@ -3135,6 +5694,61 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-045",
+      "club_name": "Real Betis Balompié",
+      "strength_score": 89.07,
+      "components": {
+        "starting_xi_average": 88.27,
+        "first_team_depth_average": 86,
+        "positional_balance_score": 100,
+        "youth_strength_average": 83.67
+      },
+      "squad": {
+        "assigned_players": 23,
+        "rated_players": 23,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00286415",
+          "tbg-tm-00099922",
+          "tbg-tm-00735568",
+          "tbg-tm-00191217",
+          "tbg-tm-00246291",
+          "tbg-tm-00085288",
+          "tbg-tm-00348795",
+          "tbg-tm-00357885",
+          "tbg-tm-00602105",
+          "tbg-tm-00724520",
+          "tbg-tm-00459463"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00261503",
+          "tbg-tm-00336869",
+          "tbg-tm-00417913",
+          "tbg-tm-00374139",
+          "tbg-tm-00378139",
+          "tbg-tm-00907559",
+          "tbg-tm-00985383",
+          "tbg-tm-00461617",
+          "tbg-tm-00898350"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00933908",
+          "tbg-tm-00961087",
+          "tbg-tm-00997814"
+        ],
+        "position_counts": {
+          "MID": 5,
+          "ATT": 5,
+          "DEF": 8,
+          "GK": 2
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 39,
+      "division_level": 2,
+      "division_seed": 19
     }
   },
   {
@@ -3147,9 +5761,9 @@
     "continent": "Europe",
     "real_world_league": "LaLiga",
     "importance": 82,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-3",
+    "division_seed": 16,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-046",
     "squad": {
       "player_ids": [
@@ -3200,6 +5814,59 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-046",
+      "club_name": "Sevilla FC",
+      "strength_score": 88.12,
+      "components": {
+        "starting_xi_average": 86.91,
+        "first_team_depth_average": 85.56,
+        "positional_balance_score": 100,
+        "youth_strength_average": 83
+      },
+      "squad": {
+        "assigned_players": 21,
+        "rated_players": 21,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00124419",
+          "tbg-tm-00385105",
+          "tbg-tm-00569384",
+          "tbg-tm-00155025",
+          "tbg-tm-00390688",
+          "tbg-tm-00212723",
+          "tbg-tm-00263727",
+          "tbg-tm-00289257",
+          "tbg-tm-00345886",
+          "tbg-tm-00607034",
+          "tbg-tm-00361254"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00439022",
+          "tbg-tm-00676042",
+          "tbg-tm-00711625",
+          "tbg-tm-00766583",
+          "tbg-tm-00768380",
+          "tbg-tm-00357628",
+          "tbg-tm-00500067",
+          "tbg-tm-00687609",
+          "tbg-tm-01032280"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00766723"
+        ],
+        "position_counts": {
+          "GK": 1,
+          "MID": 3,
+          "ATT": 6,
+          "DEF": 10
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 56,
+      "division_level": 3,
+      "division_seed": 16
     }
   },
   {
@@ -3212,9 +5879,9 @@
     "continent": "Europe",
     "real_world_league": "LaLiga",
     "importance": 80,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-3",
+    "division_seed": 12,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-047",
     "squad": {
       "player_ids": [
@@ -3266,6 +5933,60 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-047",
+      "club_name": "Valencia CF",
+      "strength_score": 88.25,
+      "components": {
+        "starting_xi_average": 87.09,
+        "first_team_depth_average": 85.89,
+        "positional_balance_score": 100,
+        "youth_strength_average": 82
+      },
+      "squad": {
+        "assigned_players": 22,
+        "rated_players": 22,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00165467",
+          "tbg-tm-00221322",
+          "tbg-tm-00342385",
+          "tbg-tm-00170472",
+          "tbg-tm-00285323",
+          "tbg-tm-00834764",
+          "tbg-tm-00375382",
+          "tbg-tm-00394236",
+          "tbg-tm-00355861",
+          "tbg-tm-00573775",
+          "tbg-tm-00278837"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00328480",
+          "tbg-tm-00337715",
+          "tbg-tm-00346289",
+          "tbg-tm-00410427",
+          "tbg-tm-00420196",
+          "tbg-tm-00617081",
+          "tbg-tm-00707274",
+          "tbg-tm-00520840",
+          "tbg-tm-00615350"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00834463",
+          "tbg-tm-00948169"
+        ],
+        "position_counts": {
+          "GK": 1,
+          "DEF": 11,
+          "MID": 3,
+          "ATT": 5
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 52,
+      "division_level": 3,
+      "division_seed": 12
     }
   },
   {
@@ -3278,9 +5999,9 @@
     "continent": "Europe",
     "real_world_league": "Süper Lig",
     "importance": 86,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-1",
+    "division_seed": 19,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-048",
     "squad": {
       "player_ids": [
@@ -3337,6 +6058,65 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-048",
+      "club_name": "Fenerbahce",
+      "strength_score": 90.18,
+      "components": {
+        "starting_xi_average": 89.45,
+        "first_team_depth_average": 88,
+        "positional_balance_score": 100,
+        "youth_strength_average": 83
+      },
+      "squad": {
+        "assigned_players": 27,
+        "rated_players": 27,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00238223",
+          "tbg-tm-00225083",
+          "tbg-tm-00177476",
+          "tbg-tm-00204069",
+          "tbg-tm-00231572",
+          "tbg-tm-00296622",
+          "tbg-tm-00465830",
+          "tbg-tm-00191614",
+          "tbg-tm-00382528",
+          "tbg-tm-00256267",
+          "tbg-tm-00671591"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00287579",
+          "tbg-tm-00329145",
+          "tbg-tm-00205927",
+          "tbg-tm-00258626",
+          "tbg-tm-00320141",
+          "tbg-tm-00591361",
+          "tbg-tm-00613725",
+          "tbg-tm-00051894",
+          "tbg-tm-00353922"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00986288",
+          "tbg-tm-00889136",
+          "tbg-tm-00851551",
+          "tbg-tm-01055247",
+          "tbg-tm-01047596",
+          "tbg-tm-01133732",
+          "tbg-tm-01133736"
+        ],
+        "position_counts": {
+          "DEF": 10,
+          "GK": 3,
+          "MID": 4,
+          "ATT": 3
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 19,
+      "division_level": 1,
+      "division_seed": 19
     }
   },
   {
@@ -3349,9 +6129,9 @@
     "continent": "Europe",
     "real_world_league": "Süper Lig",
     "importance": 87,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-3",
+    "division_seed": 7,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-049",
     "squad": {
       "player_ids": [
@@ -3409,6 +6189,66 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-049",
+      "club_name": "Galatasaray",
+      "strength_score": 88.42,
+      "components": {
+        "starting_xi_average": 89.73,
+        "first_team_depth_average": 85.67,
+        "positional_balance_score": 89.41,
+        "youth_strength_average": 82.38
+      },
+      "squad": {
+        "assigned_players": 28,
+        "rated_players": 28,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00292199",
+          "tbg-tm-00341429",
+          "tbg-tm-00318077",
+          "tbg-tm-00332798",
+          "tbg-tm-00648779",
+          "tbg-tm-00553469",
+          "tbg-tm-00053622",
+          "tbg-tm-00401923",
+          "tbg-tm-00192565",
+          "tbg-tm-00541537",
+          "tbg-tm-00199316"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00396908",
+          "tbg-tm-00119031",
+          "tbg-tm-00114422",
+          "tbg-tm-00375137",
+          "tbg-tm-00422951",
+          "tbg-tm-00616894",
+          "tbg-tm-00646478",
+          "tbg-tm-00452084",
+          "tbg-tm-00465606"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01396595",
+          "tbg-tm-00605110",
+          "tbg-tm-00727077",
+          "tbg-tm-00942940",
+          "tbg-tm-01048118",
+          "tbg-tm-01076981",
+          "tbg-tm-01226512",
+          "tbg-tm-01070983"
+        ],
+        "position_counts": {
+          "ATT": 6,
+          "DEF": 10,
+          "GK": 2,
+          "MID": 2
+        },
+        "position_shortages": 1
+      },
+      "world_rank": 47,
+      "division_level": 3,
+      "division_seed": 7
     }
   },
   {
@@ -3421,9 +6261,9 @@
     "continent": "Europe",
     "real_world_league": "Süper Lig",
     "importance": 82,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-3",
+    "division_seed": 14,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-050",
     "squad": {
       "player_ids": [
@@ -3483,6 +6323,68 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-050",
+      "club_name": "Besiktas JK",
+      "strength_score": 88.21,
+      "components": {
+        "starting_xi_average": 87.18,
+        "first_team_depth_average": 85.22,
+        "positional_balance_score": 100,
+        "youth_strength_average": 83.1
+      },
+      "squad": {
+        "assigned_players": 30,
+        "rated_players": 30,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00576033",
+          "tbg-tm-00274839",
+          "tbg-tm-00683895",
+          "tbg-tm-00354482",
+          "tbg-tm-00293213",
+          "tbg-tm-00454567",
+          "tbg-tm-00149729",
+          "tbg-tm-00900938",
+          "tbg-tm-00291739",
+          "tbg-tm-00639246",
+          "tbg-tm-00242063"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00377641",
+          "tbg-tm-00278343",
+          "tbg-tm-00420465",
+          "tbg-tm-00477930",
+          "tbg-tm-00531332",
+          "tbg-tm-00875334",
+          "tbg-tm-00947360",
+          "tbg-tm-00461951",
+          "tbg-tm-00462772"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00875334",
+          "tbg-tm-00947360",
+          "tbg-tm-00810100",
+          "tbg-tm-01043003",
+          "tbg-tm-01071252",
+          "tbg-tm-00935550",
+          "tbg-tm-00935552",
+          "tbg-tm-00983817",
+          "tbg-tm-01047101",
+          "tbg-tm-01304045"
+        ],
+        "position_counts": {
+          "DEF": 12,
+          "MID": 3,
+          "ATT": 4,
+          "GK": 1
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 54,
+      "division_level": 3,
+      "division_seed": 14
     }
   },
   {
@@ -3495,9 +6397,9 @@
     "continent": "Europe",
     "real_world_league": "Süper Lig",
     "importance": 78,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-3",
+    "division_seed": 13,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-051",
     "squad": {
       "player_ids": [
@@ -3556,6 +6458,67 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-051",
+      "club_name": "Trabzonspor",
+      "strength_score": 88.24,
+      "components": {
+        "starting_xi_average": 87.09,
+        "first_team_depth_average": 85.67,
+        "positional_balance_score": 100,
+        "youth_strength_average": 82.78
+      },
+      "squad": {
+        "assigned_players": 29,
+        "rated_players": 29,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00234509",
+          "tbg-tm-00107010",
+          "tbg-tm-00137616",
+          "tbg-tm-00156941",
+          "tbg-tm-00295024",
+          "tbg-tm-00207877",
+          "tbg-tm-01279526",
+          "tbg-tm-00236471",
+          "tbg-tm-00272855",
+          "tbg-tm-00248271",
+          "tbg-tm-00294100"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00390379",
+          "tbg-tm-00395234",
+          "tbg-tm-00583917",
+          "tbg-tm-00665048",
+          "tbg-tm-00674241",
+          "tbg-tm-01072017",
+          "tbg-tm-00275683",
+          "tbg-tm-00405399",
+          "tbg-tm-00783094"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01279526",
+          "tbg-tm-00743376",
+          "tbg-tm-00944442",
+          "tbg-tm-01054214",
+          "tbg-tm-00993407",
+          "tbg-tm-01070028",
+          "tbg-tm-01174140",
+          "tbg-tm-01243013",
+          "tbg-tm-01304031"
+        ],
+        "position_counts": {
+          "GK": 1,
+          "MID": 6,
+          "ATT": 4,
+          "DEF": 9
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 53,
+      "division_level": 3,
+      "division_seed": 13
     }
   },
   {
@@ -3568,9 +6531,9 @@
     "continent": "Europe",
     "real_world_league": "Belgian Pro League",
     "importance": 78,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-3",
+    "division_seed": 19,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-052",
     "squad": {
       "player_ids": [
@@ -3626,6 +6589,68 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-052",
+      "club_name": "Club Brugge KV",
+      "strength_score": 87.9,
+      "components": {
+        "starting_xi_average": 87,
+        "first_team_depth_average": 84.22,
+        "positional_balance_score": 100,
+        "youth_strength_average": 83.5
+      },
+      "squad": {
+        "assigned_players": 26,
+        "rated_players": 26,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00250543",
+          "tbg-tm-00699783",
+          "tbg-tm-00893661",
+          "tbg-tm-00236168",
+          "tbg-tm-00981196",
+          "tbg-tm-00137576",
+          "tbg-tm-00490884",
+          "tbg-tm-00499758",
+          "tbg-tm-00451677",
+          "tbg-tm-00717329",
+          "tbg-tm-00742451"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00320440",
+          "tbg-tm-00659518",
+          "tbg-tm-00708454",
+          "tbg-tm-00743122",
+          "tbg-tm-00578680",
+          "tbg-tm-00594227",
+          "tbg-tm-01054839",
+          "tbg-tm-00623095",
+          "tbg-tm-00632088"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00717329",
+          "tbg-tm-00981196",
+          "tbg-tm-00743122",
+          "tbg-tm-01054839",
+          "tbg-tm-00743381",
+          "tbg-tm-00998205",
+          "tbg-tm-01073654",
+          "tbg-tm-01159786",
+          "tbg-tm-01285176",
+          "tbg-tm-01191293"
+        ],
+        "position_counts": {
+          "MID": 5,
+          "ATT": 6,
+          "DEF": 8,
+          "GK": 1
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 59,
+      "division_level": 3,
+      "division_seed": 19
     }
   },
   {
@@ -3638,9 +6663,9 @@
     "continent": "Europe",
     "real_world_league": "Eredivisie",
     "importance": 88,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-3",
+    "division_seed": 18,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-053",
     "squad": {
       "player_ids": [
@@ -3696,6 +6721,67 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-053",
+      "club_name": "Ajax Amsterdam",
+      "strength_score": 87.91,
+      "components": {
+        "starting_xi_average": 86.91,
+        "first_team_depth_average": 84.44,
+        "positional_balance_score": 100,
+        "youth_strength_average": 83.67
+      },
+      "squad": {
+        "assigned_players": 26,
+        "rated_players": 26,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00396077",
+          "tbg-tm-00355816",
+          "tbg-tm-00371001",
+          "tbg-tm-00420064",
+          "tbg-tm-00559327",
+          "tbg-tm-00182932",
+          "tbg-tm-00203938",
+          "tbg-tm-00930571",
+          "tbg-tm-00129554",
+          "tbg-tm-00283196",
+          "tbg-tm-00748804"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00339328",
+          "tbg-tm-00374326",
+          "tbg-tm-00468309",
+          "tbg-tm-00662131",
+          "tbg-tm-00559324",
+          "tbg-tm-00559333",
+          "tbg-tm-00598491",
+          "tbg-tm-00701055",
+          "tbg-tm-01105532"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00748804",
+          "tbg-tm-00598491",
+          "tbg-tm-01105532",
+          "tbg-tm-01111063",
+          "tbg-tm-01162160",
+          "tbg-tm-00923667",
+          "tbg-tm-00987366",
+          "tbg-tm-00704773",
+          "tbg-tm-00981693"
+        ],
+        "position_counts": {
+          "DEF": 10,
+          "ATT": 4,
+          "MID": 5,
+          "GK": 1
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 58,
+      "division_level": 3,
+      "division_seed": 18
     }
   },
   {
@@ -3708,9 +6794,9 @@
     "continent": "Europe",
     "real_world_league": "Eredivisie",
     "importance": 84,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-3",
+    "division_seed": 2,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-054",
     "squad": {
       "player_ids": [
@@ -3767,6 +6853,67 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-054",
+      "club_name": "PSV Eindhoven",
+      "strength_score": 88.86,
+      "components": {
+        "starting_xi_average": 88,
+        "first_team_depth_average": 85.78,
+        "positional_balance_score": 100,
+        "youth_strength_average": 83.78
+      },
+      "squad": {
+        "assigned_players": 27,
+        "rated_players": 27,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00215094",
+          "tbg-tm-00347900",
+          "tbg-tm-00323910",
+          "tbg-tm-00361104",
+          "tbg-tm-00586429",
+          "tbg-tm-00408574",
+          "tbg-tm-00372267",
+          "tbg-tm-00578804",
+          "tbg-tm-00042460",
+          "tbg-tm-00167329",
+          "tbg-tm-00627207"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00397486",
+          "tbg-tm-00900909",
+          "tbg-tm-00333640",
+          "tbg-tm-00550829",
+          "tbg-tm-00895334",
+          "tbg-tm-00339337",
+          "tbg-tm-00548348",
+          "tbg-tm-00593837",
+          "tbg-tm-00735701"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00900909",
+          "tbg-tm-00895334",
+          "tbg-tm-00735701",
+          "tbg-tm-00925862",
+          "tbg-tm-00813437",
+          "tbg-tm-01095107",
+          "tbg-tm-00720805",
+          "tbg-tm-00987376",
+          "tbg-tm-01135623"
+        ],
+        "position_counts": {
+          "DEF": 7,
+          "MID": 4,
+          "ATT": 6,
+          "GK": 3
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 42,
+      "division_level": 3,
+      "division_seed": 2
     }
   },
   {
@@ -3779,9 +6926,9 @@
     "continent": "Europe",
     "real_world_league": "Eredivisie",
     "importance": 82,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-4",
+    "division_seed": 14,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-055",
     "squad": {
       "player_ids": [
@@ -3837,6 +6984,64 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-055",
+      "club_name": "Feyenoord Rotterdam",
+      "strength_score": 87.1,
+      "components": {
+        "starting_xi_average": 87.27,
+        "first_team_depth_average": 86,
+        "positional_balance_score": 89.41,
+        "youth_strength_average": 83.83
+      },
+      "squad": {
+        "assigned_players": 26,
+        "rated_players": 26,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00196829",
+          "tbg-tm-00365394",
+          "tbg-tm-00598791",
+          "tbg-tm-00377468",
+          "tbg-tm-00416660",
+          "tbg-tm-00384461",
+          "tbg-tm-00601495",
+          "tbg-tm-00409344",
+          "tbg-tm-00589128",
+          "tbg-tm-00917911",
+          "tbg-tm-00667965"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00997903",
+          "tbg-tm-00257987",
+          "tbg-tm-00288253",
+          "tbg-tm-00374212",
+          "tbg-tm-00569845",
+          "tbg-tm-00593519",
+          "tbg-tm-00617060",
+          "tbg-tm-00855731",
+          "tbg-tm-00571149"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00997903",
+          "tbg-tm-00710886",
+          "tbg-tm-00867357",
+          "tbg-tm-00775257",
+          "tbg-tm-00987370",
+          "tbg-tm-00745625"
+        ],
+        "position_counts": {
+          "DEF": 12,
+          "ATT": 2,
+          "GK": 1,
+          "MID": 5
+        },
+        "position_shortages": 1
+      },
+      "world_rank": 74,
+      "division_level": 4,
+      "division_seed": 14
     }
   },
   {
@@ -3849,9 +7054,9 @@
     "continent": "Europe",
     "real_world_league": "Liga Portugal",
     "importance": 88,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-2",
+    "division_seed": 16,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-056",
     "squad": {
       "player_ids": [
@@ -3905,6 +7110,62 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-056",
+      "club_name": "SL Benfica",
+      "strength_score": 89.41,
+      "components": {
+        "starting_xi_average": 88.64,
+        "first_team_depth_average": 86.56,
+        "positional_balance_score": 100,
+        "youth_strength_average": 83.75
+      },
+      "squad": {
+        "assigned_players": 24,
+        "rated_players": 24,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00537844",
+          "tbg-tm-00504087",
+          "tbg-tm-00735573",
+          "tbg-tm-00182904",
+          "tbg-tm-00650568",
+          "tbg-tm-00223367",
+          "tbg-tm-00623325",
+          "tbg-tm-00357233",
+          "tbg-tm-00324503",
+          "tbg-tm-00238055",
+          "tbg-tm-00303259"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00407098",
+          "tbg-tm-00452607",
+          "tbg-tm-00519184",
+          "tbg-tm-00670103",
+          "tbg-tm-00671915",
+          "tbg-tm-00139396",
+          "tbg-tm-00548028",
+          "tbg-tm-00605396",
+          "tbg-tm-00699592"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01000674",
+          "tbg-tm-00637792",
+          "tbg-tm-00931415",
+          "tbg-tm-01092964"
+        ],
+        "position_counts": {
+          "ATT": 7,
+          "MID": 3,
+          "DEF": 9,
+          "GK": 1
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 36,
+      "division_level": 2,
+      "division_seed": 16
     }
   },
   {
@@ -3917,9 +7178,9 @@
     "continent": "Europe",
     "real_world_league": "Liga Portugal",
     "importance": 87,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-2",
+    "division_seed": 12,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-057",
     "squad": {
       "player_ids": [
@@ -3975,6 +7236,64 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-057",
+      "club_name": "FC Porto",
+      "strength_score": 89.65,
+      "components": {
+        "starting_xi_average": 88.82,
+        "first_team_depth_average": 86.56,
+        "positional_balance_score": 100,
+        "youth_strength_average": 86.33
+      },
+      "squad": {
+        "assigned_players": 26,
+        "rated_players": 26,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00357153",
+          "tbg-tm-00425918",
+          "tbg-tm-00243028",
+          "tbg-tm-00756990",
+          "tbg-tm-00370791",
+          "tbg-tm-00926993",
+          "tbg-tm-00699704",
+          "tbg-tm-00957653",
+          "tbg-tm-00520662",
+          "tbg-tm-00991268",
+          "tbg-tm-00634461"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00198008",
+          "tbg-tm-00478365",
+          "tbg-tm-00491693",
+          "tbg-tm-00512913",
+          "tbg-tm-01004725",
+          "tbg-tm-00155396",
+          "tbg-tm-00284701",
+          "tbg-tm-00544784",
+          "tbg-tm-00877139"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00926993",
+          "tbg-tm-00957653",
+          "tbg-tm-01004725",
+          "tbg-tm-01162012",
+          "tbg-tm-00935480",
+          "tbg-tm-01083369"
+        ],
+        "position_counts": {
+          "GK": 3,
+          "DEF": 8,
+          "ATT": 5,
+          "MID": 4
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 32,
+      "division_level": 2,
+      "division_seed": 12
     }
   },
   {
@@ -3987,9 +7306,9 @@
     "continent": "Europe",
     "real_world_league": "Liga Portugal",
     "importance": 86,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-2",
+    "division_seed": 10,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-058",
     "squad": {
       "player_ids": [
@@ -4044,6 +7363,63 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-058",
+      "club_name": "Sporting CP",
+      "strength_score": 89.73,
+      "components": {
+        "starting_xi_average": 89.09,
+        "first_team_depth_average": 86.67,
+        "positional_balance_score": 100,
+        "youth_strength_average": 84.2
+      },
+      "squad": {
+        "assigned_players": 25,
+        "rated_players": 25,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00234811",
+          "tbg-tm-00461496",
+          "tbg-tm-00549006",
+          "tbg-tm-00572675",
+          "tbg-tm-00974982",
+          "tbg-tm-00412669",
+          "tbg-tm-00606752",
+          "tbg-tm-00461943",
+          "tbg-tm-00426620",
+          "tbg-tm-00424784",
+          "tbg-tm-00701979"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00548193",
+          "tbg-tm-00290391",
+          "tbg-tm-00466801",
+          "tbg-tm-00504073",
+          "tbg-tm-00532444",
+          "tbg-tm-00405564",
+          "tbg-tm-00546186",
+          "tbg-tm-00924349",
+          "tbg-tm-00946883"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00946883",
+          "tbg-tm-00958937",
+          "tbg-tm-00991800",
+          "tbg-tm-01057523",
+          "tbg-tm-01333982"
+        ],
+        "position_counts": {
+          "DEF": 9,
+          "MID": 6,
+          "ATT": 4,
+          "GK": 1
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 30,
+      "division_level": 2,
+      "division_seed": 10
     }
   },
   {
@@ -4056,9 +7432,9 @@
     "continent": "Europe",
     "real_world_league": "Scottish Premiership",
     "importance": 82,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-3",
+    "division_seed": 17,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-059",
     "squad": {
       "player_ids": [
@@ -4110,6 +7486,60 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-059",
+      "club_name": "Celtic FC",
+      "strength_score": 87.94,
+      "components": {
+        "starting_xi_average": 86.82,
+        "first_team_depth_average": 85.22,
+        "positional_balance_score": 100,
+        "youth_strength_average": 82
+      },
+      "squad": {
+        "assigned_players": 22,
+        "rated_players": 22,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00285283",
+          "tbg-tm-00300716",
+          "tbg-tm-00120977",
+          "tbg-tm-00341049",
+          "tbg-tm-00637446",
+          "tbg-tm-00143424",
+          "tbg-tm-00475949",
+          "tbg-tm-00496656",
+          "tbg-tm-00420931",
+          "tbg-tm-00084992",
+          "tbg-tm-00295330"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00565435",
+          "tbg-tm-00389253",
+          "tbg-tm-00439497",
+          "tbg-tm-00329812",
+          "tbg-tm-00388171",
+          "tbg-tm-00468264",
+          "tbg-tm-00539677",
+          "tbg-tm-00504090",
+          "tbg-tm-00853110"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00883540",
+          "tbg-tm-01208182"
+        ],
+        "position_counts": {
+          "DEF": 7,
+          "ATT": 6,
+          "MID": 6,
+          "GK": 1
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 57,
+      "division_level": 3,
+      "division_seed": 17
     }
   },
   {
@@ -4122,9 +7552,9 @@
     "continent": "Europe",
     "real_world_league": "Scottish Premiership",
     "importance": 81,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-4",
+    "division_seed": 11,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-060",
     "squad": {
       "player_ids": [
@@ -4175,6 +7605,59 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-060",
+      "club_name": "Rangers FC",
+      "strength_score": 87.25,
+      "components": {
+        "starting_xi_average": 85.91,
+        "first_team_depth_average": 84.56,
+        "positional_balance_score": 100,
+        "youth_strength_average": 82
+      },
+      "squad": {
+        "assigned_players": 21,
+        "rated_players": 21,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00208772",
+          "tbg-tm-00422763",
+          "tbg-tm-00807417",
+          "tbg-tm-00235767",
+          "tbg-tm-00343475",
+          "tbg-tm-00450211",
+          "tbg-tm-00390177",
+          "tbg-tm-00570336",
+          "tbg-tm-00225744",
+          "tbg-tm-00670688",
+          "tbg-tm-00476219"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00293746",
+          "tbg-tm-00346315",
+          "tbg-tm-00371013",
+          "tbg-tm-00658531",
+          "tbg-tm-00707621",
+          "tbg-tm-00527896",
+          "tbg-tm-00553328",
+          "tbg-tm-00654257",
+          "tbg-tm-00795657"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01082993"
+        ],
+        "position_counts": {
+          "DEF": 8,
+          "GK": 2,
+          "ATT": 6,
+          "MID": 4
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 71,
+      "division_level": 4,
+      "division_seed": 11
     }
   },
   {
@@ -4187,9 +7670,9 @@
     "continent": "Europe",
     "real_world_league": "Ukrainian Premier League",
     "importance": 80,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-4",
+    "division_seed": 4,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-061",
     "squad": {
       "player_ids": [
@@ -4248,6 +7731,67 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-061",
+      "club_name": "Shakhtar Donetsk",
+      "strength_score": 87.53,
+      "components": {
+        "starting_xi_average": 86.27,
+        "first_team_depth_average": 84.44,
+        "positional_balance_score": 100,
+        "youth_strength_average": 83.78
+      },
+      "squad": {
+        "assigned_players": 29,
+        "rated_players": 29,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00597880",
+          "tbg-tm-00289059",
+          "tbg-tm-00059322",
+          "tbg-tm-00273236",
+          "tbg-tm-00396394",
+          "tbg-tm-00537854",
+          "tbg-tm-00668235",
+          "tbg-tm-00430190",
+          "tbg-tm-00515208",
+          "tbg-tm-00551695",
+          "tbg-tm-01119009"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00537852",
+          "tbg-tm-00708241",
+          "tbg-tm-00858712",
+          "tbg-tm-01219752",
+          "tbg-tm-00359247",
+          "tbg-tm-00530696",
+          "tbg-tm-00540056",
+          "tbg-tm-00657796",
+          "tbg-tm-00743587"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01119009",
+          "tbg-tm-01219752",
+          "tbg-tm-01033963",
+          "tbg-tm-01082823",
+          "tbg-tm-01083070",
+          "tbg-tm-01219849",
+          "tbg-tm-01220143",
+          "tbg-tm-01057222",
+          "tbg-tm-01098098"
+        ],
+        "position_counts": {
+          "DEF": 9,
+          "ATT": 4,
+          "GK": 1,
+          "MID": 6
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 64,
+      "division_level": 4,
+      "division_seed": 4
     }
   },
   {
@@ -4260,9 +7804,9 @@
     "continent": "Europe",
     "real_world_league": "Ukrainian Premier League",
     "importance": 78,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-4",
+    "division_seed": 9,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-062",
     "squad": {
       "player_ids": [
@@ -4322,6 +7866,68 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-062",
+      "club_name": "Dynamo Kyiv",
+      "strength_score": 87.31,
+      "components": {
+        "starting_xi_average": 86.09,
+        "first_team_depth_average": 84.22,
+        "positional_balance_score": 100,
+        "youth_strength_average": 82.6
+      },
+      "squad": {
+        "assigned_players": 30,
+        "rated_players": 30,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00417242",
+          "tbg-tm-00181118",
+          "tbg-tm-00287792",
+          "tbg-tm-00669306",
+          "tbg-tm-00366723",
+          "tbg-tm-00167722",
+          "tbg-tm-00368611",
+          "tbg-tm-00294780",
+          "tbg-tm-00069015",
+          "tbg-tm-00210689",
+          "tbg-tm-01074053"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00404841",
+          "tbg-tm-01067225",
+          "tbg-tm-00357917",
+          "tbg-tm-00419061",
+          "tbg-tm-00502842",
+          "tbg-tm-00505463",
+          "tbg-tm-00539436",
+          "tbg-tm-00626475",
+          "tbg-tm-00636237"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01067225",
+          "tbg-tm-01074053",
+          "tbg-tm-00925401",
+          "tbg-tm-00955349",
+          "tbg-tm-00998742",
+          "tbg-tm-01074045",
+          "tbg-tm-01074060",
+          "tbg-tm-01138725",
+          "tbg-tm-01141487",
+          "tbg-tm-01185913"
+        ],
+        "position_counts": {
+          "ATT": 5,
+          "MID": 4,
+          "DEF": 10,
+          "GK": 1
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 69,
+      "division_level": 4,
+      "division_seed": 9
     }
   },
   {
@@ -4334,9 +7940,9 @@
     "continent": "Europe",
     "real_world_league": "Superliga",
     "importance": 74,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-4",
+    "division_seed": 13,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-063",
     "squad": {
       "player_ids": [
@@ -4391,6 +7997,65 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-063",
+      "club_name": "FC Copenhagen",
+      "strength_score": 87.17,
+      "components": {
+        "starting_xi_average": 85.82,
+        "first_team_depth_average": 84.33,
+        "positional_balance_score": 100,
+        "youth_strength_average": 82.57
+      },
+      "squad": {
+        "assigned_players": 25,
+        "rated_players": 25,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00205657",
+          "tbg-tm-00144244",
+          "tbg-tm-00282250",
+          "tbg-tm-00742095",
+          "tbg-tm-00322293",
+          "tbg-tm-00091849",
+          "tbg-tm-00422950",
+          "tbg-tm-00489929",
+          "tbg-tm-00186644",
+          "tbg-tm-00203412",
+          "tbg-tm-00308552"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00370997",
+          "tbg-tm-00432175",
+          "tbg-tm-00645589",
+          "tbg-tm-00467720",
+          "tbg-tm-00668529",
+          "tbg-tm-00805054",
+          "tbg-tm-00848856",
+          "tbg-tm-00981516",
+          "tbg-tm-01072751"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00467720",
+          "tbg-tm-01072751",
+          "tbg-tm-01073747",
+          "tbg-tm-01084714",
+          "tbg-tm-01123210",
+          "tbg-tm-01314350",
+          "tbg-tm-01489163"
+        ],
+        "position_counts": {
+          "ATT": 6,
+          "MID": 3,
+          "DEF": 9,
+          "GK": 2
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 73,
+      "division_level": 4,
+      "division_seed": 13
     }
   },
   {
@@ -4403,9 +8068,9 @@
     "continent": "Europe",
     "real_world_league": "Austrian Bundesliga",
     "importance": 78,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-4",
+    "division_seed": 19,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-064",
     "squad": {
       "player_ids": [
@@ -4463,6 +8128,67 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-064",
+      "club_name": "Red Bull Salzburg",
+      "strength_score": 85.47,
+      "components": {
+        "starting_xi_average": 85.36,
+        "first_team_depth_average": 83.89,
+        "positional_balance_score": 89.41,
+        "youth_strength_average": 83.5
+      },
+      "squad": {
+        "assigned_players": 28,
+        "rated_players": 28,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00085791",
+          "tbg-tm-00359409",
+          "tbg-tm-00404260",
+          "tbg-tm-00620313",
+          "tbg-tm-00610405",
+          "tbg-tm-00657575",
+          "tbg-tm-00671114",
+          "tbg-tm-00203123",
+          "tbg-tm-00847278",
+          "tbg-tm-00409517",
+          "tbg-tm-00709727"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-01089004",
+          "tbg-tm-00515650",
+          "tbg-tm-00601143",
+          "tbg-tm-00604320",
+          "tbg-tm-00715956",
+          "tbg-tm-00881297",
+          "tbg-tm-01236853",
+          "tbg-tm-00581880",
+          "tbg-tm-00671593"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01089004",
+          "tbg-tm-00671114",
+          "tbg-tm-00881297",
+          "tbg-tm-01236853",
+          "tbg-tm-00786822",
+          "tbg-tm-00822958",
+          "tbg-tm-00953893",
+          "tbg-tm-01073631",
+          "tbg-tm-01118873",
+          "tbg-tm-01227723"
+        ],
+        "position_counts": {
+          "DEF": 10,
+          "ATT": 6,
+          "MID": 4
+        },
+        "position_shortages": 1
+      },
+      "world_rank": 79,
+      "division_level": 4,
+      "division_seed": 19
     }
   },
   {
@@ -4475,9 +8201,9 @@
     "continent": "Europe",
     "real_world_league": "Super League Greece",
     "importance": 79,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-3",
+    "division_seed": 8,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-065",
     "squad": {
       "player_ids": [
@@ -4533,6 +8259,64 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-065",
+      "club_name": "Olympiacos Piraeus",
+      "strength_score": 88.41,
+      "components": {
+        "starting_xi_average": 87.09,
+        "first_team_depth_average": 86.33,
+        "positional_balance_score": 100,
+        "youth_strength_average": 83.17
+      },
+      "squad": {
+        "assigned_players": 26,
+        "rated_players": 26,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00554389",
+          "tbg-tm-00178425",
+          "tbg-tm-00324351",
+          "tbg-tm-00742803",
+          "tbg-tm-00185966",
+          "tbg-tm-00113707",
+          "tbg-tm-00157539",
+          "tbg-tm-00334557",
+          "tbg-tm-00307058",
+          "tbg-tm-00521127",
+          "tbg-tm-00221958"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00257448",
+          "tbg-tm-00329517",
+          "tbg-tm-00964426",
+          "tbg-tm-00251876",
+          "tbg-tm-00386726",
+          "tbg-tm-00457673",
+          "tbg-tm-00487834",
+          "tbg-tm-00498237",
+          "tbg-tm-00553663"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00964426",
+          "tbg-tm-01010577",
+          "tbg-tm-01060252",
+          "tbg-tm-00933884",
+          "tbg-tm-01060083",
+          "tbg-tm-01077556"
+        ],
+        "position_counts": {
+          "ATT": 6,
+          "MID": 5,
+          "DEF": 8,
+          "GK": 1
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 48,
+      "division_level": 3,
+      "division_seed": 8
     }
   },
   {
@@ -4545,9 +8329,9 @@
     "continent": "Europe",
     "real_world_league": "Super League Greece",
     "importance": 76,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-4",
+    "division_seed": 2,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-066",
     "squad": {
       "player_ids": [
@@ -4606,6 +8390,67 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-066",
+      "club_name": "Panathinaikos",
+      "strength_score": 87.76,
+      "components": {
+        "starting_xi_average": 86.36,
+        "first_team_depth_average": 85.56,
+        "positional_balance_score": 100,
+        "youth_strength_average": 82.33
+      },
+      "squad": {
+        "assigned_players": 29,
+        "rated_players": 29,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00283170",
+          "tbg-tm-00111196",
+          "tbg-tm-00137648",
+          "tbg-tm-00262523",
+          "tbg-tm-00182688",
+          "tbg-tm-00046001",
+          "tbg-tm-00162571",
+          "tbg-tm-00182581",
+          "tbg-tm-00317806",
+          "tbg-tm-00491296",
+          "tbg-tm-00676318"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00206386",
+          "tbg-tm-00242273",
+          "tbg-tm-00311178",
+          "tbg-tm-00360791",
+          "tbg-tm-00401394",
+          "tbg-tm-00242637",
+          "tbg-tm-00282199",
+          "tbg-tm-00325924",
+          "tbg-tm-00906748"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01024285",
+          "tbg-tm-01305935",
+          "tbg-tm-01031590",
+          "tbg-tm-00898021",
+          "tbg-tm-00990261",
+          "tbg-tm-01033404",
+          "tbg-tm-01047109",
+          "tbg-tm-01047117",
+          "tbg-tm-01077461"
+        ],
+        "position_counts": {
+          "DEF": 9,
+          "MID": 5,
+          "GK": 3,
+          "ATT": 3
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 62,
+      "division_level": 4,
+      "division_seed": 2
     }
   },
   {
@@ -4618,9 +8463,9 @@
     "continent": "South America",
     "real_world_league": "Brasileirão",
     "importance": 95,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-2",
+    "division_seed": 15,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-067",
     "squad": {
       "player_ids": [
@@ -4672,6 +8517,60 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-067",
+      "club_name": "CR Flamengo",
+      "strength_score": 89.46,
+      "components": {
+        "starting_xi_average": 88.45,
+        "first_team_depth_average": 87.22,
+        "positional_balance_score": 100,
+        "youth_strength_average": 84
+      },
+      "squad": {
+        "assigned_players": 22,
+        "rated_players": 22,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00352324",
+          "tbg-tm-00079960",
+          "tbg-tm-00102017",
+          "tbg-tm-00145707",
+          "tbg-tm-00215616",
+          "tbg-tm-00444523",
+          "tbg-tm-00248410",
+          "tbg-tm-00148928",
+          "tbg-tm-00432895",
+          "tbg-tm-00321239",
+          "tbg-tm-00435485"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00288431",
+          "tbg-tm-00354145",
+          "tbg-tm-00374136",
+          "tbg-tm-00397458",
+          "tbg-tm-00188862",
+          "tbg-tm-00428783",
+          "tbg-tm-00694928",
+          "tbg-tm-00476344",
+          "tbg-tm-00592735"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01009030",
+          "tbg-tm-01082602"
+        ],
+        "position_counts": {
+          "MID": 5,
+          "ATT": 5,
+          "DEF": 9,
+          "GK": 1
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 35,
+      "division_level": 2,
+      "division_seed": 15
     }
   },
   {
@@ -4684,9 +8583,9 @@
     "continent": "South America",
     "real_world_league": "Brasileirão",
     "importance": 94,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-3",
+    "division_seed": 5,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-068",
     "squad": {
       "player_ids": [
@@ -4741,6 +8640,63 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-068",
+      "club_name": "SE Palmeiras",
+      "strength_score": 88.69,
+      "components": {
+        "starting_xi_average": 87.64,
+        "first_team_depth_average": 86,
+        "positional_balance_score": 100,
+        "youth_strength_average": 83.8
+      },
+      "squad": {
+        "assigned_players": 25,
+        "rated_players": 25,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00053015",
+          "tbg-tm-00215390",
+          "tbg-tm-00364972",
+          "tbg-tm-00379752",
+          "tbg-tm-00496268",
+          "tbg-tm-00203394",
+          "tbg-tm-00270188",
+          "tbg-tm-00678439",
+          "tbg-tm-00588989",
+          "tbg-tm-00844797",
+          "tbg-tm-00943837"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00159372",
+          "tbg-tm-00745191",
+          "tbg-tm-00428791",
+          "tbg-tm-00458710",
+          "tbg-tm-00641458",
+          "tbg-tm-00707447",
+          "tbg-tm-01082631",
+          "tbg-tm-00563692",
+          "tbg-tm-00653348"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00943837",
+          "tbg-tm-01115722",
+          "tbg-tm-01158001",
+          "tbg-tm-01253807",
+          "tbg-tm-01116605"
+        ],
+        "position_counts": {
+          "MID": 3,
+          "DEF": 8,
+          "ATT": 7,
+          "GK": 2
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 45,
+      "division_level": 3,
+      "division_seed": 5
     }
   },
   {
@@ -4753,9 +8709,9 @@
     "continent": "South America",
     "real_world_league": "Argentina Primera División",
     "importance": 94,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-3",
+    "division_seed": 15,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-069",
     "squad": {
       "player_ids": [
@@ -4813,6 +8769,66 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-069",
+      "club_name": "River Plate",
+      "strength_score": 88.17,
+      "components": {
+        "starting_xi_average": 86.91,
+        "first_team_depth_average": 85.78,
+        "positional_balance_score": 100,
+        "youth_strength_average": 83
+      },
+      "squad": {
+        "assigned_players": 28,
+        "rated_players": 28,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00119634",
+          "tbg-tm-00054781",
+          "tbg-tm-00113133",
+          "tbg-tm-00373373",
+          "tbg-tm-00402733",
+          "tbg-tm-00122582",
+          "tbg-tm-00290249",
+          "tbg-tm-01052439",
+          "tbg-tm-00294853",
+          "tbg-tm-00323831",
+          "tbg-tm-00628366"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00060410",
+          "tbg-tm-00271478",
+          "tbg-tm-00275381",
+          "tbg-tm-00339699",
+          "tbg-tm-00439072",
+          "tbg-tm-00626917",
+          "tbg-tm-00642758",
+          "tbg-tm-00491705",
+          "tbg-tm-00857948"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01052439",
+          "tbg-tm-01138089",
+          "tbg-tm-01000684",
+          "tbg-tm-01074969",
+          "tbg-tm-01289929",
+          "tbg-tm-01000688",
+          "tbg-tm-01231221",
+          "tbg-tm-01324003"
+        ],
+        "position_counts": {
+          "DEF": 11,
+          "MID": 3,
+          "GK": 2,
+          "ATT": 4
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 55,
+      "division_level": 3,
+      "division_seed": 15
     }
   },
   {
@@ -4825,9 +8841,9 @@
     "continent": "South America",
     "real_world_league": "Argentina Primera División",
     "importance": 93,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-4",
+    "division_seed": 20,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-070",
     "squad": {
       "player_ids": [
@@ -4882,6 +8898,63 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-070",
+      "club_name": "Boca Juniors",
+      "strength_score": 85.03,
+      "components": {
+        "starting_xi_average": 86.55,
+        "first_team_depth_average": 85.11,
+        "positional_balance_score": 78.82,
+        "youth_strength_average": 82.6
+      },
+      "squad": {
+        "assigned_players": 25,
+        "rated_players": 25,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00007966",
+          "tbg-tm-00166237",
+          "tbg-tm-00423436",
+          "tbg-tm-00089297",
+          "tbg-tm-00334055",
+          "tbg-tm-00190756",
+          "tbg-tm-00262262",
+          "tbg-tm-00481367",
+          "tbg-tm-00514120",
+          "tbg-tm-00054534",
+          "tbg-tm-00552185"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00842910",
+          "tbg-tm-00289149",
+          "tbg-tm-00373916",
+          "tbg-tm-00483446",
+          "tbg-tm-00661132",
+          "tbg-tm-00665101",
+          "tbg-tm-00730779",
+          "tbg-tm-00831161",
+          "tbg-tm-01019744"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01236677",
+          "tbg-tm-01322355",
+          "tbg-tm-01000671",
+          "tbg-tm-01236684",
+          "tbg-tm-01342677"
+        ],
+        "position_counts": {
+          "DEF": 11,
+          "GK": 2,
+          "MID": 1,
+          "ATT": 6
+        },
+        "position_shortages": 2
+      },
+      "world_rank": 80,
+      "division_level": 4,
+      "division_seed": 20
     }
   },
   {
@@ -4894,9 +8967,9 @@
     "continent": "Asia",
     "real_world_league": "Saudi Pro League",
     "importance": 92,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-2",
+    "division_seed": 11,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-071",
     "squad": {
       "player_ids": [
@@ -4950,6 +9023,62 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-071",
+      "club_name": "Al-Hilal SFC",
+      "strength_score": 89.7,
+      "components": {
+        "starting_xi_average": 89.36,
+        "first_team_depth_average": 85.67,
+        "positional_balance_score": 100,
+        "youth_strength_average": 84.75
+      },
+      "squad": {
+        "assigned_players": 24,
+        "rated_players": 24,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00207834",
+          "tbg-tm-00182712",
+          "tbg-tm-00225161",
+          "tbg-tm-00093128",
+          "tbg-tm-00339808",
+          "tbg-tm-00266302",
+          "tbg-tm-00308120",
+          "tbg-tm-00955356",
+          "tbg-tm-00546543",
+          "tbg-tm-00018922",
+          "tbg-tm-00323704"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00195332",
+          "tbg-tm-00668267",
+          "tbg-tm-00229877",
+          "tbg-tm-01100642",
+          "tbg-tm-00210349",
+          "tbg-tm-00264909",
+          "tbg-tm-00509897",
+          "tbg-tm-00509911",
+          "tbg-tm-00509914"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00955356",
+          "tbg-tm-01100642",
+          "tbg-tm-01141560",
+          "tbg-tm-01238031"
+        ],
+        "position_counts": {
+          "DEF": 8,
+          "MID": 4,
+          "ATT": 6,
+          "GK": 2
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 31,
+      "division_level": 2,
+      "division_seed": 11
     }
   },
   {
@@ -4962,9 +9091,9 @@
     "continent": "South America",
     "real_world_league": "Brasileirão",
     "importance": 89,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-3",
+    "division_seed": 6,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-072",
     "squad": {
       "player_ids": [
@@ -5019,6 +9148,63 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-072",
+      "club_name": "Corinthians",
+      "strength_score": 88.59,
+      "components": {
+        "starting_xi_average": 87.36,
+        "first_team_depth_average": 86.11,
+        "positional_balance_score": 100,
+        "youth_strength_average": 84.6
+      },
+      "squad": {
+        "assigned_players": 25,
+        "rated_players": 25,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00574901",
+          "tbg-tm-00149498",
+          "tbg-tm-00208681",
+          "tbg-tm-00175792",
+          "tbg-tm-00268506",
+          "tbg-tm-00135057",
+          "tbg-tm-00141660",
+          "tbg-tm-00565009",
+          "tbg-tm-00167850",
+          "tbg-tm-00489893",
+          "tbg-tm-00213605"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00123349",
+          "tbg-tm-01029227",
+          "tbg-tm-00219835",
+          "tbg-tm-00385271",
+          "tbg-tm-00546530",
+          "tbg-tm-00594226",
+          "tbg-tm-00670021",
+          "tbg-tm-01221818",
+          "tbg-tm-00323934"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01029227",
+          "tbg-tm-01221818",
+          "tbg-tm-01257133",
+          "tbg-tm-01005656",
+          "tbg-tm-01257132"
+        ],
+        "position_counts": {
+          "ATT": 3,
+          "MID": 8,
+          "DEF": 8,
+          "GK": 1
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 46,
+      "division_level": 3,
+      "division_seed": 6
     }
   },
   {
@@ -5031,9 +9217,9 @@
     "continent": "South America",
     "real_world_league": "Brasileirão",
     "importance": 88,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-3",
+    "division_seed": 11,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-073",
     "squad": {
       "player_ids": [
@@ -5089,6 +9275,64 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-073",
+      "club_name": "Santos FC",
+      "strength_score": 88.26,
+      "components": {
+        "starting_xi_average": 87.18,
+        "first_team_depth_average": 85.56,
+        "positional_balance_score": 100,
+        "youth_strength_average": 82.67
+      },
+      "squad": {
+        "assigned_players": 26,
+        "rated_players": 26,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00275412",
+          "tbg-tm-00147361",
+          "tbg-tm-00198859",
+          "tbg-tm-00411662",
+          "tbg-tm-00210747",
+          "tbg-tm-00068290",
+          "tbg-tm-00225432",
+          "tbg-tm-00392487",
+          "tbg-tm-00371009",
+          "tbg-tm-00244275",
+          "tbg-tm-00491704"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00371247",
+          "tbg-tm-00347913",
+          "tbg-tm-00563812",
+          "tbg-tm-00608216",
+          "tbg-tm-00484848",
+          "tbg-tm-00552240",
+          "tbg-tm-00598838",
+          "tbg-tm-00613873",
+          "tbg-tm-00788361"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01089958",
+          "tbg-tm-01253844",
+          "tbg-tm-01355385",
+          "tbg-tm-01101124",
+          "tbg-tm-01256755",
+          "tbg-tm-01220141"
+        ],
+        "position_counts": {
+          "MID": 4,
+          "DEF": 9,
+          "GK": 2,
+          "ATT": 5
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 51,
+      "division_level": 3,
+      "division_seed": 11
     }
   },
   {
@@ -5101,9 +9345,9 @@
     "continent": "Asia",
     "real_world_league": "Saudi Pro League",
     "importance": 91,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-4",
+    "division_seed": 12,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-074",
     "squad": {
       "player_ids": [
@@ -5157,6 +9401,62 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-074",
+      "club_name": "Al-Nassr FC",
+      "strength_score": 87.18,
+      "components": {
+        "starting_xi_average": 87.91,
+        "first_team_depth_average": 84.78,
+        "positional_balance_score": 89.41,
+        "youth_strength_average": 83.25
+      },
+      "squad": {
+        "assigned_players": 24,
+        "rated_players": 24,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00691906",
+          "tbg-tm-00666234",
+          "tbg-tm-00435045",
+          "tbg-tm-00509894",
+          "tbg-tm-00141805",
+          "tbg-tm-00324633",
+          "tbg-tm-00434672",
+          "tbg-tm-00200512",
+          "tbg-tm-00008198",
+          "tbg-tm-00462250",
+          "tbg-tm-00243714"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00649317",
+          "tbg-tm-00743598",
+          "tbg-tm-00364773",
+          "tbg-tm-00437903",
+          "tbg-tm-00031406",
+          "tbg-tm-00068626",
+          "tbg-tm-00735815",
+          "tbg-tm-00821377",
+          "tbg-tm-00886183"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00743598",
+          "tbg-tm-01007378",
+          "tbg-tm-01032334",
+          "tbg-tm-01180070"
+        ],
+        "position_counts": {
+          "ATT": 8,
+          "DEF": 8,
+          "GK": 2,
+          "MID": 2
+        },
+        "position_shortages": 1
+      },
+      "world_rank": 72,
+      "division_level": 4,
+      "division_seed": 12
     }
   },
   {
@@ -5169,9 +9469,9 @@
     "continent": "South America",
     "real_world_league": "Brasileirão",
     "importance": 88,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-3",
+    "division_seed": 9,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-075",
     "squad": {
       "player_ids": [
@@ -5223,6 +9523,60 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-075",
+      "club_name": "Fluminense FC",
+      "strength_score": 88.32,
+      "components": {
+        "starting_xi_average": 87.09,
+        "first_team_depth_average": 86.11,
+        "positional_balance_score": 100,
+        "youth_strength_average": 82.5
+      },
+      "squad": {
+        "assigned_players": 22,
+        "rated_players": 22,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00022415",
+          "tbg-tm-00029241",
+          "tbg-tm-00346766",
+          "tbg-tm-00815558",
+          "tbg-tm-00198250",
+          "tbg-tm-00067920",
+          "tbg-tm-00229736",
+          "tbg-tm-00309193",
+          "tbg-tm-00080562",
+          "tbg-tm-00054590",
+          "tbg-tm-00312294"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00315169",
+          "tbg-tm-00982617",
+          "tbg-tm-00212209",
+          "tbg-tm-00261309",
+          "tbg-tm-00312314",
+          "tbg-tm-00341701",
+          "tbg-tm-00457533",
+          "tbg-tm-00745927",
+          "tbg-tm-00856085"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01219749",
+          "tbg-tm-01119008"
+        ],
+        "position_counts": {
+          "GK": 1,
+          "ATT": 6,
+          "DEF": 7,
+          "MID": 6
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 49,
+      "division_level": 3,
+      "division_seed": 9
     }
   },
   {
@@ -5235,9 +9589,9 @@
     "continent": "South America",
     "real_world_league": "Brasileirão",
     "importance": 87,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-3",
+    "division_seed": 20,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-076",
     "squad": {
       "player_ids": [
@@ -5293,6 +9647,64 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-076",
+      "club_name": "Atlético Mineiro",
+      "strength_score": 87.79,
+      "components": {
+        "starting_xi_average": 86.64,
+        "first_team_depth_average": 85,
+        "positional_balance_score": 100,
+        "youth_strength_average": 82.17
+      },
+      "squad": {
+        "assigned_players": 26,
+        "rated_players": 26,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00106032",
+          "tbg-tm-00273000",
+          "tbg-tm-00476352",
+          "tbg-tm-00149752",
+          "tbg-tm-00312678",
+          "tbg-tm-00330085",
+          "tbg-tm-00400960",
+          "tbg-tm-00421935",
+          "tbg-tm-00175169",
+          "tbg-tm-00362667",
+          "tbg-tm-00114937"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00379807",
+          "tbg-tm-00450241",
+          "tbg-tm-00503052",
+          "tbg-tm-00553459",
+          "tbg-tm-00555015",
+          "tbg-tm-00740295",
+          "tbg-tm-00749559",
+          "tbg-tm-00897051",
+          "tbg-tm-00997714"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01101447",
+          "tbg-tm-01152154",
+          "tbg-tm-01193865",
+          "tbg-tm-01355484",
+          "tbg-tm-01410674",
+          "tbg-tm-01365061"
+        ],
+        "position_counts": {
+          "DEF": 9,
+          "GK": 1,
+          "ATT": 5,
+          "MID": 5
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 60,
+      "division_level": 3,
+      "division_seed": 20
     }
   },
   {
@@ -5305,9 +9717,9 @@
     "continent": "South America",
     "real_world_league": "Brasileirão",
     "importance": 86,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-4",
+    "division_seed": 6,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-077",
     "squad": {
       "player_ids": [
@@ -5360,6 +9772,61 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-077",
+      "club_name": "SC Internacional",
+      "strength_score": 87.43,
+      "components": {
+        "starting_xi_average": 86.09,
+        "first_team_depth_average": 84.89,
+        "positional_balance_score": 100,
+        "youth_strength_average": 82
+      },
+      "squad": {
+        "assigned_players": 23,
+        "rated_players": 23,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00264014",
+          "tbg-tm-00045319",
+          "tbg-tm-00294873",
+          "tbg-tm-00383638",
+          "tbg-tm-00468174",
+          "tbg-tm-00104505",
+          "tbg-tm-00277335",
+          "tbg-tm-00534473",
+          "tbg-tm-00438202",
+          "tbg-tm-00572042",
+          "tbg-tm-00670965"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00530737",
+          "tbg-tm-00719635",
+          "tbg-tm-00405768",
+          "tbg-tm-00657220",
+          "tbg-tm-00703322",
+          "tbg-tm-00741021",
+          "tbg-tm-00668265",
+          "tbg-tm-00834444",
+          "tbg-tm-00869437"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01220008",
+          "tbg-tm-01259706",
+          "tbg-tm-01355429"
+        ],
+        "position_counts": {
+          "GK": 2,
+          "DEF": 11,
+          "MID": 3,
+          "ATT": 4
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 66,
+      "division_level": 4,
+      "division_seed": 6
     }
   },
   {
@@ -5372,9 +9839,9 @@
     "continent": "North America",
     "real_world_league": "MLS",
     "importance": 87,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-4",
+    "division_seed": 16,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-078",
     "squad": {
       "player_ids": [
@@ -5431,6 +9898,66 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-078",
+      "club_name": "Inter Miami CF",
+      "strength_score": 86.38,
+      "components": {
+        "starting_xi_average": 87.09,
+        "first_team_depth_average": 83.67,
+        "positional_balance_score": 89.41,
+        "youth_strength_average": 82
+      },
+      "squad": {
+        "assigned_players": 27,
+        "rated_players": 27,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00439750",
+          "tbg-tm-00282429",
+          "tbg-tm-00437993",
+          "tbg-tm-00642759",
+          "tbg-tm-00867847",
+          "tbg-tm-00255901",
+          "tbg-tm-00858719",
+          "tbg-tm-00028003",
+          "tbg-tm-00044352",
+          "tbg-tm-00401572",
+          "tbg-tm-00644782"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00872184",
+          "tbg-tm-00634692",
+          "tbg-tm-00661094",
+          "tbg-tm-00896536",
+          "tbg-tm-01213080",
+          "tbg-tm-00661126",
+          "tbg-tm-00744586",
+          "tbg-tm-00819603",
+          "tbg-tm-00914681"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01213080",
+          "tbg-tm-00994254",
+          "tbg-tm-01007387",
+          "tbg-tm-01008456",
+          "tbg-tm-01046966",
+          "tbg-tm-01382553",
+          "tbg-tm-01096186",
+          "tbg-tm-01335512"
+        ],
+        "position_counts": {
+          "ATT": 5,
+          "MID": 2,
+          "DEF": 10,
+          "GK": 3
+        },
+        "position_shortages": 1
+      },
+      "world_rank": 76,
+      "division_level": 4,
+      "division_seed": 16
     }
   },
   {
@@ -5443,9 +9970,9 @@
     "continent": "Africa",
     "real_world_league": "Egyptian Premier League",
     "importance": 95,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-4",
+    "division_seed": 7,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-079",
     "squad": {
       "player_ids": [
@@ -5499,6 +10026,62 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-079",
+      "club_name": "Al Ahly SC",
+      "strength_score": 87.32,
+      "components": {
+        "starting_xi_average": 86.09,
+        "first_team_depth_average": 84.44,
+        "positional_balance_score": 100,
+        "youth_strength_average": 81.75
+      },
+      "squad": {
+        "assigned_players": 24,
+        "rated_players": 24,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00134573",
+          "tbg-tm-00237425",
+          "tbg-tm-00271641",
+          "tbg-tm-00343974",
+          "tbg-tm-00734542",
+          "tbg-tm-00604008",
+          "tbg-tm-00308472",
+          "tbg-tm-00577881",
+          "tbg-tm-00234189",
+          "tbg-tm-00320722",
+          "tbg-tm-00344737"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00361925",
+          "tbg-tm-00380873",
+          "tbg-tm-00518804",
+          "tbg-tm-00566823",
+          "tbg-tm-00582527",
+          "tbg-tm-00661455",
+          "tbg-tm-00689431",
+          "tbg-tm-00789005",
+          "tbg-tm-01029240"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-01158728",
+          "tbg-tm-01158730",
+          "tbg-tm-01237440",
+          "tbg-tm-01330625"
+        ],
+        "position_counts": {
+          "ATT": 6,
+          "GK": 2,
+          "DEF": 8,
+          "MID": 4
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 67,
+      "division_level": 4,
+      "division_seed": 7
     }
   },
   {
@@ -5511,9 +10094,9 @@
     "continent": "South America",
     "real_world_league": "Uruguay Primera División",
     "importance": 84,
-    "division_id": null,
-    "division_seed": null,
-    "seeding_status": "pending_club_strength",
+    "division_id": "division-4",
+    "division_seed": 8,
+    "seeding_status": "frozen_inaugural_membership",
     "manager_slot_id": "manager-slot-080",
     "squad": {
       "player_ids": [
@@ -5573,6 +10156,68 @@
       "honours": [],
       "division_history": [],
       "manager_history": []
+    },
+    "strength": {
+      "tbg_club_id": "tbg-club-080",
+      "club_name": "Club Nacional",
+      "strength_score": 87.32,
+      "components": {
+        "starting_xi_average": 86,
+        "first_team_depth_average": 84.67,
+        "positional_balance_score": 100,
+        "youth_strength_average": 81.9
+      },
+      "squad": {
+        "assigned_players": 30,
+        "rated_players": 30,
+        "first_team_players_used": 20,
+        "starting_xi_player_ids": [
+          "tbg-tm-00076715",
+          "tbg-tm-00115507",
+          "tbg-tm-00102427",
+          "tbg-tm-00188470",
+          "tbg-tm-00196187",
+          "tbg-tm-00072653",
+          "tbg-tm-00338641",
+          "tbg-tm-00577259",
+          "tbg-tm-00185593",
+          "tbg-tm-00396894",
+          "tbg-tm-00365827"
+        ],
+        "depth_player_ids": [
+          "tbg-tm-00360521",
+          "tbg-tm-00382473",
+          "tbg-tm-00403014",
+          "tbg-tm-00410456",
+          "tbg-tm-00456535",
+          "tbg-tm-00577406",
+          "tbg-tm-00697408",
+          "tbg-tm-00891569",
+          "tbg-tm-00988662"
+        ],
+        "youth_player_ids": [
+          "tbg-tm-00898379",
+          "tbg-tm-00997825",
+          "tbg-tm-01021366",
+          "tbg-tm-01228248",
+          "tbg-tm-01232131",
+          "tbg-tm-01310240",
+          "tbg-tm-01339507",
+          "tbg-tm-01372201",
+          "tbg-tm-01379675",
+          "tbg-tm-01379671"
+        ],
+        "position_counts": {
+          "GK": 2,
+          "DEF": 9,
+          "MID": 4,
+          "ATT": 5
+        },
+        "position_shortages": 0
+      },
+      "world_rank": 68,
+      "division_level": 4,
+      "division_seed": 8
     }
   }
 ]

@@ -122,6 +122,38 @@
     {
       "matchday": 30,
       "fixture_status": "not_generated"
+    },
+    {
+      "matchday": 31,
+      "fixture_status": "not_generated"
+    },
+    {
+      "matchday": 32,
+      "fixture_status": "not_generated"
+    },
+    {
+      "matchday": 33,
+      "fixture_status": "not_generated"
+    },
+    {
+      "matchday": 34,
+      "fixture_status": "not_generated"
+    },
+    {
+      "matchday": 35,
+      "fixture_status": "not_generated"
+    },
+    {
+      "matchday": 36,
+      "fixture_status": "not_generated"
+    },
+    {
+      "matchday": 37,
+      "fixture_status": "not_generated"
+    },
+    {
+      "matchday": 38,
+      "fixture_status": "not_generated"
     }
   ],
   "cup_rounds": [],
