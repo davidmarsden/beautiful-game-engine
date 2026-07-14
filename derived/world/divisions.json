@@ -1,0 +1,62 @@
+[
+  {
+    "division_id": "division-1",
+    "level": 1,
+    "name": "Division 1",
+    "club_capacity": 16,
+    "club_ids": [],
+    "seeding_status": "pending_club_strength",
+    "competition_id": "league-division-1",
+    "promotion_places": 0,
+    "relegation_places": 4,
+    "automatic_sacking_places": 3
+  },
+  {
+    "division_id": "division-2",
+    "level": 2,
+    "name": "Division 2",
+    "club_capacity": 16,
+    "club_ids": [],
+    "seeding_status": "pending_club_strength",
+    "competition_id": "league-division-2",
+    "promotion_places": 4,
+    "relegation_places": 4,
+    "automatic_sacking_places": 3
+  },
+  {
+    "division_id": "division-3",
+    "level": 3,
+    "name": "Division 3",
+    "club_capacity": 16,
+    "club_ids": [],
+    "seeding_status": "pending_club_strength",
+    "competition_id": "league-division-3",
+    "promotion_places": 4,
+    "relegation_places": 4,
+    "automatic_sacking_places": 3
+  },
+  {
+    "division_id": "division-4",
+    "level": 4,
+    "name": "Division 4",
+    "club_capacity": 16,
+    "club_ids": [],
+    "seeding_status": "pending_club_strength",
+    "competition_id": "league-division-4",
+    "promotion_places": 4,
+    "relegation_places": 4,
+    "automatic_sacking_places": 3
+  },
+  {
+    "division_id": "division-5",
+    "level": 5,
+    "name": "Division 5",
+    "club_capacity": 16,
+    "club_ids": [],
+    "seeding_status": "pending_club_strength",
+    "competition_id": "league-division-5",
+    "promotion_places": 4,
+    "relegation_places": 0,
+    "automatic_sacking_places": 3
+  }
+]

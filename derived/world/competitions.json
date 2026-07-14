@@ -1,0 +1,60 @@
+[
+  {
+    "competition_id": "league-division-1",
+    "name": "TBG Division 1",
+    "type": "league",
+    "level": 1,
+    "club_capacity": 16,
+    "format": "double_round_robin",
+    "matchdays": 30,
+    "status": "awaiting_division_seeding"
+  },
+  {
+    "competition_id": "league-division-2",
+    "name": "TBG Division 2",
+    "type": "league",
+    "level": 2,
+    "club_capacity": 16,
+    "format": "double_round_robin",
+    "matchdays": 30,
+    "status": "awaiting_division_seeding"
+  },
+  {
+    "competition_id": "league-division-3",
+    "name": "TBG Division 3",
+    "type": "league",
+    "level": 3,
+    "club_capacity": 16,
+    "format": "double_round_robin",
+    "matchdays": 30,
+    "status": "awaiting_division_seeding"
+  },
+  {
+    "competition_id": "league-division-4",
+    "name": "TBG Division 4",
+    "type": "league",
+    "level": 4,
+    "club_capacity": 16,
+    "format": "double_round_robin",
+    "matchdays": 30,
+    "status": "awaiting_division_seeding"
+  },
+  {
+    "competition_id": "league-division-5",
+    "name": "TBG Division 5",
+    "type": "league",
+    "level": 5,
+    "club_capacity": 16,
+    "format": "double_round_robin",
+    "matchdays": 30,
+    "status": "awaiting_division_seeding"
+  },
+  {
+    "competition_id": "tbg-cup",
+    "name": "The Beautiful Game Cup",
+    "type": "knockout_cup",
+    "club_capacity": 80,
+    "format": "to_be_ratified",
+    "status": "foundation_shell"
+  }
+]

@@ -1,0 +1,141 @@
+{
+  "season_id": "season-001",
+  "ordinal": 1,
+  "status": "foundation",
+  "calendar": {
+    "season_id": "season-001",
+    "status": "unscheduled",
+    "date_policy": "Dates are assigned when the season generator is configured.",
+    "league_matchdays": [
+      {
+        "matchday": 1,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 2,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 3,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 4,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 5,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 6,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 7,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 8,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 9,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 10,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 11,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 12,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 13,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 14,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 15,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 16,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 17,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 18,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 19,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 20,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 21,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 22,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 23,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 24,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 25,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 26,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 27,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 28,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 29,
+        "fixture_status": "not_generated"
+      },
+      {
+        "matchday": 30,
+        "fixture_status": "not_generated"
+      }
+    ],
+    "cup_rounds": [],
+    "transfer_windows": [],
+    "international_breaks": []
+  },
+  "fixtures": [],
+  "standings": [],
+  "transfers": [],
+  "disciplinary_events": [],
+  "injuries": [],
+  "honours": []
+}

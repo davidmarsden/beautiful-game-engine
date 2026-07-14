@@ -1,0 +1,722 @@
+[
+  {
+    "manager_slot_id": "manager-slot-001",
+    "tbg_club_id": "tbg-club-001",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-002",
+    "tbg_club_id": "tbg-club-002",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-003",
+    "tbg_club_id": "tbg-club-003",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-004",
+    "tbg_club_id": "tbg-club-004",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-005",
+    "tbg_club_id": "tbg-club-005",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-006",
+    "tbg_club_id": "tbg-club-006",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-007",
+    "tbg_club_id": "tbg-club-007",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-008",
+    "tbg_club_id": "tbg-club-008",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-009",
+    "tbg_club_id": "tbg-club-009",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-010",
+    "tbg_club_id": "tbg-club-010",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-011",
+    "tbg_club_id": "tbg-club-011",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-012",
+    "tbg_club_id": "tbg-club-012",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-013",
+    "tbg_club_id": "tbg-club-013",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-014",
+    "tbg_club_id": "tbg-club-014",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-015",
+    "tbg_club_id": "tbg-club-015",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-016",
+    "tbg_club_id": "tbg-club-016",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-017",
+    "tbg_club_id": "tbg-club-017",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-018",
+    "tbg_club_id": "tbg-club-018",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-019",
+    "tbg_club_id": "tbg-club-019",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-020",
+    "tbg_club_id": "tbg-club-020",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-021",
+    "tbg_club_id": "tbg-club-021",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-022",
+    "tbg_club_id": "tbg-club-022",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-023",
+    "tbg_club_id": "tbg-club-023",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-024",
+    "tbg_club_id": "tbg-club-024",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-025",
+    "tbg_club_id": "tbg-club-025",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-026",
+    "tbg_club_id": "tbg-club-026",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-027",
+    "tbg_club_id": "tbg-club-027",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-028",
+    "tbg_club_id": "tbg-club-028",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-029",
+    "tbg_club_id": "tbg-club-029",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-030",
+    "tbg_club_id": "tbg-club-030",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-031",
+    "tbg_club_id": "tbg-club-031",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-032",
+    "tbg_club_id": "tbg-club-032",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-033",
+    "tbg_club_id": "tbg-club-033",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-034",
+    "tbg_club_id": "tbg-club-034",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-035",
+    "tbg_club_id": "tbg-club-035",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-036",
+    "tbg_club_id": "tbg-club-036",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-037",
+    "tbg_club_id": "tbg-club-037",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-038",
+    "tbg_club_id": "tbg-club-038",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-039",
+    "tbg_club_id": "tbg-club-039",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-040",
+    "tbg_club_id": "tbg-club-040",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-041",
+    "tbg_club_id": "tbg-club-041",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-042",
+    "tbg_club_id": "tbg-club-042",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-043",
+    "tbg_club_id": "tbg-club-043",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-044",
+    "tbg_club_id": "tbg-club-044",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-045",
+    "tbg_club_id": "tbg-club-045",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-046",
+    "tbg_club_id": "tbg-club-046",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-047",
+    "tbg_club_id": "tbg-club-047",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-048",
+    "tbg_club_id": "tbg-club-048",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-049",
+    "tbg_club_id": "tbg-club-049",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-050",
+    "tbg_club_id": "tbg-club-050",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-051",
+    "tbg_club_id": "tbg-club-051",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-052",
+    "tbg_club_id": "tbg-club-052",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-053",
+    "tbg_club_id": "tbg-club-053",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-054",
+    "tbg_club_id": "tbg-club-054",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-055",
+    "tbg_club_id": "tbg-club-055",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-056",
+    "tbg_club_id": "tbg-club-056",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-057",
+    "tbg_club_id": "tbg-club-057",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-058",
+    "tbg_club_id": "tbg-club-058",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-059",
+    "tbg_club_id": "tbg-club-059",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-060",
+    "tbg_club_id": "tbg-club-060",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-061",
+    "tbg_club_id": "tbg-club-061",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-062",
+    "tbg_club_id": "tbg-club-062",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-063",
+    "tbg_club_id": "tbg-club-063",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-064",
+    "tbg_club_id": "tbg-club-064",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-065",
+    "tbg_club_id": "tbg-club-065",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-066",
+    "tbg_club_id": "tbg-club-066",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-067",
+    "tbg_club_id": "tbg-club-067",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-068",
+    "tbg_club_id": "tbg-club-068",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-069",
+    "tbg_club_id": "tbg-club-069",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-070",
+    "tbg_club_id": "tbg-club-070",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-071",
+    "tbg_club_id": "tbg-club-071",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-072",
+    "tbg_club_id": "tbg-club-072",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-073",
+    "tbg_club_id": "tbg-club-073",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-074",
+    "tbg_club_id": "tbg-club-074",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-075",
+    "tbg_club_id": "tbg-club-075",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-076",
+    "tbg_club_id": "tbg-club-076",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-077",
+    "tbg_club_id": "tbg-club-077",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-078",
+    "tbg_club_id": "tbg-club-078",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-079",
+    "tbg_club_id": "tbg-club-079",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  },
+  {
+    "manager_slot_id": "manager-slot-080",
+    "tbg_club_id": "tbg-club-080",
+    "manager_id": null,
+    "manager_name": null,
+    "manager_type": "vacant",
+    "appointed_at": null,
+    "status": "open"
+  }
+]

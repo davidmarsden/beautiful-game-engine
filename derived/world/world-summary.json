@@ -1,0 +1,17 @@
+{
+  "world_id": "tbg-world-001",
+  "contract_version": "tbg-world-contract-v1.0",
+  "foundation_version": "tbg-world-foundation-v0.1",
+  "data_snapshot_id": "d1d474382cccd36380d6",
+  "status": "foundation_ready_for_strength_seeding",
+  "clubs": 80,
+  "divisions": 5,
+  "players": 8082,
+  "assigned_players": 2166,
+  "unsigned_players": 5916,
+  "manager_slots": 80,
+  "competitions": 6,
+  "league_matchdays_planned": 30,
+  "division_seeding_status": "pending_club_strength",
+  "validation_errors": []
+}
