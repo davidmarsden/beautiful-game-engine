@@ -106,6 +106,12 @@ export {
   validateTbgPlayer,
   validateTbgPlayers
 } from "./worldState/validateTbgPlayer.js";
+export {
+  buildWorldFoundation,
+  summariseWorldFoundation,
+  WORLD_CONTRACT_VERSION,
+  WORLD_FOUNDATION_VERSION
+} from "./worldFoundation/buildWorldFoundation.js";
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const world = generateWorld({ seed: "demo", season: 1 });
