@@ -1,12 +1,13 @@
 {
   "name": "beautiful-game-engine",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Simulation engine and persistent world state for The Beautiful Game.",
   "type": "module",
   "main": "src/index.js",
   "scripts": {
     "test": "node --test",
     "demo": "node src/index.js",
+    "portal:manager": "node scripts/serve-manager-portal.js",
     "build:world-foundation": "node scripts/build-world-foundation.js",
     "seed:world-divisions": "node scripts/seed-world-divisions.js",
     "build:inaugural-world": "npm run build:world-foundation && npm run seed:world-divisions",
