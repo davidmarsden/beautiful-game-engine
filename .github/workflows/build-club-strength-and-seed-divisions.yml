@@ -1,0 +1,77 @@
+name: Build Club Strength and Seed Divisions
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-club-strength-and-seed-divisions
+  cancel-in-progress: false
+
+jobs:
+  build-and-seed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out engine repository
+        uses: actions/checkout@v4
+        with:
+          path: beautiful-game-engine
+          fetch-depth: 0
+
+      - name: Check out canonical data repository
+        uses: actions/checkout@v4
+        with:
+          repository: davidmarsden/beautiful-game-data
+          path: beautiful-game-data
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install engine dependencies
+        working-directory: beautiful-game-engine
+        run: npm install
+
+      - name: Run engine tests
+        working-directory: beautiful-game-engine
+        run: npm test
+
+      - name: Build foundation and seed four divisions
+        working-directory: beautiful-game-engine
+        run: npm run build:world-phase-2b -- --dataRoot=../beautiful-game-data --outputDir=derived/world
+
+      - name: Verify frozen league membership
+        working-directory: beautiful-game-engine
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFile } from 'node:fs/promises';
+          const world = JSON.parse(await readFile('derived/world/world.json', 'utf8'));
+          if (world.divisions.length !== 4) throw new Error(`Expected 4 divisions; got ${world.divisions.length}`);
+          if (world.divisions.some(d => d.club_ids.length !== 20)) throw new Error('Every division must have 20 clubs.');
+          if (world.season.calendar.league_matchdays.length !== 38) throw new Error('Expected 38 league matchdays.');
+          if (world.status !== 'inaugural_divisions_frozen') throw new Error(`Unexpected world status: ${world.status}`);
+          console.log(world.divisions.map(d => ({ division: d.name, clubs: d.club_ids.length, top_seed: d.seeds[0] })));
+          NODE
+
+      - name: Upload Phase 2B world artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tbg-phase-2b-world
+          path: beautiful-game-engine/derived/world/**
+          if-no-files-found: error
+
+      - name: Commit frozen inaugural world
+        working-directory: beautiful-game-engine
+        run: |
+          if [ -z "$(git status --porcelain derived/world)" ]; then
+            echo "No Phase 2B world changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add derived/world
+          git commit -m "Calculate club strength and freeze inaugural divisions"
+          git push
