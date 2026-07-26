@@ -100,10 +100,14 @@ export { createSeasonShell } from "./world/seasonShell.js";
 export { validateWorld } from "./world/validateWorld.js";
 export {
   DEFAULT_LOAN_ELIGIBILITY_RULES,
+  LOAN_RULE_INHERIT,
+  createLoanEligibilitySnapshot,
+  fixtureEligibilityCheckpoint,
   fixtureOpponentClubId,
   isLoanPlayerEligibleForFixture,
   loanEligibility,
-  parentClubRestrictionEnabled
+  parentClubRestrictionEnabled,
+  resolveParentClubRestriction
 } from "./world/loanEligibility.js";
 export {
   buildWorldStateFromPlayerPools,
