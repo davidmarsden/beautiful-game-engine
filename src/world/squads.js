@@ -13,6 +13,9 @@ export function createSquadShell(club) {
       maxRegisteredSeniorPlayers: 25,
       maxLoansIn: 5,
       maxLoansOut: 5
+    },
+    loanEligibility: {
+      parentClubRestriction: false
     }
   };
 }
