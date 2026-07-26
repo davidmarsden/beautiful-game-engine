@@ -15,17 +15,25 @@ function ownershipRow(playerOrId, world = {}) {
 
 function ownerClubId(player, ownership = {}) {
   return text(
-    ownership.parent_club_id || ownership.owner_club_id || ownership.owning_club_id || ownership.club_id ||
-    player?.parent_club_id || player?.owner_club_id || player?.owning_club_id
+    ownership.parent_club_id || ownership.owner_club_id || ownership.owning_club_id || ownership.tbg_club_id || ownership.club_id ||
+    player?.parent_club_id || player?.owner_club_id || player?.owning_club_id || player?.tbg_club_id
   );
 }
 
 function loanClubId(player, ownership = {}) {
   const loan = ownership.loan || player?.loan || {};
   return text(
-    loan.club_id || loan.borrower_club_id || ownership.loan_club_id || ownership.borrower_club_id ||
+    loan.club_id || loan.borrower_club_id || loan.tbg_club_id || ownership.loan_club_id || ownership.borrower_club_id ||
     player?.loan_club_id || player?.borrower_club_id
   );
+}
+
+function competitionRuleSource(world = {}, fixture = {}) {
+  const competitionId = text(fixture.competition_id || fixture.competitionId);
+  if (!competitionId) return null;
+  const competition = (world.competitions || []).find((row) => text(row.id || row.competition_id) === competitionId);
+  if (!competition) return null;
+  return competition.rules?.loans || competition.loan_rules || competition.rules || competition;
 }
 
 export function parentClubRestrictionEnabled({ world = {}, fixture = {}, competitionRules = null } = {}) {
@@ -33,6 +41,7 @@ export function parentClubRestrictionEnabled({ world = {}, fixture = {}, competi
     competitionRules,
     fixture.competition_rules,
     fixture.rules,
+    competitionRuleSource(world, fixture),
     world.competition_rules?.[fixture.competition_id],
     world.rules?.loans,
     world.loan_rules,
@@ -48,8 +57,8 @@ export function parentClubRestrictionEnabled({ world = {}, fixture = {}, competi
 
 export function fixtureOpponentClubId(fixture = {}, clubId) {
   const selected = text(clubId);
-  const home = text(fixture.home_club_id || fixture.homeClubId);
-  const away = text(fixture.away_club_id || fixture.awayClubId);
+  const home = text(fixture.home_club_id || fixture.homeClubId || fixture.homeTeamId);
+  const away = text(fixture.away_club_id || fixture.awayClubId || fixture.awayTeamId);
   if (selected === home) return away;
   if (selected === away) return home;
   return '';
